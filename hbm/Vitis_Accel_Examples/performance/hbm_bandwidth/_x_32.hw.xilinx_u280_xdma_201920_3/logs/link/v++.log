@@ -1,0 +1,293 @@
+INFO: [v++ 60-1306] Additional information associated with this v++ link can be found at:
+	Reports: /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/reports/link
+	Log files: /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/logs/link
+INFO: [v++ 60-1548] Creating build summary session with primary output /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/build_dir_32.hw.xilinx_u280_xdma_201920_3/krnl_vaddmul.link.xclbin.link_summary, at Wed Oct 16 04:40:19 2024
+INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Wed Oct 16 04:40:19 2024
+INFO: [v++ 60-1315] Creating rulecheck session with output '/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/reports/link/v++_link_krnl_vaddmul.link_guidance.html', at Wed Oct 16 04:40:21 2024
+INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u280_xdma_201920_3/xilinx_u280_xdma_201920_3.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/opt/xilinx/platforms/xilinx_u280_xdma_201920_3/hw/xilinx_u280_xdma_201920_3.xsa'
+INFO: [v++ 74-78] Compiler Version string: 2021.2
+INFO: [v++ 60-1302] Platform 'xilinx_u280_xdma_201920_3.xpfm' has been explicitly enabled for this release.
+INFO: [v++ 60-629] Linking for hardware target
+INFO: [v++ 60-423]   Target device: xilinx_u280_xdma_201920_3
+INFO: [v++ 60-1332] Run 'run_link' status: Not started
+INFO: [v++ 60-1443] [04:40:43] Run run_link: Step system_link: Started
+INFO: [v++ 60-1453] Command Line: system_link --xo /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/krnl_vaddmul.xo -keep --config /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/int/syslinkConfig.ini --xpfm /opt/xilinx/platforms/xilinx_u280_xdma_201920_3/xilinx_u280_xdma_201920_3.xpfm --target hw --output_dir /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/int --temp_dir /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/sys_link
+INFO: [v++ 60-1454] Run Directory: /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/run_link
+INFO: [SYSTEM_LINK 60-1316] Initiating connection to rulecheck server, at Wed Oct 16 04:40:47 2024
+INFO: [SYSTEM_LINK 82-70] Extracting xo v3 file /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/krnl_vaddmul.xo
+INFO: [SYSTEM_LINK 82-53] Creating IP database /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-38] [04:41:11] build_xd_ip_db started: /tools/Xilinx/Vitis/2021.2/bin/build_xd_ip_db -ip_search 0  -sds-pf /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/sys_link/xilinx_u280_xdma_201920_3.hpfm -clkid 0 -ip /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/sys_link/iprepo/xilinx_com_hls_krnl_vaddmul_1_0,krnl_vaddmul -o /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-37] [04:41:23] build_xd_ip_db finished successfully
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 2168.234 ; gain = 0.000 ; free physical = 273004 ; free virtual = 505912
+INFO: [SYSTEM_LINK 82-51] Create system connectivity graph
+INFO: [SYSTEM_LINK 82-102] Applying explicit connections to the system connectivity graph: /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [SYSTEM_LINK 82-38] [04:41:23] cfgen started: /tools/Xilinx/Vitis/2021.2/bin/cfgen  -nk krnl_vaddmul:8 -sp krnl_vaddmul_1.in1:HBM[0] -sp krnl_vaddmul_1.in2:HBM[1] -sp krnl_vaddmul_1.out_add:HBM[2] -sp krnl_vaddmul_1.out_mul:HBM[3] -sp krnl_vaddmul_2.in1:HBM[4] -sp krnl_vaddmul_2.in2:HBM[5] -sp krnl_vaddmul_2.out_add:HBM[6] -sp krnl_vaddmul_2.out_mul:HBM[7] -sp krnl_vaddmul_3.in1:HBM[8] -sp krnl_vaddmul_3.in2:HBM[9] -sp krnl_vaddmul_3.out_add:HBM[10] -sp krnl_vaddmul_3.out_mul:HBM[11] -sp krnl_vaddmul_4.in1:HBM[12] -sp krnl_vaddmul_4.in2:HBM[13] -sp krnl_vaddmul_4.out_add:HBM[14] -sp krnl_vaddmul_4.out_mul:HBM[15] -sp krnl_vaddmul_5.in1:HBM[16] -sp krnl_vaddmul_5.in2:HBM[17] -sp krnl_vaddmul_5.out_add:HBM[18] -sp krnl_vaddmul_5.out_mul:HBM[19] -sp krnl_vaddmul_6.in1:HBM[20] -sp krnl_vaddmul_6.in2:HBM[21] -sp krnl_vaddmul_6.out_add:HBM[22] -sp krnl_vaddmul_6.out_mul:HBM[23] -sp krnl_vaddmul_7.in1:HBM[24] -sp krnl_vaddmul_7.in2:HBM[25] -sp krnl_vaddmul_7.out_add:HBM[26] -sp krnl_vaddmul_7.out_mul:HBM[27] -sp krnl_vaddmul_8.in1:HBM[28] -sp krnl_vaddmul_8.in2:HBM[29] -sp krnl_vaddmul_8.out_add:HBM[30] -sp krnl_vaddmul_8.out_mul:HBM[31] -dmclkid 0 -r /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [CFGEN 83-0] Kernel Specs: 
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul, num: 8  {krnl_vaddmul_1 krnl_vaddmul_2 krnl_vaddmul_3 krnl_vaddmul_4 krnl_vaddmul_5 krnl_vaddmul_6 krnl_vaddmul_7 krnl_vaddmul_8}
+INFO: [CFGEN 83-0] Port Specs: 
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_1, k_port: in1, sptag: HBM[0]
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_1, k_port: in2, sptag: HBM[1]
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_1, k_port: out_add, sptag: HBM[2]
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_1, k_port: out_mul, sptag: HBM[3]
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_2, k_port: in1, sptag: HBM[4]
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_2, k_port: in2, sptag: HBM[5]
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_2, k_port: out_add, sptag: HBM[6]
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_2, k_port: out_mul, sptag: HBM[7]
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_3, k_port: in1, sptag: HBM[8]
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_3, k_port: in2, sptag: HBM[9]
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_3, k_port: out_add, sptag: HBM[10]
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_3, k_port: out_mul, sptag: HBM[11]
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_4, k_port: in1, sptag: HBM[12]
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_4, k_port: in2, sptag: HBM[13]
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_4, k_port: out_add, sptag: HBM[14]
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_4, k_port: out_mul, sptag: HBM[15]
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_5, k_port: in1, sptag: HBM[16]
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_5, k_port: in2, sptag: HBM[17]
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_5, k_port: out_add, sptag: HBM[18]
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_5, k_port: out_mul, sptag: HBM[19]
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_6, k_port: in1, sptag: HBM[20]
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_6, k_port: in2, sptag: HBM[21]
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_6, k_port: out_add, sptag: HBM[22]
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_6, k_port: out_mul, sptag: HBM[23]
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_7, k_port: in1, sptag: HBM[24]
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_7, k_port: in2, sptag: HBM[25]
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_7, k_port: out_add, sptag: HBM[26]
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_7, k_port: out_mul, sptag: HBM[27]
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_8, k_port: in1, sptag: HBM[28]
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_8, k_port: in2, sptag: HBM[29]
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_8, k_port: out_add, sptag: HBM[30]
+INFO: [CFGEN 83-0]   kernel: krnl_vaddmul_8, k_port: out_mul, sptag: HBM[31]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_1.in1 to HBM[0] for directive krnl_vaddmul_1.in1:HBM[0]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_1.in2 to HBM[1] for directive krnl_vaddmul_1.in2:HBM[1]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_1.out_add to HBM[2] for directive krnl_vaddmul_1.out_add:HBM[2]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_1.out_mul to HBM[3] for directive krnl_vaddmul_1.out_mul:HBM[3]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_2.in1 to HBM[4] for directive krnl_vaddmul_2.in1:HBM[4]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_2.in2 to HBM[5] for directive krnl_vaddmul_2.in2:HBM[5]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_2.out_add to HBM[6] for directive krnl_vaddmul_2.out_add:HBM[6]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_2.out_mul to HBM[7] for directive krnl_vaddmul_2.out_mul:HBM[7]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_3.in1 to HBM[8] for directive krnl_vaddmul_3.in1:HBM[8]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_3.in2 to HBM[9] for directive krnl_vaddmul_3.in2:HBM[9]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_3.out_add to HBM[10] for directive krnl_vaddmul_3.out_add:HBM[10]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_3.out_mul to HBM[11] for directive krnl_vaddmul_3.out_mul:HBM[11]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_4.in1 to HBM[12] for directive krnl_vaddmul_4.in1:HBM[12]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_4.in2 to HBM[13] for directive krnl_vaddmul_4.in2:HBM[13]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_4.out_add to HBM[14] for directive krnl_vaddmul_4.out_add:HBM[14]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_4.out_mul to HBM[15] for directive krnl_vaddmul_4.out_mul:HBM[15]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_5.in1 to HBM[16] for directive krnl_vaddmul_5.in1:HBM[16]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_5.in2 to HBM[17] for directive krnl_vaddmul_5.in2:HBM[17]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_5.out_add to HBM[18] for directive krnl_vaddmul_5.out_add:HBM[18]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_5.out_mul to HBM[19] for directive krnl_vaddmul_5.out_mul:HBM[19]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_6.in1 to HBM[20] for directive krnl_vaddmul_6.in1:HBM[20]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_6.in2 to HBM[21] for directive krnl_vaddmul_6.in2:HBM[21]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_6.out_add to HBM[22] for directive krnl_vaddmul_6.out_add:HBM[22]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_6.out_mul to HBM[23] for directive krnl_vaddmul_6.out_mul:HBM[23]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_7.in1 to HBM[24] for directive krnl_vaddmul_7.in1:HBM[24]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_7.in2 to HBM[25] for directive krnl_vaddmul_7.in2:HBM[25]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_7.out_add to HBM[26] for directive krnl_vaddmul_7.out_add:HBM[26]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_7.out_mul to HBM[27] for directive krnl_vaddmul_7.out_mul:HBM[27]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_8.in1 to HBM[28] for directive krnl_vaddmul_8.in1:HBM[28]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_8.in2 to HBM[29] for directive krnl_vaddmul_8.in2:HBM[29]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_8.out_add to HBM[30] for directive krnl_vaddmul_8.out_add:HBM[30]
+INFO: [CFGEN 83-2228] Creating mapping for argument krnl_vaddmul_8.out_mul to HBM[31] for directive krnl_vaddmul_8.out_mul:HBM[31]
+INFO: [SYSTEM_LINK 82-37] [04:41:31] cfgen finished successfully
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2168.234 ; gain = 0.000 ; free physical = 273008 ; free virtual = 505916
+INFO: [SYSTEM_LINK 82-52] Create top-level block diagram
+INFO: [SYSTEM_LINK 82-38] [04:41:31] cf2bd started: /tools/Xilinx/Vitis/2021.2/bin/cf2bd  --linux --trace_buffer 1024 --input_file /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/sys_link/cfgraph/cfgen_cfgraph.xml --ip_db /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/sys_link/_sysl/.cdb/xd_ip_db.xml --cf_name dr --working_dir /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/sys_link/_sysl/.xsd --temp_dir /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/sys_link --output_dir /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/int --target_bd pfm_dynamic.bd
+INFO: [CF2BD 82-31] Launching cf2xd: cf2xd -linux -trace-buffer 1024 -i /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/sys_link/cfgraph/cfgen_cfgraph.xml -r /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o dr.xml
+INFO: [CF2BD 82-28] cf2xd finished successfully
+INFO: [CF2BD 82-31] Launching cf_xsd: cf_xsd -disable-address-gen -bd pfm_dynamic.bd -dn dr -dp /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/sys_link/_sysl/.xsd
+INFO: [CF2BD 82-28] cf_xsd finished successfully
+INFO: [SYSTEM_LINK 82-37] [04:41:39] cf2bd finished successfully
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2168.234 ; gain = 0.000 ; free physical = 273000 ; free virtual = 505913
+INFO: [v++ 60-1441] [04:41:39] Run run_link: Step system_link: Completed
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:56 . Memory (MB): peak = 2038.430 ; gain = 0.000 ; free physical = 273044 ; free virtual = 505957
+INFO: [v++ 60-1443] [04:41:39] Run run_link: Step cf2sw: Started
+INFO: [v++ 60-1453] Command Line: cf2sw -sdsl /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/int/sdsl.dat -rtd /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/int/cf2sw.rtd -nofilter /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/int/cf2sw_full.rtd -xclbin /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/int/xclbin_orig.xml -o /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/int/xclbin_orig.1.xml
+INFO: [v++ 60-1454] Run Directory: /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/run_link
+INFO: [v++ 60-1441] [04:41:49] Run run_link: Step cf2sw: Completed
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2038.430 ; gain = 0.000 ; free physical = 273041 ; free virtual = 505954
+INFO: [v++ 60-1443] [04:41:49] Run run_link: Step rtd2_system_diagram: Started
+INFO: [v++ 60-1453] Command Line: rtd2SystemDiagram
+INFO: [v++ 60-1454] Run Directory: /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/run_link
+INFO: [v++ 60-1441] [04:41:50] Run run_link: Step rtd2_system_diagram: Completed
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 2038.430 ; gain = 0.000 ; free physical = 273033 ; free virtual = 505946
+INFO: [v++ 60-1443] [04:41:50] Run run_link: Step vpl: Started
+INFO: [v++ 60-1453] Command Line: vpl -t hw -f xilinx_u280_xdma_201920_3 --remote_ip_cache /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/.ipcache -s --output_dir /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/int --log_dir /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/logs/link --report_dir /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/reports/link --config /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/int/vplConfig.ini -k /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link --no-info --iprepo /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/int/xo/ip_repo/xilinx_com_hls_krnl_vaddmul_1_0 --messageDb /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/run_link/vpl.pb /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/int/dr.bd.tcl
+INFO: [v++ 60-1454] Run Directory: /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/run_link
+
+****** vpl v2021.2 (64-bit)
+  **** SW Build 3363252 on 2021-10-14-04:41:01
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+INFO: [VPL 60-839] Read in kernel information from file '/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/int/kernel_info.dat'.
+INFO: [VPL 74-78] Compiler Version string: 2021.2
+INFO: [VPL 60-423]   Target device: xilinx_u280_xdma_201920_3
+INFO: [VPL 60-1032] Extracting hardware platform to /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/.local/hw_platform
+[04:57:10] Run vpl: Step create_project: Started
+Creating Vivado project.
+[04:57:51] Run vpl: Step create_project: Completed
+[04:57:51] Run vpl: Step create_bd: Started
+[04:59:32] Run vpl: Step create_bd: RUNNING...
+[05:00:55] Run vpl: Step create_bd: RUNNING...
+[05:02:45] Run vpl: Step create_bd: RUNNING...
+[05:04:07] Run vpl: Step create_bd: RUNNING...
+[05:05:26] Run vpl: Step create_bd: RUNNING...
+[05:06:56] Run vpl: Step create_bd: RUNNING...
+[05:08:16] Run vpl: Step create_bd: RUNNING...
+[05:09:37] Run vpl: Step create_bd: RUNNING...
+[05:10:57] Run vpl: Step create_bd: RUNNING...
+[05:12:20] Run vpl: Step create_bd: RUNNING...
+[05:13:40] Run vpl: Step create_bd: RUNNING...
+[05:15:08] Run vpl: Step create_bd: RUNNING...
+[05:16:26] Run vpl: Step create_bd: RUNNING...
+[05:17:48] Run vpl: Step create_bd: RUNNING...
+[05:19:08] Run vpl: Step create_bd: RUNNING...
+[05:19:55] Run vpl: Step create_bd: Completed
+[05:19:55] Run vpl: Step update_bd: Started
+[05:20:03] Run vpl: Step update_bd: Completed
+[05:20:03] Run vpl: Step generate_target: Started
+[05:21:24] Run vpl: Step generate_target: RUNNING...
+[05:22:44] Run vpl: Step generate_target: RUNNING...
+[05:24:03] Run vpl: Step generate_target: RUNNING...
+[05:25:26] Run vpl: Step generate_target: RUNNING...
+[05:26:47] Run vpl: Step generate_target: RUNNING...
+[05:28:08] Run vpl: Step generate_target: RUNNING...
+[05:29:27] Run vpl: Step generate_target: RUNNING...
+[05:30:52] Run vpl: Step generate_target: RUNNING...
+[05:32:11] Run vpl: Step generate_target: RUNNING...
+[05:33:37] Run vpl: Step generate_target: RUNNING...
+[05:34:58] Run vpl: Step generate_target: RUNNING...
+[05:36:22] Run vpl: Step generate_target: RUNNING...
+[05:37:43] Run vpl: Step generate_target: RUNNING...
+[05:39:09] Run vpl: Step generate_target: RUNNING...
+[05:40:19] Run vpl: Step generate_target: Completed
+[05:40:19] Run vpl: Step config_hw_runs: Started
+[05:40:59] Run vpl: Step config_hw_runs: Completed
+[05:40:59] Run vpl: Step synth: Started
+[05:42:07] Block-level synthesis in progress, 0 of 8 jobs complete, 1 job running.
+[05:42:40] Block-level synthesis in progress, 0 of 8 jobs complete, 1 job running.
+[05:43:14] Block-level synthesis in progress, 0 of 8 jobs complete, 1 job running.
+[05:43:47] Block-level synthesis in progress, 0 of 8 jobs complete, 1 job running.
+[05:44:26] Block-level synthesis in progress, 0 of 8 jobs complete, 1 job running.
+[05:45:18] Block-level synthesis in progress, 0 of 8 jobs complete, 1 job running.
+[05:46:10] Block-level synthesis in progress, 0 of 8 jobs complete, 1 job running.
+[05:46:43] Block-level synthesis in progress, 0 of 8 jobs complete, 1 job running.
+[05:47:17] Block-level synthesis in progress, 0 of 8 jobs complete, 1 job running.
+[05:47:50] Block-level synthesis in progress, 0 of 8 jobs complete, 1 job running.
+[05:48:24] Block-level synthesis in progress, 0 of 8 jobs complete, 1 job running.
+[05:48:57] Block-level synthesis in progress, 0 of 8 jobs complete, 1 job running.
+[05:49:32] Block-level synthesis in progress, 0 of 8 jobs complete, 1 job running.
+[05:50:06] Block-level synthesis in progress, 0 of 8 jobs complete, 1 job running.
+[05:50:39] Block-level synthesis in progress, 1 of 8 jobs complete, 0 jobs running.
+[05:51:13] Block-level synthesis in progress, 1 of 8 jobs complete, 0 jobs running.
+[05:52:03] Block-level synthesis in progress, 7 of 8 jobs complete, 1 job running.
+[05:52:36] Top-level synthesis in progress.
+[05:53:09] Top-level synthesis in progress.
+[05:53:41] Top-level synthesis in progress.
+[05:54:15] Top-level synthesis in progress.
+[05:54:48] Top-level synthesis in progress.
+[05:55:22] Top-level synthesis in progress.
+[05:55:54] Run vpl: Step synth: Completed
+[05:55:54] Run vpl: Step impl: Started
+[06:17:03] Finished 2nd of 6 tasks (FPGA linking synthesized kernels to platform). Elapsed time: 01h 35m 10s 
+
+[06:17:03] Starting logic optimization..
+[06:20:49] Phase 1 Retarget
+[06:21:21] Phase 2 Constant propagation
+[06:21:54] Phase 3 Sweep
+[06:24:37] Phase 4 BUFG optimization
+[06:25:10] Phase 5 Shift Register Optimization
+[06:25:42] Phase 6 Post Processing Netlist
+[06:30:05] Finished 3rd of 6 tasks (FPGA logic optimization). Elapsed time: 00h 13m 02s 
+
+[06:30:05] Starting logic placement..
+[06:32:18] Phase 1 Placer Initialization
+[06:32:18] Phase 1.1 Placer Initialization Netlist Sorting
+[06:37:18] Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+[06:39:32] Phase 1.3 Build Placer Netlist Model
+[06:44:29] Phase 1.4 Constrain Clocks/Macros
+[06:45:03] Phase 2 Global Placement
+[06:45:03] Phase 2.1 Floorplanning
+[06:47:16] Phase 2.1.1 Partition Driven Placement
+[06:47:16] Phase 2.1.1.1 PBP: Partition Driven Placement
+[06:52:39] Phase 2.1.1.2 PBP: Clock Region Placement
+[06:54:48] Phase 2.1.1.3 PBP: Compute Congestion
+[06:54:48] Phase 2.1.1.4 PBP: UpdateTiming
+[06:55:53] Phase 2.1.1.5 PBP: Add part constraints
+[06:55:53] Phase 2.2 Physical Synthesis After Floorplan
+[06:57:31] Phase 2.3 Update Timing before SLR Path Opt
+[06:57:31] Phase 2.4 Post-Processing in Floorplanning
+[06:57:31] Phase 2.5 Global Placement Core
+[07:17:28] Phase 2.5.1 Physical Synthesis In Placer
+[07:26:35] Phase 3 Detail Placement
+[07:26:35] Phase 3.1 Commit Multi Column Macros
+[07:26:35] Phase 3.2 Commit Most Macros & LUTRAMs
+[07:30:54] Phase 3.3 Small Shape DP
+[07:30:54] Phase 3.3.1 Small Shape Clustering
+[07:31:58] Phase 3.3.2 Flow Legalize Slice Clusters
+[07:31:58] Phase 3.3.3 Slice Area Swap
+[07:40:34] Phase 3.4 Place Remaining
+[07:40:34] Phase 3.5 Re-assign LUT pins
+[07:42:11] Phase 3.6 Pipeline Register Optimization
+[07:42:11] Phase 3.7 Fast Optimization
+[07:45:58] Phase 4 Post Placement Optimization and Clean-Up
+[07:45:58] Phase 4.1 Post Commit Optimization
+[07:51:02] Phase 4.1.1 Post Placement Optimization
+[07:51:02] Phase 4.1.1.1 BUFG Insertion
+[07:51:02] Phase 1 Physical Synthesis Initialization
+[07:56:57] Phase 4.1.1.2 BUFG Replication
+[07:58:02] Phase 4.1.1.3 Post Placement Timing Optimization
+[08:10:53] Phase 4.1.1.4 Replication
+[08:14:38] Phase 4.2 Post Placement Cleanup
+[08:14:38] Phase 4.3 Placer Reporting
+[08:14:38] Phase 4.3.1 Print Estimated Congestion
+[08:15:11] Phase 4.4 Final Placement Cleanup
+[08:35:07] Finished 4th of 6 tasks (FPGA logic placement). Elapsed time: 02h 05m 01s 
+
+[08:35:07] Starting logic routing..
+[08:37:47] Phase 1 Build RT Design
+[08:43:49] Phase 2 Router Initialization
+[08:43:49] Phase 2.1 Fix Topology Constraints
+[08:44:21] Phase 2.2 Pre Route Cleanup
+[08:44:53] Phase 2.3 Global Clock Net Routing
+[08:45:58] Phase 2.4 Update Timing
+[08:54:37] Phase 2.5 Update Timing for Bus Skew
+[08:54:37] Phase 2.5.1 Update Timing
+[08:58:26] Phase 3 Initial Routing
+[08:58:26] Phase 3.1 Global Routing
+[09:05:29] Phase 3.2 Update Timing
+[09:16:17] Phase 3.3 Update Timing
+[09:27:07] Phase 3.4 Update Timing
+[09:37:31] Phase 3.5 Update Timing
+[09:48:07] Phase 3.6 Update Timing
+[09:55:40] Phase 4 Rip-up And Reroute
+[09:55:40] Phase 4.1 Global Iteration 0
+[09:55:40] Phase 4.1.1 Update Timing
+[10:01:05] Phase 4.2 Global Iteration 1
+[12:15:07] Phase 4.3 Global Iteration 2
+[14:46:13] Phase 5 Delay and Skew Optimization
+[14:46:13] Phase 5.1 Delay CleanUp
+[14:46:49] Phase 5.2 Clock Skew Optimization
+[14:47:22] Phase 6 Post Hold Fix
+[14:47:22] Phase 6.1 Hold Fix Iter
+[14:48:59] Phase 6.2 Additional Hold Fix
+[14:50:36] Phase 7 Leaf Clock Prog Delay Opt
+[14:53:51] Phase 8 Route finalize
+[14:54:23] Phase 9 Verifying routed nets
+[14:54:56] Phase 10 Depositing Routes
+[15:04:06] Run vpl: Step impl: Failed
+[15:04:09] Run vpl: FINISHED. Run Status: impl ERROR
+
+===>The following messages were generated while processing /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/impl_1 :
+ERROR: [VPL 18-1000] Routing results verification failed due to partially-conflicted nets (Up to first 10 of violated nets):  pfm_top_i/dynamic_region/krnl_vaddmul_1/inst/control_s_axi_U/grp_fu_211_p00[18] pfm_top_i/dynamic_region/krnl_vaddmul_1/inst/control_s_axi_U/trunc_ln71_reg_506[126]_i_2_n_0 pfm_top_i/dynamic_region/krnl_vaddmul_1/inst/control_s_axi_U/waddr_reg_n_0_[1] pfm_top_i/dynamic_region/krnl_vaddmul_1/inst/control_s_axi_U/grp_fu_211_p00[19] pfm_top_i/dynamic_region/krnl_vaddmul_1/inst/control_s_axi_U/trunc_ln71_reg_506[106]_i_2_n_0 pfm_top_i/dynamic_region/krnl_vaddmul_1/inst/control_s_axi_U/waddr_reg_n_0_[2] pfm_top_i/dynamic_region/krnl_vaddmul_1/inst/control_s_axi_U/trunc_ln70_reg_481[126]_i_2_n_0 pfm_top_i/dynamic_region/krnl_vaddmul_1/inst/gmem0_m_axi_U/bus_read/buff_rdata/full_n_reg_0 pfm_top_i/dynamic_region/krnl_vaddmul_1/inst/gmem0_m_axi_U/bus_read/buff_rdata/if_dout[4] pfm_top_i/dynamic_region/krnl_vaddmul_1/inst/gmem0_m_axi_U/bus_read/buff_rdata/show_ahead 
+ERROR: [VPL 60-773] In '/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/runme.log', caught Tcl error:  problem implementing dynamic region, impl_1: route_design ERROR, please look at the run log file '/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/impl_1/runme.log' for more information
+WARNING: [VPL 60-732] Link warning: No monitor points found for BD automation.
+ERROR: [VPL 60-704] Integration error, problem implementing dynamic region, impl_1: route_design ERROR, please look at the run log file '/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_32.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/impl_1/runme.log' for more information
+ERROR: [VPL 60-1328] Vpl run 'vpl' failed
+ERROR: [VPL 60-806] Failed to finish platform linker
+INFO: [v++ 60-1442] [15:04:23] Run run_link: Step vpl: Failed
+Time (s): cpu = 00:06:33 ; elapsed = 10:22:33 . Memory (MB): peak = 2038.430 ; gain = 0.000 ; free physical = 268653 ; free virtual = 505901
+ERROR: [v++ 60-661] v++ link run 'run_link' failed
+ERROR: [v++ 60-626] Kernel link failed to complete
+ERROR: [v++ 60-703] Failed to finish linking

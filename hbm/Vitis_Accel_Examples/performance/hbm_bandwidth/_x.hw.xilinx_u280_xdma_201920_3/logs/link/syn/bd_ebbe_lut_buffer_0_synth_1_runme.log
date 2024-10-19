@@ -1,0 +1,273 @@
+
+*** Running vivado
+    with args -log bd_ebbe_lut_buffer_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_ebbe_lut_buffer_0.tcl
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source bd_ebbe_lut_buffer_0.tcl -notrace
+INFO: Dispatch client connection id - 38785
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x.hw.xilinx_u280_xdma_201920_3/link/int/xo/ip_repo/xilinx_com_hls_krnl_vaddmul_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/.local/hw_platform/iprepo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2021.2/data/cache/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2021.2/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.2/data/ip'.
+Command: synth_design -top bd_ebbe_lut_buffer_0 -part xcu280-fsvh2892-2L-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Device 21-403] Loading part xcu280-fsvh2892-2L-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3987695
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3519.969 ; gain = 284.656 ; free physical = 19125 ; free virtual = 135113
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_ebbe_lut_buffer_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_debug_bridge_xsdbm_0/bd_0/ip/ip_1/synth/bd_ebbe_lut_buffer_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:62649]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (1#1) [/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:62649]
+INFO: [Synth 8-6155] done synthesizing module 'bd_ebbe_lut_buffer_0' (3#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_debug_bridge_xsdbm_0/bd_0/ip/ip_1/synth/bd_ebbe_lut_buffer_0.v:57]
+WARNING: [Synth 8-7129] Port bscanid_i[31] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[30] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[29] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[28] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[27] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[26] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[25] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[24] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[23] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[22] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[21] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[20] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[19] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[18] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[17] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[16] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[15] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[14] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[13] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[12] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[11] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[10] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[9] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[8] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[7] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[6] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[5] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[4] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[3] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[2] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[1] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[0] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 3569.906 ; gain = 334.594 ; free physical = 21168 ; free virtual = 137166
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 3587.719 ; gain = 352.406 ; free physical = 23084 ; free virtual = 139082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 3587.719 ; gain = 352.406 ; free physical = 23084 ; free virtual = 139082
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3595.656 ; gain = 0.000 ; free physical = 22994 ; free virtual = 138995
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3620.438 ; gain = 0.000 ; free physical = 22319 ; free virtual = 138335
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.18 . Memory (MB): peak = 3634.312 ; gain = 13.875 ; free physical = 22376 ; free virtual = 138393
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 3634.312 ; gain = 399.000 ; free physical = 22501 ; free virtual = 138562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu280-fsvh2892-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 3634.312 ; gain = 399.000 ; free physical = 22504 ; free virtual = 138567
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 3634.312 ; gain = 399.000 ; free physical = 22529 ; free virtual = 138573
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 3634.312 ; gain = 399.000 ; free physical = 22420 ; free virtual = 138445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 9024 (col length:94)
+BRAMs: 4032 (col length: RAMB18 288 RAMB36 144)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port bscanid_i[31] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[30] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[29] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[28] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[27] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[26] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[25] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[24] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[23] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[22] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[21] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[20] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[19] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[18] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[17] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[16] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[15] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[14] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[13] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[12] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[11] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[10] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[9] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[8] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[7] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[6] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[5] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[4] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[3] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[2] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[1] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bscanid_i[0] in module lut_buffer_v2_0_0_lut_buffer is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 3634.312 ; gain = 399.000 ; free physical = 22390 ; free virtual = 138419
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 3996.289 ; gain = 760.977 ; free physical = 19543 ; free virtual = 135630
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 3996.289 ; gain = 760.977 ; free physical = 19543 ; free virtual = 135630
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 4015.320 ; gain = 780.008 ; free physical = 19530 ; free virtual = 135617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 4021.258 ; gain = 785.945 ; free physical = 19286 ; free virtual = 135374
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 4021.258 ; gain = 785.945 ; free physical = 19286 ; free virtual = 135373
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 4021.258 ; gain = 785.945 ; free physical = 19284 ; free virtual = 135371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 4021.258 ; gain = 785.945 ; free physical = 19283 ; free virtual = 135370
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 4021.258 ; gain = 785.945 ; free physical = 19282 ; free virtual = 135369
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 4021.258 ; gain = 785.945 ; free physical = 19281 ; free virtual = 135368
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 4021.258 ; gain = 785.945 ; free physical = 19280 ; free virtual = 135367
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 33 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 4021.258 ; gain = 739.352 ; free physical = 19282 ; free virtual = 135369
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 4021.266 ; gain = 785.945 ; free physical = 19264 ; free virtual = 135351
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4021.266 ; gain = 0.000 ; free physical = 19181 ; free virtual = 135268
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4096.578 ; gain = 0.000 ; free physical = 18512 ; free virtual = 134600
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 487750ed
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 65 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:50 . Memory (MB): peak = 4096.578 ; gain = 1352.930 ; free physical = 18656 ; free virtual = 134744
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint '/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/bd_ebbe_lut_buffer_0_synth_1/bd_ebbe_lut_buffer_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_ebbe_lut_buffer_0, cache-ID = 1f000f3d147c93fc
+INFO: [Common 17-1381] The checkpoint '/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/bd_ebbe_lut_buffer_0_synth_1/bd_ebbe_lut_buffer_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_ebbe_lut_buffer_0_utilization_synth.rpt -pb bd_ebbe_lut_buffer_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 11 01:03:44 2024...

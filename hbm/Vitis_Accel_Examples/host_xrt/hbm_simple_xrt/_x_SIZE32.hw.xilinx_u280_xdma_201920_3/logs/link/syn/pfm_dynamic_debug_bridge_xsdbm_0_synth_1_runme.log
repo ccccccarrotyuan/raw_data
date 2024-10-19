@@ -1,0 +1,233 @@
+
+*** Running vivado
+    with args -log pfm_dynamic_debug_bridge_xsdbm_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source pfm_dynamic_debug_bridge_xsdbm_0.tcl
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source pfm_dynamic_debug_bridge_xsdbm_0.tcl -notrace
+INFO: Dispatch client connection id - 40307
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:23 . Memory (MB): peak = 2740.648 ; gain = 0.023 ; free physical = 273009 ; free virtual = 498357
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_SIZE32.hw.xilinx_u280_xdma_201920_3/link/int/xo/ip_repo/xilinx_com_hls_krnl_vadd_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_SIZE32.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/.local/hw_platform/iprepo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2021.2/data/cache/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_SIZE32.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2021.2/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.2/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:00.85 ; elapsed = 00:00:10 . Memory (MB): peak = 2740.648 ; gain = 0.000 ; free physical = 272931 ; free virtual = 498255
+Command: synth_design -top pfm_dynamic_debug_bridge_xsdbm_0 -part xcu280-fsvh2892-2L-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Device 21-403] Loading part xcu280-fsvh2892-2L-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 355163
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 3518.938 ; gain = 285.637 ; free physical = 262585 ; free virtual = 487912
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_debug_bridge_xsdbm_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_SIZE32.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_debug_bridge_xsdbm_0/synth/pfm_dynamic_debug_bridge_xsdbm_0.v:59]
+INFO: [Synth 8-6157] synthesizing module 'bd_ebbe' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_SIZE32.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_debug_bridge_xsdbm_0/bd_0/synth/bd_ebbe.v:10]
+INFO: [Synth 8-6157] synthesizing module 'bd_ebbe_lut_buffer_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_SIZE32.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_debug_bridge_xsdbm_0_synth_1/.Xil/Vivado-354845-hacc-gpu0/realtime/bd_ebbe_lut_buffer_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_ebbe_lut_buffer_0' (1#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_SIZE32.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_debug_bridge_xsdbm_0_synth_1/.Xil/Vivado-354845-hacc-gpu0/realtime/bd_ebbe_lut_buffer_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_ebbe_xsdbm_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_SIZE32.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_debug_bridge_xsdbm_0_synth_1/.Xil/Vivado-354845-hacc-gpu0/realtime/bd_ebbe_xsdbm_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_ebbe_xsdbm_0' (2#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_SIZE32.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_debug_bridge_xsdbm_0_synth_1/.Xil/Vivado-354845-hacc-gpu0/realtime/bd_ebbe_xsdbm_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_ebbe' (3#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_SIZE32.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_debug_bridge_xsdbm_0/bd_0/synth/bd_ebbe.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_debug_bridge_xsdbm_0' (4#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_SIZE32.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_debug_bridge_xsdbm_0/synth/pfm_dynamic_debug_bridge_xsdbm_0.v:59]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:22 . Memory (MB): peak = 3568.875 ; gain = 335.574 ; free physical = 263132 ; free virtual = 488459
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:25 . Memory (MB): peak = 3586.688 ; gain = 353.387 ; free physical = 263171 ; free virtual = 488498
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:25 . Memory (MB): peak = 3586.688 ; gain = 353.387 ; free physical = 263171 ; free virtual = 488498
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3586.688 ; gain = 0.000 ; free physical = 263056 ; free virtual = 488383
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_SIZE32.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_debug_bridge_xsdbm_0/bd_0/ip/ip_0/bd_ebbe_xsdbm_0/bd_ebbe_xsdbm_0_in_context.xdc] for cell 'inst/xsdbm'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_SIZE32.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_debug_bridge_xsdbm_0/bd_0/ip/ip_0/bd_ebbe_xsdbm_0/bd_ebbe_xsdbm_0_in_context.xdc] for cell 'inst/xsdbm'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_SIZE32.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_debug_bridge_xsdbm_0/bd_0/ip/ip_1/bd_ebbe_lut_buffer_0/bd_ebbe_lut_buffer_0_in_context.xdc] for cell 'inst/lut_buffer'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_SIZE32.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_debug_bridge_xsdbm_0/bd_0/ip/ip_1/bd_ebbe_lut_buffer_0/bd_ebbe_lut_buffer_0_in_context.xdc] for cell 'inst/lut_buffer'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_SIZE32.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_debug_bridge_xsdbm_0/pfm_dynamic_debug_bridge_xsdbm_0_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 3630.281 ; gain = 2.969 ; free physical = 264125 ; free virtual = 489469
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_SIZE32.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_debug_bridge_xsdbm_0/pfm_dynamic_debug_bridge_xsdbm_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_SIZE32.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_debug_bridge_xsdbm_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_SIZE32.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_debug_bridge_xsdbm_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3630.281 ; gain = 0.000 ; free physical = 264115 ; free virtual = 489460
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.56 . Memory (MB): peak = 3630.281 ; gain = 0.000 ; free physical = 263967 ; free virtual = 489327
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:56 . Memory (MB): peak = 3630.281 ; gain = 396.980 ; free physical = 261758 ; free virtual = 487106
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu280-fsvh2892-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:56 . Memory (MB): peak = 3630.281 ; gain = 396.980 ; free physical = 261757 ; free virtual = 487106
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xsdbm. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/lut_buffer. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:56 . Memory (MB): peak = 3630.281 ; gain = 396.980 ; free physical = 261750 ; free virtual = 487099
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:57 . Memory (MB): peak = 3630.281 ; gain = 396.980 ; free physical = 261656 ; free virtual = 487000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 9024 (col length:94)
+BRAMs: 4032 (col length: RAMB18 288 RAMB36 144)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:01:02 . Memory (MB): peak = 3630.281 ; gain = 396.980 ; free physical = 261213 ; free virtual = 486560
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:01:30 . Memory (MB): peak = 4005.227 ; gain = 771.926 ; free physical = 259298 ; free virtual = 484655
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:01:30 . Memory (MB): peak = 4005.227 ; gain = 771.926 ; free physical = 259296 ; free virtual = 484654
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:01:30 . Memory (MB): peak = 4024.258 ; gain = 790.957 ; free physical = 259277 ; free virtual = 484635
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:01:38 . Memory (MB): peak = 4030.195 ; gain = 796.895 ; free physical = 259941 ; free virtual = 485299
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:01:38 . Memory (MB): peak = 4030.195 ; gain = 796.895 ; free physical = 259941 ; free virtual = 485299
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:01:38 . Memory (MB): peak = 4030.195 ; gain = 796.895 ; free physical = 259941 ; free virtual = 485299
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:01:38 . Memory (MB): peak = 4030.195 ; gain = 796.895 ; free physical = 259941 ; free virtual = 485299
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:01:38 . Memory (MB): peak = 4030.195 ; gain = 796.895 ; free physical = 259940 ; free virtual = 485299
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:01:38 . Memory (MB): peak = 4030.195 ; gain = 796.895 ; free physical = 259940 ; free virtual = 485299
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------+----------+
+|      |BlackBox name        |Instances |
++------+---------------------+----------+
+|1     |bd_ebbe_lut_buffer_0 |         1|
+|2     |bd_ebbe_xsdbm_0      |         1|
++------+---------------------+----------+
+
+Report Cell Usage: 
++------+-------------------+------+
+|      |Cell               |Count |
++------+-------------------+------+
+|1     |bd_ebbe_lut_buffer |     1|
+|2     |bd_ebbe_xsdbm      |     1|
++------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:01:38 . Memory (MB): peak = 4030.195 ; gain = 796.895 ; free physical = 259940 ; free virtual = 485298
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:01:20 . Memory (MB): peak = 4030.195 ; gain = 753.301 ; free physical = 259971 ; free virtual = 485330
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:01:38 . Memory (MB): peak = 4030.203 ; gain = 796.895 ; free physical = 260066 ; free virtual = 485424
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4030.203 ; gain = 0.000 ; free physical = 260069 ; free virtual = 485427
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4109.484 ; gain = 0.000 ; free physical = 259853 ; free virtual = 485234
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 87af0f6b
+INFO: [Common 17-83] Releasing license: Synthesis
+28 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:02:06 . Memory (MB): peak = 4109.484 ; gain = 1368.836 ; free physical = 260039 ; free virtual = 485420
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint '/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_SIZE32.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_debug_bridge_xsdbm_0_synth_1/pfm_dynamic_debug_bridge_xsdbm_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:00.34 ; elapsed = 00:00:07 . Memory (MB): peak = 4109.484 ; gain = 0.000 ; free physical = 260026 ; free virtual = 485392
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP pfm_dynamic_debug_bridge_xsdbm_0, cache-ID = f326f7134443b21c
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_SIZE32.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_debug_bridge_xsdbm_0_synth_1/pfm_dynamic_debug_bridge_xsdbm_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:05 . Memory (MB): peak = 4109.484 ; gain = 0.000 ; free physical = 264223 ; free virtual = 489638
+INFO: [runtcl-4] Executing : report_utilization -file pfm_dynamic_debug_bridge_xsdbm_0_utilization_synth.rpt -pb pfm_dynamic_debug_bridge_xsdbm_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 14 20:41:47 2024...
