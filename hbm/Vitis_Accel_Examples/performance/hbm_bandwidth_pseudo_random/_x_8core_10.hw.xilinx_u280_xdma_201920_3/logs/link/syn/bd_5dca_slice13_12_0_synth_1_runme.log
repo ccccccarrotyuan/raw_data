@@ -1,0 +1,266 @@
+
+*** Running vivado
+    with args -log bd_5dca_slice13_12_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_5dca_slice13_12_0.tcl
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source bd_5dca_slice13_12_0.tcl -notrace
+INFO: Dispatch client connection id - 38721
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 2763.434 ; gain = 0.023 ; free physical = 244915 ; free virtual = 499125
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth_pseudo_random/_x_8core_10.hw.xilinx_u280_xdma_201920_3/link/int/xo/ip_repo/xilinx_com_hls_krnl_vaddmul_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth_pseudo_random/_x_8core_10.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/.local/hw_platform/iprepo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2021.2/data/cache/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth_pseudo_random/_x_8core_10.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2021.2/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.2/data/ip'.
+Command: synth_design -top bd_5dca_slice13_12_0 -part xcu280-fsvh2892-2L-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Device 21-403] Loading part xcu280-fsvh2892-2L-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 651049
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 3516.723 ; gain = 285.637 ; free physical = 232995 ; free virtual = 487206
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_slice13_12_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth_pseudo_random/_x_8core_10.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_40/synth/bd_5dca_slice13_12_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_axi_register_slice' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth_pseudo_random/_x_8core_10.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:3726]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth_pseudo_random/_x_8core_10.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (1#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth_pseudo_random/_x_8core_10.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth_pseudo_random/_x_8core_10.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (2#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth_pseudo_random/_x_8core_10.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth_pseudo_random/_x_8core_10.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice' (3#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth_pseudo_random/_x_8core_10.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice__parameterized0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth_pseudo_random/_x_8core_10.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice__parameterized0' (3#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth_pseudo_random/_x_8core_10.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice__parameterized1' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth_pseudo_random/_x_8core_10.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice__parameterized1' (3#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth_pseudo_random/_x_8core_10.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice__parameterized2' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth_pseudo_random/_x_8core_10.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice__parameterized2' (3#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth_pseudo_random/_x_8core_10.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_axi_register_slice' (4#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth_pseudo_random/_x_8core_10.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:3726]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_slice13_12_0' (5#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth_pseudo_random/_x_8core_10.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_40/synth/bd_5dca_slice13_12_0.v:58]
+WARNING: [Synth 8-7129] Port m_axi_buser[0] in module axi_infrastructure_v1_1_0_vector2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_ruser[0] in module axi_infrastructure_v1_1_0_vector2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awuser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wuser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_aruser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk2x in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 3573.660 ; gain = 342.574 ; free physical = 231254 ; free virtual = 485465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:21 . Memory (MB): peak = 3588.504 ; gain = 357.418 ; free physical = 230072 ; free virtual = 484284
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:21 . Memory (MB): peak = 3588.504 ; gain = 357.418 ; free physical = 230072 ; free virtual = 484284
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.18 . Memory (MB): peak = 3588.504 ; gain = 0.000 ; free physical = 226796 ; free virtual = 481009
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth_pseudo_random/_x_8core_10.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_40/bd_5dca_slice13_12_0_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 3717.879 ; gain = 14.844 ; free physical = 229678 ; free virtual = 483912
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth_pseudo_random/_x_8core_10.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_40/bd_5dca_slice13_12_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth_pseudo_random/_x_8core_10.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/bd_5dca_slice13_12_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth_pseudo_random/_x_8core_10.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/bd_5dca_slice13_12_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth_pseudo_random/_x_8core_10.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_40/bd_5dca_slice13_12_0_clocks.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth_pseudo_random/_x_8core_10.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_40/bd_5dca_slice13_12_0_clocks.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth_pseudo_random/_x_8core_10.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_40/bd_5dca_slice13_12_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_5dca_slice13_12_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_5dca_slice13_12_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3717.879 ; gain = 0.000 ; free physical = 229756 ; free virtual = 483996
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.44 . Memory (MB): peak = 3720.848 ; gain = 2.969 ; free physical = 229830 ; free virtual = 484049
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:01:02 . Memory (MB): peak = 3720.848 ; gain = 489.762 ; free physical = 230570 ; free virtual = 484826
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu280-fsvh2892-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:01:02 . Memory (MB): peak = 3720.848 ; gain = 489.762 ; free physical = 230569 ; free virtual = 484826
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth_pseudo_random/_x_8core_10.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/bd_5dca_slice13_12_0_synth_1/dont_touch.xdc, line 6).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:01:02 . Memory (MB): peak = 3720.848 ; gain = 489.762 ; free physical = 230569 ; free virtual = 484826
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:01:04 . Memory (MB): peak = 3720.848 ; gain = 489.762 ; free physical = 230602 ; free virtual = 484844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	             1153 Bit    Registers := 2     
+	             1028 Bit    Registers := 2     
+	               62 Bit    Registers := 4     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input 1153 Bit        Muxes := 2     
+	   2 Input 1028 Bit        Muxes := 2     
+	   2 Input   62 Bit        Muxes := 4     
+	   2 Input    3 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 9024 (col length:94)
+BRAMs: 4032 (col length: RAMB18 288 RAMB36 144)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port aclk2x in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awuser[0] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[0] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wuser[0] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_aruser[0] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[0] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_ruser[0] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:01:09 . Memory (MB): peak = 3720.848 ; gain = 489.762 ; free physical = 230311 ; free virtual = 484552
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:01:36 . Memory (MB): peak = 4021.418 ; gain = 790.332 ; free physical = 228421 ; free virtual = 482685
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:01:38 . Memory (MB): peak = 4043.434 ; gain = 812.348 ; free physical = 228350 ; free virtual = 482614
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:01:43 . Memory (MB): peak = 4091.473 ; gain = 860.387 ; free physical = 228540 ; free virtual = 482804
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:01:53 . Memory (MB): peak = 4091.473 ; gain = 860.387 ; free physical = 229751 ; free virtual = 484016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:01:53 . Memory (MB): peak = 4091.473 ; gain = 860.387 ; free physical = 229756 ; free virtual = 484020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:01:53 . Memory (MB): peak = 4091.473 ; gain = 860.387 ; free physical = 229756 ; free virtual = 484020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:01:53 . Memory (MB): peak = 4091.473 ; gain = 860.387 ; free physical = 229754 ; free virtual = 484019
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:01:53 . Memory (MB): peak = 4091.473 ; gain = 860.387 ; free physical = 229730 ; free virtual = 483994
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:01:54 . Memory (MB): peak = 4091.473 ; gain = 860.387 ; free physical = 229723 ; free virtual = 483988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     3|
+|2     |LUT2 |     5|
+|3     |LUT3 |  2304|
+|4     |LUT4 |     6|
+|5     |LUT5 |     4|
+|6     |FDRE |  4620|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:01:54 . Memory (MB): peak = 4091.473 ; gain = 860.387 ; free physical = 229722 ; free virtual = 483987
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:01:22 . Memory (MB): peak = 4091.473 ; gain = 728.043 ; free physical = 229756 ; free virtual = 484020
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:01:54 . Memory (MB): peak = 4091.480 ; gain = 860.387 ; free physical = 229901 ; free virtual = 484166
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.20 . Memory (MB): peak = 4091.480 ; gain = 0.000 ; free physical = 230096 ; free virtual = 484369
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4145.730 ; gain = 0.000 ; free physical = 229778 ; free virtual = 484077
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: e8b1eb72
+INFO: [Common 17-83] Releasing license: Synthesis
+37 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:02:26 . Memory (MB): peak = 4145.730 ; gain = 1382.297 ; free physical = 230140 ; free virtual = 484439
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint '/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth_pseudo_random/_x_8core_10.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/bd_5dca_slice13_12_0_synth_1/bd_5dca_slice13_12_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 4145.730 ; gain = 0.000 ; free physical = 229594 ; free virtual = 483931
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_5dca_slice13_12_0, cache-ID = 2d87c64da8ee05b5
+INFO: [Coretcl 2-1174] Renamed 6 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth_pseudo_random/_x_8core_10.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/bd_5dca_slice13_12_0_synth_1/bd_5dca_slice13_12_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 4145.730 ; gain = 0.000 ; free physical = 229014 ; free virtual = 483411
+INFO: [runtcl-4] Executing : report_utilization -file bd_5dca_slice13_12_0_utilization_synth.rpt -pb bd_5dca_slice13_12_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 18 02:44:16 2024...
