@@ -1,0 +1,42 @@
+===============================================================================
+Version:    v++ v2021.2 (64-bit)
+Build:      SW Build 3363252 on 2021-10-14-04:41:01
+Copyright:  Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+Created:    Sun Nov 10 04:34:46 2024
+===============================================================================
+
+-------------------------------------------------------------------------------
+Design Name:             krnl_vaddmul
+Target Device:           xilinx:u280:xdma:201920.3
+Target Clock:            300.000000MHz
+Total number of kernels: 1
+-------------------------------------------------------------------------------
+
+Kernel Summary
+Kernel Name   Type  Target              OpenCL Library  Compute Units
+------------  ----  ------------------  --------------  -------------
+krnl_vaddmul  c     fpga0:OCL_REGION_0  krnl_vaddmul    1
+
+
+-------------------------------------------------------------------------------
+OpenCL Binary:     krnl_vaddmul
+Kernels mapped to: clc_region
+
+Timing Information (MHz)
+Compute Unit    Kernel Name   Module Name                  Target Frequency  Estimated Frequency
+--------------  ------------  ---------------------------  ----------------  -------------------
+krnl_vaddmul_1  krnl_vaddmul  krnl_vaddmul_Pipeline_vops1  300.300293        411.015198
+krnl_vaddmul_1  krnl_vaddmul  krnl_vaddmul                 300.300293        411.015198
+
+Latency Information
+Compute Unit    Kernel Name   Module Name                  Start Interval  Best (cycles)  Avg (cycles)  Worst (cycles)  Best (absolute)  Avg (absolute)  Worst (absolute)
+--------------  ------------  ---------------------------  --------------  -------------  ------------  --------------  ---------------  --------------  ----------------
+krnl_vaddmul_1  krnl_vaddmul  krnl_vaddmul_Pipeline_vops1  undef           undef          undef         undef           undef            undef           undef
+krnl_vaddmul_1  krnl_vaddmul  krnl_vaddmul                 undef           undef          undef         undef           undef            undef           undef
+
+Area Information
+Compute Unit    Kernel Name   Module Name                  FF    LUT   DSP  BRAM  URAM
+--------------  ------------  ---------------------------  ----  ----  ---  ----  ----
+krnl_vaddmul_1  krnl_vaddmul  krnl_vaddmul_Pipeline_vops1  1244  622   0    0     0
+krnl_vaddmul_1  krnl_vaddmul  krnl_vaddmul                 4633  4710  0    32    0
+-------------------------------------------------------------------------------
