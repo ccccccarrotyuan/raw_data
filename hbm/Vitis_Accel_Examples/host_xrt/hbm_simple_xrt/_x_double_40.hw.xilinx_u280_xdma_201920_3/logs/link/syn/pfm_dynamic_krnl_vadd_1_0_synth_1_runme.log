@@ -1,0 +1,727 @@
+
+*** Running vivado
+    with args -log pfm_dynamic_krnl_vadd_1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source pfm_dynamic_krnl_vadd_1_0.tcl
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source pfm_dynamic_krnl_vadd_1_0.tcl -notrace
+INFO: Dispatch client connection id - 41085
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2740.652 ; gain = 0.023 ; free physical = 10553 ; free virtual = 465430
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/int/xo/ip_repo/xilinx_com_hls_krnl_vadd_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/.local/hw_platform/iprepo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2021.2/data/cache/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2021.2/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.2/data/ip'.
+Command: synth_design -top pfm_dynamic_krnl_vadd_1_0 -part xcu280-fsvh2892-2L-e -directive sdx_optimization_effort_high -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Device 21-403] Loading part xcu280-fsvh2892-2L-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1343489
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 3517.973 ; gain = 285.668 ; free physical = 8168 ; free virtual = 463045
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_krnl_vadd_1_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_krnl_vadd_1_0/synth/pfm_dynamic_krnl_vadd_1_0.v:59]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd.v:12]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_krnl_vadd_Pipeline_vadd1_vadd2' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_krnl_vadd_Pipeline_vadd1_vadd2.v:10]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_dadd_64ns_64ns_64_8_full_dsp_1' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_dadd_64ns_64ns_64_8_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_dadd_64ns_64ns_64_8_full_dsp_1_ip' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/ip/krnl_vadd_dadd_64ns_64ns_64_8_full_dsp_1_ip.v:60]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:62649]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (1#1) [/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:62649]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_dadd_64ns_64ns_64_8_full_dsp_1_ip' (29#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/ip/krnl_vadd_dadd_64ns_64ns_64_8_full_dsp_1_ip.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_dadd_64ns_64ns_64_8_full_dsp_1' (30#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_dadd_64ns_64ns_64_8_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_flow_control_loop_pipe_sequential_init' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_flow_control_loop_pipe_sequential_init.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_flow_control_loop_pipe_sequential_init' (31#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_flow_control_loop_pipe_sequential_init.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_krnl_vadd_Pipeline_vadd1_vadd2' (32#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_krnl_vadd_Pipeline_vadd1_vadd2.v:10]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_control_s_axi' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_control_s_axi.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_control_s_axi.v:233]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_control_s_axi.v:303]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_control_s_axi' (33#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_control_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_gmem0_m_axi' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_gmem0_m_axi_write' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:1742]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_gmem0_m_axi_fifo' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:435]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_gmem0_m_axi_fifo' (34#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:435]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_gmem0_m_axi_reg_slice' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:318]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_gmem0_m_axi_reg_slice' (35#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:318]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_gmem0_m_axi_fifo__parameterized0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:435]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_gmem0_m_axi_fifo__parameterized0' (35#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:435]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_gmem0_m_axi_buffer' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:546]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:600]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_gmem0_m_axi_buffer' (36#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:546]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_gmem0_m_axi_fifo__parameterized1' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:435]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_gmem0_m_axi_fifo__parameterized1' (36#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:435]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_gmem0_m_axi_fifo__parameterized2' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:435]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_gmem0_m_axi_fifo__parameterized2' (36#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:435]
+WARNING: [Synth 8-6014] Unused sequential element sect_end_buf_reg was removed.  [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:2111]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_gmem0_m_axi_write' (37#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:1742]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_gmem0_m_axi_read' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:951]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_gmem0_m_axi_buffer__parameterized0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:546]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:600]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_gmem0_m_axi_buffer__parameterized0' (37#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:546]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_gmem0_m_axi_reg_slice__parameterized0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:318]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_gmem0_m_axi_reg_slice__parameterized0' (37#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:318]
+WARNING: [Synth 8-6014] Unused sequential element sect_end_buf_reg was removed.  [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:1237]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_gmem0_m_axi_read' (38#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:951]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_gmem0_m_axi_throttle' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:728]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_gmem0_m_axi_reg_slice__parameterized1' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:318]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_gmem0_m_axi_reg_slice__parameterized1' (38#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:318]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_gmem0_m_axi_fifo__parameterized3' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:435]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_gmem0_m_axi_fifo__parameterized3' (38#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:435]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_gmem0_m_axi_fifo__parameterized4' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:435]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_gmem0_m_axi_fifo__parameterized4' (38#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:435]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_gmem0_m_axi_throttle' (39#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:728]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_gmem0_m_axi' (40#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem0_m_axi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_gmem1_m_axi' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_gmem1_m_axi_write' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:1742]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_gmem1_m_axi_fifo' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:435]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_gmem1_m_axi_fifo' (41#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:435]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_gmem1_m_axi_reg_slice' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:318]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_gmem1_m_axi_reg_slice' (42#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:318]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_gmem1_m_axi_fifo__parameterized0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:435]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_gmem1_m_axi_fifo__parameterized0' (42#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:435]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_gmem1_m_axi_buffer' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:546]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:600]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_gmem1_m_axi_buffer' (43#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:546]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_gmem1_m_axi_fifo__parameterized1' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:435]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_gmem1_m_axi_fifo__parameterized1' (43#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:435]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_gmem1_m_axi_fifo__parameterized2' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:435]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_gmem1_m_axi_fifo__parameterized2' (43#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:435]
+WARNING: [Synth 8-6014] Unused sequential element sect_end_buf_reg was removed.  [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:2111]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_gmem1_m_axi_write' (44#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:1742]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_gmem1_m_axi_read' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:951]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_gmem1_m_axi_buffer__parameterized0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:546]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:600]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_gmem1_m_axi_buffer__parameterized0' (44#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:546]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_gmem1_m_axi_reg_slice__parameterized0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:318]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_gmem1_m_axi_reg_slice__parameterized0' (44#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:318]
+WARNING: [Synth 8-6014] Unused sequential element sect_end_buf_reg was removed.  [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:1237]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_gmem1_m_axi_read' (45#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:951]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_gmem1_m_axi_throttle' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:728]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_gmem1_m_axi_reg_slice__parameterized1' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:318]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_gmem1_m_axi_reg_slice__parameterized1' (45#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:318]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_gmem1_m_axi_fifo__parameterized3' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:435]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_gmem1_m_axi_fifo__parameterized3' (45#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:435]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_gmem1_m_axi_fifo__parameterized4' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:435]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_gmem1_m_axi_fifo__parameterized4' (45#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:435]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_gmem1_m_axi_throttle' (46#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:728]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_gmem1_m_axi' (47#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_gmem1_m_axi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vadd_mul_32ns_34ns_65_2_1' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_mul_32ns_34ns_65_2_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd_mul_32ns_34ns_65_2_1' (48#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd_mul_32ns_34ns_65_2_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vadd' (49#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c069/hdl/verilog/krnl_vadd.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_krnl_vadd_1_0' (50#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_krnl_vadd_1_0/synth/pfm_dynamic_krnl_vadd_1_0.v:59]
+WARNING: [Synth 8-7129] Port reset in module krnl_vadd_mul_32ns_34ns_65_2_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RID[0] in module krnl_vadd_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RUSER[0] in module krnl_vadd_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARCACHE[3] in module krnl_vadd_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARCACHE[2] in module krnl_vadd_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARCACHE[1] in module krnl_vadd_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARCACHE[0] in module krnl_vadd_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARPROT[2] in module krnl_vadd_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARPROT[1] in module krnl_vadd_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARPROT[0] in module krnl_vadd_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARUSER[0] in module krnl_vadd_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BID[0] in module krnl_vadd_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BUSER[0] in module krnl_vadd_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWCACHE[3] in module krnl_vadd_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWCACHE[2] in module krnl_vadd_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWCACHE[1] in module krnl_vadd_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWCACHE[0] in module krnl_vadd_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWPROT[2] in module krnl_vadd_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWPROT[1] in module krnl_vadd_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWPROT[0] in module krnl_vadd_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWUSER[0] in module krnl_vadd_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_WUSER[0] in module krnl_vadd_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWID[0] in module krnl_vadd_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWSIZE[2] in module krnl_vadd_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWSIZE[1] in module krnl_vadd_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWSIZE[0] in module krnl_vadd_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWBURST[1] in module krnl_vadd_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWBURST[0] in module krnl_vadd_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWLOCK[1] in module krnl_vadd_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWLOCK[0] in module krnl_vadd_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_WID[0] in module krnl_vadd_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_WLAST in module krnl_vadd_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARID[0] in module krnl_vadd_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARSIZE[2] in module krnl_vadd_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARSIZE[1] in module krnl_vadd_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARSIZE[0] in module krnl_vadd_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARBURST[1] in module krnl_vadd_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARBURST[0] in module krnl_vadd_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARLOCK[1] in module krnl_vadd_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARLOCK[0] in module krnl_vadd_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RID[0] in module krnl_vadd_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RUSER[0] in module krnl_vadd_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARCACHE[3] in module krnl_vadd_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARCACHE[2] in module krnl_vadd_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARCACHE[1] in module krnl_vadd_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARCACHE[0] in module krnl_vadd_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARPROT[2] in module krnl_vadd_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARPROT[1] in module krnl_vadd_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARPROT[0] in module krnl_vadd_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARUSER[0] in module krnl_vadd_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BID[0] in module krnl_vadd_gmem0_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BUSER[0] in module krnl_vadd_gmem0_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWCACHE[3] in module krnl_vadd_gmem0_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWCACHE[2] in module krnl_vadd_gmem0_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWCACHE[1] in module krnl_vadd_gmem0_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWCACHE[0] in module krnl_vadd_gmem0_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWPROT[2] in module krnl_vadd_gmem0_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWPROT[1] in module krnl_vadd_gmem0_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWPROT[0] in module krnl_vadd_gmem0_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWUSER[0] in module krnl_vadd_gmem0_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_WUSER[0] in module krnl_vadd_gmem0_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWID[0] in module krnl_vadd_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWSIZE[2] in module krnl_vadd_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWSIZE[1] in module krnl_vadd_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWSIZE[0] in module krnl_vadd_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWBURST[1] in module krnl_vadd_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWBURST[0] in module krnl_vadd_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWLOCK[1] in module krnl_vadd_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWLOCK[0] in module krnl_vadd_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_WID[0] in module krnl_vadd_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_WLAST in module krnl_vadd_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARID[0] in module krnl_vadd_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARSIZE[2] in module krnl_vadd_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARSIZE[1] in module krnl_vadd_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARSIZE[0] in module krnl_vadd_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARBURST[1] in module krnl_vadd_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARBURST[0] in module krnl_vadd_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARLOCK[1] in module krnl_vadd_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARLOCK[0] in module krnl_vadd_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized95 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized95 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized95 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized95 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized95 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[11] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[10] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[9] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[8] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DIVIDE_BY_ZERO_IN in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized91 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized91 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized91 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 3704.965 ; gain = 472.660 ; free physical = 8946 ; free virtual = 463826
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 3722.777 ; gain = 490.473 ; free physical = 8955 ; free virtual = 463835
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 3722.777 ; gain = 490.473 ; free physical = 8955 ; free virtual = 463835
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.56 ; elapsed = 00:00:00.55 . Memory (MB): peak = 3728.715 ; gain = 0.000 ; free physical = 8910 ; free virtual = 463790
+INFO: [Netlist 29-17] Analyzing 245 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_krnl_vadd_1_0/constraints/krnl_vadd_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_krnl_vadd_1_0/constraints/krnl_vadd_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_krnl_vadd_1_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_krnl_vadd_1_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3945.934 ; gain = 0.000 ; free physical = 8669 ; free virtual = 463549
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 22 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 3 instances
+  FDE => FDRE: 19 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3970.746 ; gain = 24.812 ; free physical = 8694 ; free virtual = 463574
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 3970.746 ; gain = 738.441 ; free physical = 9056 ; free virtual = 463936
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu280-fsvh2892-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 3970.746 ; gain = 738.441 ; free physical = 9056 ; free virtual = 463936
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_krnl_vadd_1_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 3970.746 ; gain = 738.441 ; free physical = 9055 ; free virtual = 463935
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'krnl_vadd_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'krnl_vadd_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'krnl_vadd_gmem0_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'krnl_vadd_gmem0_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'krnl_vadd_gmem0_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'krnl_vadd_gmem1_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'krnl_vadd_gmem1_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'krnl_vadd_gmem1_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'krnl_vadd_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'krnl_vadd_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'krnl_vadd_gmem0_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'krnl_vadd_gmem0_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'krnl_vadd_gmem0_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'krnl_vadd_gmem1_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'krnl_vadd_gmem1_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'krnl_vadd_gmem1_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 3970.746 ; gain = 738.441 ; free physical = 8975 ; free virtual = 463859
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/grp_krnl_vadd_Pipeline_vadd1_vadd2_fu_143/dadd_64ns_64ns_64_8_full_dsp_1_U1/krnl_vadd_dadd_64ns_64ns_64_8_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized13) to 'inst/grp_krnl_vadd_Pipeline_vadd1_vadd2_fu_143/dadd_64ns_64ns_64_8_full_dsp_1_U1/krnl_vadd_dadd_64ns_64ns_64_8_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_krnl_vadd_Pipeline_vadd1_vadd2_fu_143/dadd_64ns_64ns_64_8_full_dsp_1_U1/krnl_vadd_dadd_64ns_64ns_64_8_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized13) to 'inst/grp_krnl_vadd_Pipeline_vadd1_vadd2_fu_143/dadd_64ns_64ns_64_8_full_dsp_1_U1/krnl_vadd_dadd_64ns_64ns_64_8_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 9024 (col length:94)
+BRAMs: 4032 (col length: RAMB18 288 RAMB36 144)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7257] Removed RAM (buff_wdata/mem_reg) due to inactive write enable.
+WARNING: [Synth 8-6014] Unused sequential element buff_wdata/mem_reg was removed. 
+WARNING: [Synth 8-3332] Sequential element (control_s_axi_U/FSM_onehot_wstate_reg[0]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (control_s_axi_U/FSM_onehot_rstate_reg[0]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (rs_wreq/FSM_sequential_state_reg[1]) is unused and will be removed from module krnl_vadd_gmem1_m_axi_write.
+WARNING: [Synth 8-3332] Sequential element (rs_wreq/FSM_sequential_state_reg[0]) is unused and will be removed from module krnl_vadd_gmem1_m_axi_write.
+WARNING: [Synth 8-3332] Sequential element (rs_req/FSM_sequential_state_reg[1]) is unused and will be removed from module krnl_vadd_gmem1_m_axi_throttle.
+WARNING: [Synth 8-3332] Sequential element (rs_req/FSM_sequential_state_reg[0]) is unused and will be removed from module krnl_vadd_gmem1_m_axi_throttle.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[47]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[46]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[45]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[44]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[43]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[42]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[41]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[40]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[39]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[38]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[37]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[36]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[35]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[34]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[33]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[32]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[31]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[30]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[29]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[28]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[27]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[26]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[25]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[24]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[23]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[22]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[21]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[20]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[19]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[18]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[17]) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[47]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[46]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[45]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[44]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[43]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[42]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[41]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[40]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[39]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[38]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[37]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[36]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[35]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[34]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[33]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[32]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[31]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[30]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[29]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[28]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[27]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[26]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[25]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[24]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[23]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[22]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[21]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[20]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[19]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[18]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[17]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[15]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[14]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[13]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[12]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[11]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[10]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[9]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[8]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[7]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[6]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[5]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[4]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[3]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[2]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[1]__0) is unused and will be removed from module krnl_vadd.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_34ns_65_2_1_U9/dout_reg[0]__0) is unused and will be removed from module krnl_vadd.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:15 . Memory (MB): peak = 3970.746 ; gain = 738.441 ; free physical = 9078 ; free virtual = 463979
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:12 ; elapsed = 00:01:26 . Memory (MB): peak = 4077.840 ; gain = 845.535 ; free physical = 8346 ; free virtual = 463247
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+INFO: [Common 17-14] Message 'Synth 8-6779' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:33 . Memory (MB): peak = 4211.816 ; gain = 979.512 ; free physical = 8323 ; free virtual = 463224
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_write/buff_wdata/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_write/buff_wdata/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_write/buff_wdata/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_write/buff_wdata/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_write/buff_wdata/mem_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_write/buff_wdata/mem_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_write/buff_wdata/mem_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_write/buff_wdata/mem_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_read/buff_rdata/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_read/buff_rdata/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_read/buff_rdata/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_read/buff_rdata/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_read/buff_rdata/mem_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_read/buff_rdata/mem_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_read/buff_rdata/mem_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_read/buff_rdata/mem_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/bus_read/buff_rdata/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/bus_read/buff_rdata/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/bus_read/buff_rdata/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/bus_read/buff_rdata/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/bus_read/buff_rdata/mem_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/bus_read/buff_rdata/mem_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/bus_read/buff_rdata/mem_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/bus_read/buff_rdata/mem_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:25 ; elapsed = 00:01:39 . Memory (MB): peak = 4233.473 ; gain = 1001.168 ; free physical = 8388 ; free virtual = 463289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:30 ; elapsed = 00:01:44 . Memory (MB): peak = 4233.473 ; gain = 1001.168 ; free physical = 8351 ; free virtual = 463252
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:30 ; elapsed = 00:01:45 . Memory (MB): peak = 4233.473 ; gain = 1001.168 ; free physical = 8351 ; free virtual = 463252
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:31 ; elapsed = 00:01:46 . Memory (MB): peak = 4233.473 ; gain = 1001.168 ; free physical = 8370 ; free virtual = 463271
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:31 ; elapsed = 00:01:46 . Memory (MB): peak = 4233.473 ; gain = 1001.168 ; free physical = 8390 ; free virtual = 463291
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:33 ; elapsed = 00:01:47 . Memory (MB): peak = 4233.473 ; gain = 1001.168 ; free physical = 8492 ; free virtual = 463393
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:33 ; elapsed = 00:01:47 . Memory (MB): peak = 4233.473 ; gain = 1001.168 ; free physical = 8487 ; free virtual = 463388
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |   145|
+|2     |DSP48E1         |     3|
+|3     |DSP_ALU         |     4|
+|4     |DSP_A_B_DATA    |     4|
+|6     |DSP_C_DATA      |     4|
+|7     |DSP_MULTIPLIER  |     4|
+|8     |DSP_M_DATA      |     4|
+|9     |DSP_OUTPUT      |     4|
+|11    |DSP_PREADD      |     4|
+|12    |DSP_PREADD_DATA |     4|
+|13    |LUT1            |   153|
+|14    |LUT2            |   841|
+|15    |LUT3            |  2301|
+|16    |LUT4            |  2718|
+|17    |LUT5            |   441|
+|18    |LUT6            |   800|
+|19    |MUXCY           |   130|
+|20    |MUXF7           |   270|
+|21    |MUXF8           |     1|
+|22    |RAMB18E2        |     2|
+|23    |RAMB36E2        |    22|
+|24    |SRL16E          |   660|
+|25    |SRLC32E         |   804|
+|26    |XORCY           |    44|
+|27    |FDE             |    19|
+|28    |FDRE            | 14335|
+|29    |FDSE            |    21|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:33 ; elapsed = 00:01:48 . Memory (MB): peak = 4233.473 ; gain = 1001.168 ; free physical = 8484 ; free virtual = 463385
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1440 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:19 ; elapsed = 00:01:33 . Memory (MB): peak = 4233.473 ; gain = 753.199 ; free physical = 8513 ; free virtual = 463414
+Synthesis Optimization Complete : Time (s): cpu = 00:01:33 ; elapsed = 00:01:48 . Memory (MB): peak = 4233.480 ; gain = 1001.168 ; free physical = 8592 ; free virtual = 463493
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.23 . Memory (MB): peak = 4233.480 ; gain = 0.000 ; free physical = 8593 ; free virtual = 463494
+INFO: [Netlist 29-17] Analyzing 616 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4278.793 ; gain = 0.000 ; free physical = 8381 ; free virtual = 463282
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 48 instances were transformed.
+  (CARRY4) => CARRY8: 22 instances
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 3 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 4 instances
+  FDE => FDRE: 19 instances
+
+Synth Design complete, checksum: f51d8f94
+INFO: [Common 17-83] Releasing license: Synthesis
+148 Infos, 296 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:51 ; elapsed = 00:02:04 . Memory (MB): peak = 4278.793 ; gain = 1538.141 ; free physical = 8620 ; free virtual = 463521
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint '/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_krnl_vadd_1_0_synth_1/pfm_dynamic_krnl_vadd_1_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 4278.793 ; gain = 0.000 ; free physical = 8591 ; free virtual = 463495
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP pfm_dynamic_krnl_vadd_1_0, cache-ID = ecf894159797f7a4
+INFO: [Coretcl 2-1174] Renamed 163 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/ziyuanwang/hbm/Vitis_Accel_Examples/host_xrt/hbm_simple_xrt/_x_double_40.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_krnl_vadd_1_0_synth_1/pfm_dynamic_krnl_vadd_1_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 4278.793 ; gain = 0.000 ; free physical = 8629 ; free virtual = 463548
+INFO: [runtcl-4] Executing : report_utilization -file pfm_dynamic_krnl_vadd_1_0_utilization_synth.rpt -pb pfm_dynamic_krnl_vadd_1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 21 19:02:43 2024...

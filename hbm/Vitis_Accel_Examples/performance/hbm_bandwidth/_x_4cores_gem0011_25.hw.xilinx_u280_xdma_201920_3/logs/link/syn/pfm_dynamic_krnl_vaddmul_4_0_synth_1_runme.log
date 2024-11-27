@@ -1,0 +1,1426 @@
+
+*** Running vivado
+    with args -log pfm_dynamic_krnl_vaddmul_4_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source pfm_dynamic_krnl_vaddmul_4_0.tcl
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source pfm_dynamic_krnl_vaddmul_4_0.tcl -notrace
+INFO: Dispatch client connection id - 37675
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2737.910 ; gain = 0.023 ; free physical = 49556 ; free virtual = 477496
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/int/xo/ip_repo/xilinx_com_hls_krnl_vaddmul_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/.local/hw_platform/iprepo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2021.2/data/cache/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2021.2/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.2/data/ip'.
+Command: synth_design -top pfm_dynamic_krnl_vaddmul_4_0 -part xcu280-fsvh2892-2L-e -directive sdx_optimization_effort_high -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Device 21-403] Loading part xcu280-fsvh2892-2L-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 665081
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3517.230 ; gain = 285.668 ; free physical = 45947 ; free virtual = 473887
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_krnl_vaddmul_4_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_krnl_vaddmul_4_0/synth/pfm_dynamic_krnl_vaddmul_4_0.v:59]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul.v:12]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_krnl_vaddmul_Pipeline_L_vops_vops1' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_krnl_vaddmul_Pipeline_L_vops_vops1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_mul_28ns_8ns_35_2_1' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_mul_28ns_8ns_35_2_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_mul_28ns_8ns_35_2_1' (1#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_mul_28ns_8ns_35_2_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_mul_32s_32s_32_2_1' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_mul_32s_32s_32_2_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_mul_32s_32s_32_2_1' (2#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_mul_32s_32s_32_2_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_flow_control_loop_pipe_sequential_init' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_flow_control_loop_pipe_sequential_init.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_flow_control_loop_pipe_sequential_init' (3#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_flow_control_loop_pipe_sequential_init.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_krnl_vaddmul_Pipeline_L_vops_vops1' (4#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_krnl_vaddmul_Pipeline_L_vops_vops1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_control_s_axi' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_control_s_axi.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_control_s_axi.v:250]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_control_s_axi.v:331]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_control_s_axi' (5#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_control_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_gmem0_m_axi' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_gmem0_m_axi_write' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:1742]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_gmem0_m_axi_fifo' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:435]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_gmem0_m_axi_fifo' (6#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:435]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_gmem0_m_axi_reg_slice' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:318]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_gmem0_m_axi_reg_slice' (7#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:318]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_gmem0_m_axi_fifo__parameterized0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:435]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_gmem0_m_axi_fifo__parameterized0' (7#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:435]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_gmem0_m_axi_buffer' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:546]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:600]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_gmem0_m_axi_buffer' (8#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:546]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_gmem0_m_axi_fifo__parameterized1' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:435]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_gmem0_m_axi_fifo__parameterized1' (8#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:435]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_gmem0_m_axi_fifo__parameterized2' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:435]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_gmem0_m_axi_fifo__parameterized2' (8#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:435]
+WARNING: [Synth 8-6014] Unused sequential element sect_end_buf_reg was removed.  [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:2111]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_gmem0_m_axi_write' (9#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:1742]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_gmem0_m_axi_read' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:951]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_gmem0_m_axi_buffer__parameterized0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:546]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:600]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_gmem0_m_axi_buffer__parameterized0' (9#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:546]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_gmem0_m_axi_reg_slice__parameterized0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:318]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_gmem0_m_axi_reg_slice__parameterized0' (9#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:318]
+WARNING: [Synth 8-6014] Unused sequential element sect_end_buf_reg was removed.  [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:1237]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_gmem0_m_axi_read' (10#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:951]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_gmem0_m_axi_throttle' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:728]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_gmem0_m_axi_reg_slice__parameterized1' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:318]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_gmem0_m_axi_reg_slice__parameterized1' (10#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:318]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_gmem0_m_axi_fifo__parameterized3' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:435]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_gmem0_m_axi_fifo__parameterized3' (10#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:435]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_gmem0_m_axi_fifo__parameterized4' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:435]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_gmem0_m_axi_fifo__parameterized4' (10#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:435]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_gmem0_m_axi_throttle' (11#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:728]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_gmem0_m_axi' (12#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem0_m_axi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_gmem1_m_axi' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_gmem1_m_axi_write' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:1742]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_gmem1_m_axi_fifo' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:435]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_gmem1_m_axi_fifo' (13#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:435]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_gmem1_m_axi_reg_slice' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:318]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_gmem1_m_axi_reg_slice' (14#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:318]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_gmem1_m_axi_fifo__parameterized0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:435]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_gmem1_m_axi_fifo__parameterized0' (14#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:435]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_gmem1_m_axi_buffer' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:546]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:600]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_gmem1_m_axi_buffer' (15#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:546]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_gmem1_m_axi_fifo__parameterized1' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:435]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_gmem1_m_axi_fifo__parameterized1' (15#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:435]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_gmem1_m_axi_fifo__parameterized2' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:435]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_gmem1_m_axi_fifo__parameterized2' (15#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:435]
+WARNING: [Synth 8-6014] Unused sequential element sect_end_buf_reg was removed.  [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:2111]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_gmem1_m_axi_write' (16#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:1742]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_gmem1_m_axi_read' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:951]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_gmem1_m_axi_buffer__parameterized0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:546]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:600]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_gmem1_m_axi_buffer__parameterized0' (16#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:546]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_gmem1_m_axi_reg_slice__parameterized0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:318]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_gmem1_m_axi_reg_slice__parameterized0' (16#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:318]
+WARNING: [Synth 8-6014] Unused sequential element sect_end_buf_reg was removed.  [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:1237]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_gmem1_m_axi_read' (17#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:951]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_gmem1_m_axi_throttle' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:728]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_gmem1_m_axi_reg_slice__parameterized1' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:318]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_gmem1_m_axi_reg_slice__parameterized1' (17#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:318]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_gmem1_m_axi_fifo__parameterized3' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:435]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_gmem1_m_axi_fifo__parameterized3' (17#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:435]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_gmem1_m_axi_fifo__parameterized4' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:435]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_gmem1_m_axi_fifo__parameterized4' (17#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:435]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_gmem1_m_axi_throttle' (18#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:728]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_gmem1_m_axi' (19#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_gmem1_m_axi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_mul_32ns_34ns_65_2_1' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_mul_32ns_34ns_65_2_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_mul_32ns_34ns_65_2_1' (20#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_mul_32ns_34ns_65_2_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'krnl_vaddmul_mul_32ns_28ns_60_2_1' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_mul_32ns_28ns_60_2_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul_mul_32ns_28ns_60_2_1' (21#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_mul_32ns_28ns_60_2_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'krnl_vaddmul' (22#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_krnl_vaddmul_4_0' (23#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_krnl_vaddmul_4_0/synth/pfm_dynamic_krnl_vaddmul_4_0.v:59]
+WARNING: [Synth 8-7129] Port reset in module krnl_vaddmul_mul_32ns_28ns_60_2_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module krnl_vaddmul_mul_32ns_34ns_65_2_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RID[0] in module krnl_vaddmul_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RUSER[0] in module krnl_vaddmul_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARCACHE[3] in module krnl_vaddmul_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARCACHE[2] in module krnl_vaddmul_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARCACHE[1] in module krnl_vaddmul_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARCACHE[0] in module krnl_vaddmul_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARPROT[2] in module krnl_vaddmul_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARPROT[1] in module krnl_vaddmul_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARPROT[0] in module krnl_vaddmul_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARUSER[0] in module krnl_vaddmul_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BID[0] in module krnl_vaddmul_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BUSER[0] in module krnl_vaddmul_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWCACHE[3] in module krnl_vaddmul_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWCACHE[2] in module krnl_vaddmul_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWCACHE[1] in module krnl_vaddmul_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWCACHE[0] in module krnl_vaddmul_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWPROT[2] in module krnl_vaddmul_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWPROT[1] in module krnl_vaddmul_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWPROT[0] in module krnl_vaddmul_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWUSER[0] in module krnl_vaddmul_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_WUSER[0] in module krnl_vaddmul_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWID[0] in module krnl_vaddmul_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWSIZE[2] in module krnl_vaddmul_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWSIZE[1] in module krnl_vaddmul_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWSIZE[0] in module krnl_vaddmul_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWBURST[1] in module krnl_vaddmul_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWBURST[0] in module krnl_vaddmul_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWLOCK[1] in module krnl_vaddmul_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWLOCK[0] in module krnl_vaddmul_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_WID[0] in module krnl_vaddmul_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_WLAST in module krnl_vaddmul_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARID[0] in module krnl_vaddmul_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARSIZE[2] in module krnl_vaddmul_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARSIZE[1] in module krnl_vaddmul_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARSIZE[0] in module krnl_vaddmul_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARBURST[1] in module krnl_vaddmul_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARBURST[0] in module krnl_vaddmul_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARLOCK[1] in module krnl_vaddmul_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARLOCK[0] in module krnl_vaddmul_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RID[0] in module krnl_vaddmul_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RUSER[0] in module krnl_vaddmul_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARCACHE[3] in module krnl_vaddmul_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARCACHE[2] in module krnl_vaddmul_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARCACHE[1] in module krnl_vaddmul_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARCACHE[0] in module krnl_vaddmul_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARPROT[2] in module krnl_vaddmul_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARPROT[1] in module krnl_vaddmul_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARPROT[0] in module krnl_vaddmul_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_ARUSER[0] in module krnl_vaddmul_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BID[0] in module krnl_vaddmul_gmem0_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BUSER[0] in module krnl_vaddmul_gmem0_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWCACHE[3] in module krnl_vaddmul_gmem0_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWCACHE[2] in module krnl_vaddmul_gmem0_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWCACHE[1] in module krnl_vaddmul_gmem0_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWCACHE[0] in module krnl_vaddmul_gmem0_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWPROT[2] in module krnl_vaddmul_gmem0_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWPROT[1] in module krnl_vaddmul_gmem0_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWPROT[0] in module krnl_vaddmul_gmem0_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_AWUSER[0] in module krnl_vaddmul_gmem0_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_HLS_WUSER[0] in module krnl_vaddmul_gmem0_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWID[0] in module krnl_vaddmul_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWSIZE[2] in module krnl_vaddmul_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWSIZE[1] in module krnl_vaddmul_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWSIZE[0] in module krnl_vaddmul_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWBURST[1] in module krnl_vaddmul_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWBURST[0] in module krnl_vaddmul_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWLOCK[1] in module krnl_vaddmul_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWLOCK[0] in module krnl_vaddmul_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_WID[0] in module krnl_vaddmul_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_WLAST in module krnl_vaddmul_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARID[0] in module krnl_vaddmul_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARSIZE[2] in module krnl_vaddmul_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARSIZE[1] in module krnl_vaddmul_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARSIZE[0] in module krnl_vaddmul_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARBURST[1] in module krnl_vaddmul_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARBURST[0] in module krnl_vaddmul_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARLOCK[1] in module krnl_vaddmul_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARLOCK[0] in module krnl_vaddmul_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module krnl_vaddmul_mul_32s_32s_32_2_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module krnl_vaddmul_mul_28ns_8ns_35_2_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem0_AWREADY in module krnl_vaddmul_krnl_vaddmul_Pipeline_L_vops_vops1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem0_WREADY in module krnl_vaddmul_krnl_vaddmul_Pipeline_L_vops_vops1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem0_RLAST in module krnl_vaddmul_krnl_vaddmul_Pipeline_L_vops_vops1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem0_RID[0] in module krnl_vaddmul_krnl_vaddmul_Pipeline_L_vops_vops1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem0_RFIFONUM[8] in module krnl_vaddmul_krnl_vaddmul_Pipeline_L_vops_vops1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem0_RFIFONUM[7] in module krnl_vaddmul_krnl_vaddmul_Pipeline_L_vops_vops1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem0_RFIFONUM[6] in module krnl_vaddmul_krnl_vaddmul_Pipeline_L_vops_vops1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem0_RFIFONUM[5] in module krnl_vaddmul_krnl_vaddmul_Pipeline_L_vops_vops1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem0_RFIFONUM[4] in module krnl_vaddmul_krnl_vaddmul_Pipeline_L_vops_vops1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem0_RFIFONUM[3] in module krnl_vaddmul_krnl_vaddmul_Pipeline_L_vops_vops1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem0_RFIFONUM[2] in module krnl_vaddmul_krnl_vaddmul_Pipeline_L_vops_vops1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem0_RFIFONUM[1] in module krnl_vaddmul_krnl_vaddmul_Pipeline_L_vops_vops1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem0_RFIFONUM[0] in module krnl_vaddmul_krnl_vaddmul_Pipeline_L_vops_vops1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem0_RUSER[0] in module krnl_vaddmul_krnl_vaddmul_Pipeline_L_vops_vops1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem0_RRESP[1] in module krnl_vaddmul_krnl_vaddmul_Pipeline_L_vops_vops1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem0_RRESP[0] in module krnl_vaddmul_krnl_vaddmul_Pipeline_L_vops_vops1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem0_BVALID in module krnl_vaddmul_krnl_vaddmul_Pipeline_L_vops_vops1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem0_BRESP[1] in module krnl_vaddmul_krnl_vaddmul_Pipeline_L_vops_vops1 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 3683.574 ; gain = 452.012 ; free physical = 46592 ; free virtual = 474536
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 3701.387 ; gain = 469.824 ; free physical = 46508 ; free virtual = 474452
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 3701.387 ; gain = 469.824 ; free physical = 46508 ; free virtual = 474452
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3708.418 ; gain = 0.000 ; free physical = 46328 ; free virtual = 474272
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_krnl_vaddmul_4_0/constraints/krnl_vaddmul_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 4090.355 ; gain = 24.750 ; free physical = 46067 ; free virtual = 474011
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_krnl_vaddmul_4_0/constraints/krnl_vaddmul_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_krnl_vaddmul_4_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_krnl_vaddmul_4_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4090.355 ; gain = 0.000 ; free physical = 46011 ; free virtual = 473955
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 4135.230 ; gain = 44.875 ; free physical = 45805 ; free virtual = 473749
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:42 ; elapsed = 00:00:59 . Memory (MB): peak = 4135.230 ; gain = 903.668 ; free physical = 45988 ; free virtual = 473932
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'krnl_vaddmul_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'krnl_vaddmul_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'krnl_vaddmul_gmem0_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'krnl_vaddmul_gmem0_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'krnl_vaddmul_gmem0_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'krnl_vaddmul_gmem1_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'krnl_vaddmul_gmem1_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'krnl_vaddmul_gmem1_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'krnl_vaddmul_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'krnl_vaddmul_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'krnl_vaddmul_gmem0_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'krnl_vaddmul_gmem0_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'krnl_vaddmul_gmem0_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'krnl_vaddmul_gmem1_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'krnl_vaddmul_gmem1_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'krnl_vaddmul_gmem1_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:46 ; elapsed = 00:01:08 . Memory (MB): peak = 4147.152 ; gain = 915.590 ; free physical = 46365 ; free virtual = 474312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 12    
+	   2 Input   52 Bit       Adders := 4     
+	   2 Input   32 Bit       Adders := 30    
+	   2 Input   28 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 4     
+	   2 Input    9 Bit       Adders := 12    
+	   3 Input    9 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 10    
+	   2 Input    7 Bit       Adders := 12    
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 8     
+	   2 Input    1 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	             1153 Bit    Registers := 2     
+	             1152 Bit    Registers := 6     
+	             1027 Bit    Registers := 6     
+	             1026 Bit    Registers := 4     
+	             1024 Bit    Registers := 28    
+	              800 Bit    Registers := 1     
+	              792 Bit    Registers := 2     
+	              128 Bit    Registers := 4     
+	               99 Bit    Registers := 2     
+	               96 Bit    Registers := 12    
+	               72 Bit    Registers := 6     
+	               65 Bit    Registers := 1     
+	               64 Bit    Registers := 24    
+	               60 Bit    Registers := 2     
+	               57 Bit    Registers := 5     
+	               52 Bit    Registers := 4     
+	               48 Bit    Registers := 1     
+	               35 Bit    Registers := 20    
+	               32 Bit    Registers := 122   
+	               30 Bit    Registers := 1     
+	               29 Bit    Registers := 1     
+	               28 Bit    Registers := 4     
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 13    
+	                7 Bit    Registers := 73    
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 10    
+	                4 Bit    Registers := 9     
+	                2 Bit    Registers := 32    
+	                1 Bit    Registers := 290   
++---Multipliers : 
+	              32x34  Multipliers := 1     
+	              28x32  Multipliers := 1     
+	              32x32  Multipliers := 25    
++---RAMs : 
+	             288K Bit	(256 X 1152 bit)          RAMs := 2     
+	             256K Bit	(256 X 1027 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input 1152 Bit        Muxes := 2     
+	   2 Input 1027 Bit        Muxes := 2     
+	   2 Input 1026 Bit        Muxes := 2     
+	   2 Input 1024 Bit        Muxes := 5     
+	   2 Input  128 Bit        Muxes := 3     
+	   2 Input   96 Bit        Muxes := 4     
+	   2 Input   72 Bit        Muxes := 2     
+	   2 Input   64 Bit        Muxes := 18    
+	   2 Input   52 Bit        Muxes := 4     
+	   2 Input   32 Bit        Muxes := 2     
+	   4 Input   12 Bit        Muxes := 4     
+	   2 Input    9 Bit        Muxes := 10    
+	   2 Input    8 Bit        Muxes := 21    
+	   4 Input    8 Bit        Muxes := 4     
+	   9 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 8     
+	   2 Input    5 Bit        Muxes := 10    
+	   2 Input    4 Bit        Muxes := 7     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 3     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 143   
+	   3 Input    2 Bit        Muxes := 56    
+	   4 Input    2 Bit        Muxes := 10    
+	   5 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 145   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 9024 (col length:94)
+BRAMs: 4032 (col length: RAMB18 288 RAMB36 144)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U23/tmp_product, operation Mode is: A2*B2.
+DSP Report: register trunc_ln62_22_reg_2005_reg is absorbed into DSP mul_32s_32s_32_2_1_U23/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U23/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U23/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U23/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U23/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U23/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U23/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U23/dout_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register trunc_ln62_22_reg_2005_reg is absorbed into DSP mul_32s_32s_32_2_1_U23/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U23/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U23/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U23/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U23/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U23/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U23/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U23/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_32s_32s_32_2_1_U23/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U23/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U23/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U23/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U23/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U23/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U23/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U23/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U23/dout_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U23/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U23/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U23/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U23/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U23/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U23/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U23/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U23/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U24/tmp_product, operation Mode is: A2*B2.
+DSP Report: register trunc_ln62_23_reg_2011_reg is absorbed into DSP mul_32s_32s_32_2_1_U24/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U24/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U24/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U24/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U24/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U24/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U24/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U24/dout_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register trunc_ln62_23_reg_2011_reg is absorbed into DSP mul_32s_32s_32_2_1_U24/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U24/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U24/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U24/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U24/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U24/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U24/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U24/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_32s_32s_32_2_1_U24/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U24/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U24/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U24/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U24/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U24/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U24/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U24/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U24/dout_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U24/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U24/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U24/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U24/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U24/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U24/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U24/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U24/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U25/tmp_product, operation Mode is: A2*B2.
+DSP Report: register trunc_ln62_24_reg_2017_reg is absorbed into DSP mul_32s_32s_32_2_1_U25/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U25/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U25/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U25/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U25/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U25/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U25/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U25/dout_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register trunc_ln62_24_reg_2017_reg is absorbed into DSP mul_32s_32s_32_2_1_U25/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U25/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U25/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U25/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U25/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U25/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U25/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U25/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_32s_32s_32_2_1_U25/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U25/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U25/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U25/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U25/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U25/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U25/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U25/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U25/dout_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U25/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U25/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U25/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U25/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U25/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U25/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U25/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U25/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U26/tmp_product, operation Mode is: A2*B2.
+DSP Report: register trunc_ln62_25_reg_2023_reg is absorbed into DSP mul_32s_32s_32_2_1_U26/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U26/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U26/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U26/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U26/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U26/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U26/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U26/dout_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register trunc_ln62_25_reg_2023_reg is absorbed into DSP mul_32s_32s_32_2_1_U26/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U26/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U26/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U26/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U26/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U26/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U26/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U26/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_32s_32s_32_2_1_U26/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U26/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U26/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U26/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U26/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U26/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U26/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U26/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U26/dout_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U26/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U26/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U26/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U26/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U26/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U26/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U26/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U26/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U2/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U2/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U2/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U2/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U2/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U2/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U2/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U2/dout_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register mul_32s_32s_32_2_1_U2/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U2/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U2/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U2/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U2/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U2/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U2/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_32s_32s_32_2_1_U2/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U2/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U2/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U2/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U2/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U2/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U2/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U2/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U2/dout_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U2/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U2/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U2/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U2/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U2/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U2/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U2/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U2/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U3/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U3/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U3/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U3/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U3/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U3/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U3/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U3/dout_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register mul_32s_32s_32_2_1_U3/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U3/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U3/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U3/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U3/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U3/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U3/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_32s_32s_32_2_1_U3/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U3/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U3/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U3/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U3/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U3/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U3/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U3/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U3/dout_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U3/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U3/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U3/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U3/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U3/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U3/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U3/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U3/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U4/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U4/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U4/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U4/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U4/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U4/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U4/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U4/dout_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register mul_32s_32s_32_2_1_U4/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U4/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U4/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U4/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U4/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U4/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U4/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_32s_32s_32_2_1_U4/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U4/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U4/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U4/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U4/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U4/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U4/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U4/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U4/dout_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U4/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U4/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U4/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U4/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U4/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U4/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U4/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U4/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U5/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U5/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U5/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U5/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U5/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U5/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U5/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U5/dout_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register mul_32s_32s_32_2_1_U5/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U5/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U5/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U5/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U5/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U5/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U5/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_32s_32s_32_2_1_U5/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U5/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U5/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U5/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U5/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U5/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U5/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U5/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U5/dout_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U5/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U5/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U5/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U5/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U5/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U5/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U5/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U5/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U6/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U6/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U6/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U6/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U6/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U6/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U6/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U6/dout_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register mul_32s_32s_32_2_1_U6/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U6/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U6/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U6/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U6/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U6/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U6/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_32s_32s_32_2_1_U6/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U6/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U6/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U6/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U6/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U6/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U6/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U6/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U6/dout_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U6/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U6/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U6/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U6/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U6/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U6/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U6/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U6/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U7/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U7/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U7/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U7/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U7/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U7/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U7/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U7/dout_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register mul_32s_32s_32_2_1_U7/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U7/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U7/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U7/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U7/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U7/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U7/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_32s_32s_32_2_1_U7/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U7/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U7/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U7/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U7/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U7/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U7/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U7/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U7/dout_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U7/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U7/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U7/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U7/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U7/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U7/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U7/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U7/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U8/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U8/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U8/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U8/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U8/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U8/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U8/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U8/dout_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register mul_32s_32s_32_2_1_U8/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U8/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U8/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U8/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U8/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U8/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U8/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_32s_32s_32_2_1_U8/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U8/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U8/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U8/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U8/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U8/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U8/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U8/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U8/dout_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U8/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U8/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U8/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U8/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U8/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U8/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U8/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U8/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U9/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U9/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U9/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U9/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U9/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U9/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U9/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U9/dout_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register mul_32s_32s_32_2_1_U9/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U9/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U9/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U9/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U9/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U9/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U9/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_32s_32s_32_2_1_U9/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U9/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U9/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U9/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U9/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U9/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U9/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U9/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U9/dout_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U9/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U9/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U9/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U9/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U9/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U9/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U9/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U9/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U10/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U10/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U10/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U10/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U10/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U10/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U10/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U10/dout_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register mul_32s_32s_32_2_1_U10/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U10/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U10/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U10/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U10/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U10/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U10/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_32s_32s_32_2_1_U10/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U10/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U10/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U10/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U10/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U10/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U10/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U10/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U10/dout_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U10/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U10/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U10/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U10/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U10/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U10/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U10/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U10/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U11/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U11/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U11/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U11/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U11/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U11/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U11/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U11/dout_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register mul_32s_32s_32_2_1_U11/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U11/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U11/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U11/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U11/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U11/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U11/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_32s_32s_32_2_1_U11/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U11/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U11/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U11/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U11/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U11/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U11/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U11/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U11/dout_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U11/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U11/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U11/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U11/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U11/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U11/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U11/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U11/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U12/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U12/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U12/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U12/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U12/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U12/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U12/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U12/dout_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register mul_32s_32s_32_2_1_U12/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U12/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U12/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U12/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U12/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U12/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U12/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_32s_32s_32_2_1_U12/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U12/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U12/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U12/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U12/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U12/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U12/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U12/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U12/dout_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U12/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U12/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U12/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U12/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U12/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U12/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U12/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U12/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U13/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U13/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U13/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U13/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U13/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U13/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U13/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U13/dout_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register mul_32s_32s_32_2_1_U13/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U13/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U13/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U13/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U13/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U13/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U13/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_32s_32s_32_2_1_U13/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U13/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U13/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U13/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U13/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U13/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U13/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U13/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U13/dout_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U13/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U13/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U13/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U13/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U13/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U13/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U13/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U13/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U14/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U14/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U14/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U14/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U14/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U14/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U14/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U14/dout_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register mul_32s_32s_32_2_1_U14/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U14/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U14/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U14/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U14/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U14/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U14/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_32s_32s_32_2_1_U14/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U14/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U14/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U14/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U14/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U14/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U14/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U14/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U14/dout_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U14/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U14/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U14/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U14/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U14/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U14/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U14/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U14/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U15/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U15/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U15/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U15/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U15/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U15/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U15/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U15/dout_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register mul_32s_32s_32_2_1_U15/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U15/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U15/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U15/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U15/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U15/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U15/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_32s_32s_32_2_1_U15/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U15/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U15/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U15/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U15/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U15/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U15/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U15/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U15/dout_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U15/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U15/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U15/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U15/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U15/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U15/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U15/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U15/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U16/tmp_product, operation Mode is: A''*B.
+DSP Report: register mul_32s_32s_32_2_1_U16/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U16/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U16/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U16/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U16/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U16/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U16/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U16/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U16/dout_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register tmpIn1_data_14_reg_1803_pp0_iter20_reg_reg is absorbed into DSP mul_32s_32s_32_2_1_U16/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U16/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U16/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U16/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U16/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U16/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U16/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U16/tmp_product, operation Mode is: A2*B''.
+DSP Report: register mul_32s_32s_32_2_1_U16/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U16/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U16/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U16/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U16/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U16/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U16/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U16/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U16/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U16/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U16/dout_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register tmpIn1_data_14_reg_1803_pp0_iter20_reg_reg is absorbed into DSP mul_32s_32s_32_2_1_U16/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U16/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U16/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U16/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U16/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U16/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U16/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U16/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U16/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U17/tmp_product, operation Mode is: A''*B.
+DSP Report: register mul_32s_32s_32_2_1_U17/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U17/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U17/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U17/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U17/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U17/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U17/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U17/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U17/dout_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register tmpIn1_data_15_reg_1809_pp0_iter20_reg_reg is absorbed into DSP mul_32s_32s_32_2_1_U17/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U17/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U17/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U17/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U17/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U17/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U17/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U17/tmp_product, operation Mode is: A2*B''.
+DSP Report: register mul_32s_32s_32_2_1_U17/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U17/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U17/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U17/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U17/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U17/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U17/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U17/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U17/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U17/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U17/dout_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register tmpIn1_data_15_reg_1809_pp0_iter20_reg_reg is absorbed into DSP mul_32s_32s_32_2_1_U17/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U17/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U17/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U17/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U17/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U17/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U17/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U17/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U17/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U18/tmp_product, operation Mode is: A''*B.
+DSP Report: register mul_32s_32s_32_2_1_U18/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U18/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U18/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U18/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U18/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U18/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U18/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U18/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U18/dout_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register tmpIn1_data_16_reg_1815_pp0_iter20_reg_reg is absorbed into DSP mul_32s_32s_32_2_1_U18/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U18/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U18/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U18/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U18/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U18/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U18/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U18/tmp_product, operation Mode is: A2*B''.
+DSP Report: register mul_32s_32s_32_2_1_U18/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U18/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U18/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U18/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U18/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U18/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U18/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U18/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U18/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U18/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U18/dout_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register tmpIn1_data_16_reg_1815_pp0_iter20_reg_reg is absorbed into DSP mul_32s_32s_32_2_1_U18/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U18/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U18/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U18/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U18/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U18/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U18/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U18/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U18/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U19/tmp_product, operation Mode is: A''*B.
+DSP Report: register mul_32s_32s_32_2_1_U19/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U19/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U19/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U19/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U19/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U19/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U19/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U19/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U19/dout_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register tmpIn1_data_17_reg_1821_pp0_iter20_reg_reg is absorbed into DSP mul_32s_32s_32_2_1_U19/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U19/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U19/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U19/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U19/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U19/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U19/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U19/tmp_product, operation Mode is: A2*B''.
+DSP Report: register mul_32s_32s_32_2_1_U19/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U19/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U19/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U19/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U19/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U19/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U19/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U19/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U19/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U19/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U19/dout_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register tmpIn1_data_17_reg_1821_pp0_iter20_reg_reg is absorbed into DSP mul_32s_32s_32_2_1_U19/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U19/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U19/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U19/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U19/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U19/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U19/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U19/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U19/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U20/tmp_product, operation Mode is: A''*B.
+DSP Report: register mul_32s_32s_32_2_1_U20/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U20/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U20/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U20/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U20/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U20/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U20/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U20/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U20/dout_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register tmpIn1_data_18_reg_1827_pp0_iter20_reg_reg is absorbed into DSP mul_32s_32s_32_2_1_U20/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U20/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U20/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U20/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U20/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U20/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U20/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U20/tmp_product, operation Mode is: A2*B''.
+DSP Report: register mul_32s_32s_32_2_1_U20/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U20/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U20/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U20/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U20/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U20/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U20/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U20/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U20/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U20/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U20/dout_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register tmpIn1_data_18_reg_1827_pp0_iter20_reg_reg is absorbed into DSP mul_32s_32s_32_2_1_U20/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U20/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U20/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U20/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U20/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U20/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U20/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U20/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U20/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U21/tmp_product, operation Mode is: A''*B.
+DSP Report: register mul_32s_32s_32_2_1_U21/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U21/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U21/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U21/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U21/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U21/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U21/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U21/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U21/dout_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register tmpIn1_data_19_reg_1833_pp0_iter20_reg_reg is absorbed into DSP mul_32s_32s_32_2_1_U21/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U21/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U21/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U21/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U21/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U21/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U21/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U21/tmp_product, operation Mode is: A2*B''.
+DSP Report: register mul_32s_32s_32_2_1_U21/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U21/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U21/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U21/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U21/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U21/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U21/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U21/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U21/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U21/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U21/dout_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register tmpIn1_data_19_reg_1833_pp0_iter20_reg_reg is absorbed into DSP mul_32s_32s_32_2_1_U21/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U21/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U21/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U21/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U21/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U21/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U21/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U21/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U21/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U22/tmp_product, operation Mode is: A''*B.
+DSP Report: register mul_32s_32s_32_2_1_U22/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U22/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U22/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U22/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U22/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U22/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U22/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U22/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U22/dout_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register tmpIn1_data_20_reg_1839_pp0_iter20_reg_reg is absorbed into DSP mul_32s_32s_32_2_1_U22/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U22/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U22/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U22/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U22/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U22/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U22/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U22/tmp_product, operation Mode is: A2*B''.
+DSP Report: register mul_32s_32s_32_2_1_U22/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U22/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U22/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U22/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U22/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U22/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U22/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U22/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U22/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U22/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U22/dout_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register tmpIn1_data_20_reg_1839_pp0_iter20_reg_reg is absorbed into DSP mul_32s_32s_32_2_1_U22/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U22/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U22/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U22/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U22/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U22/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U22/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U22/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U22/dout_reg.
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_28ns_8ns_35_2_1_U1/dout_reg' and it is trimmed from '48' to '9' bits. [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/70cc/hdl/verilog/krnl_vaddmul_mul_28ns_8ns_35_2_1.v:27]
+DSP Report: Generating DSP mul_28ns_8ns_35_2_1_U1/dout_reg, operation Mode is: (A2*(B:0x64))'.
+DSP Report: register mul_28ns_8ns_35_2_1_U1/dout_reg is absorbed into DSP mul_28ns_8ns_35_2_1_U1/dout_reg.
+DSP Report: register mul_28ns_8ns_35_2_1_U1/dout_reg is absorbed into DSP mul_28ns_8ns_35_2_1_U1/dout_reg.
+DSP Report: operator mul_28ns_8ns_35_2_1_U1/tmp_product is absorbed into DSP mul_28ns_8ns_35_2_1_U1/dout_reg.
+DSP Report: operator mul_28ns_8ns_35_2_1_U1/tmp_product is absorbed into DSP mul_28ns_8ns_35_2_1_U1/dout_reg.
+DSP Report: Generating DSP mul_32ns_34ns_65_2_1_U41/tmp_product, operation Mode is: A2*(B:0x147b).
+DSP Report: register add_ln49_reg_200_reg is absorbed into DSP mul_32ns_34ns_65_2_1_U41/tmp_product.
+DSP Report: operator mul_32ns_34ns_65_2_1_U41/tmp_product is absorbed into DSP mul_32ns_34ns_65_2_1_U41/tmp_product.
+DSP Report: operator mul_32ns_34ns_65_2_1_U41/tmp_product is absorbed into DSP mul_32ns_34ns_65_2_1_U41/tmp_product.
+DSP Report: Generating DSP mul_32ns_34ns_65_2_1_U41/dout_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register add_ln49_reg_200_reg is absorbed into DSP mul_32ns_34ns_65_2_1_U41/dout_reg.
+DSP Report: register mul_32ns_34ns_65_2_1_U41/dout_reg is absorbed into DSP mul_32ns_34ns_65_2_1_U41/dout_reg.
+DSP Report: operator mul_32ns_34ns_65_2_1_U41/tmp_product is absorbed into DSP mul_32ns_34ns_65_2_1_U41/dout_reg.
+DSP Report: operator mul_32ns_34ns_65_2_1_U41/tmp_product is absorbed into DSP mul_32ns_34ns_65_2_1_U41/dout_reg.
+DSP Report: Generating DSP mul_32ns_34ns_65_2_1_U41/tmp_product, operation Mode is: A2*(B:0x147b).
+DSP Report: register mul_32ns_34ns_65_2_1_U41/tmp_product is absorbed into DSP mul_32ns_34ns_65_2_1_U41/tmp_product.
+DSP Report: operator mul_32ns_34ns_65_2_1_U41/tmp_product is absorbed into DSP mul_32ns_34ns_65_2_1_U41/tmp_product.
+DSP Report: operator mul_32ns_34ns_65_2_1_U41/tmp_product is absorbed into DSP mul_32ns_34ns_65_2_1_U41/tmp_product.
+DSP Report: Generating DSP mul_32ns_34ns_65_2_1_U41/dout_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register mul_32ns_34ns_65_2_1_U41/dout_reg is absorbed into DSP mul_32ns_34ns_65_2_1_U41/dout_reg.
+DSP Report: register mul_32ns_34ns_65_2_1_U41/dout_reg is absorbed into DSP mul_32ns_34ns_65_2_1_U41/dout_reg.
+DSP Report: operator mul_32ns_34ns_65_2_1_U41/tmp_product is absorbed into DSP mul_32ns_34ns_65_2_1_U41/dout_reg.
+DSP Report: operator mul_32ns_34ns_65_2_1_U41/tmp_product is absorbed into DSP mul_32ns_34ns_65_2_1_U41/dout_reg.
+DSP Report: Generating DSP mul_32ns_28ns_60_2_1_U42/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_32ns_28ns_60_2_1_U42/tmp_product is absorbed into DSP mul_32ns_28ns_60_2_1_U42/tmp_product.
+DSP Report: operator mul_32ns_28ns_60_2_1_U42/tmp_product is absorbed into DSP mul_32ns_28ns_60_2_1_U42/tmp_product.
+DSP Report: operator mul_32ns_28ns_60_2_1_U42/tmp_product is absorbed into DSP mul_32ns_28ns_60_2_1_U42/tmp_product.
+DSP Report: Generating DSP mul_32ns_28ns_60_2_1_U42/dout_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register add_ln57_reg_220_reg is absorbed into DSP mul_32ns_28ns_60_2_1_U42/dout_reg.
+DSP Report: register mul_32ns_28ns_60_2_1_U42/dout_reg is absorbed into DSP mul_32ns_28ns_60_2_1_U42/dout_reg.
+DSP Report: operator mul_32ns_28ns_60_2_1_U42/tmp_product is absorbed into DSP mul_32ns_28ns_60_2_1_U42/dout_reg.
+DSP Report: operator mul_32ns_28ns_60_2_1_U42/tmp_product is absorbed into DSP mul_32ns_28ns_60_2_1_U42/dout_reg.
+DSP Report: Generating DSP mul_32ns_28ns_60_2_1_U42/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_32ns_28ns_60_2_1_U42/tmp_product is absorbed into DSP mul_32ns_28ns_60_2_1_U42/tmp_product.
+DSP Report: register mul_32ns_28ns_60_2_1_U42/tmp_product is absorbed into DSP mul_32ns_28ns_60_2_1_U42/tmp_product.
+DSP Report: operator mul_32ns_28ns_60_2_1_U42/tmp_product is absorbed into DSP mul_32ns_28ns_60_2_1_U42/tmp_product.
+DSP Report: operator mul_32ns_28ns_60_2_1_U42/tmp_product is absorbed into DSP mul_32ns_28ns_60_2_1_U42/tmp_product.
+DSP Report: Generating DSP mul_32ns_28ns_60_2_1_U42/dout_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register add_ln57_reg_220_reg is absorbed into DSP mul_32ns_28ns_60_2_1_U42/dout_reg.
+DSP Report: register mul_32ns_28ns_60_2_1_U42/dout_reg is absorbed into DSP mul_32ns_28ns_60_2_1_U42/dout_reg.
+DSP Report: register mul_32ns_28ns_60_2_1_U42/dout_reg is absorbed into DSP mul_32ns_28ns_60_2_1_U42/dout_reg.
+DSP Report: operator mul_32ns_28ns_60_2_1_U42/tmp_product is absorbed into DSP mul_32ns_28ns_60_2_1_U42/dout_reg.
+DSP Report: operator mul_32ns_28ns_60_2_1_U42/tmp_product is absorbed into DSP mul_32ns_28ns_60_2_1_U42/dout_reg.
+WARNING: [Synth 8-7257] Removed RAM (buff_wdata/mem_reg) due to inactive write enable.
+WARNING: [Synth 8-6014] Unused sequential element buff_wdata/mem_reg was removed. 
+WARNING: [Synth 8-3332] Sequential element (rs_wreq/FSM_sequential_state_reg[1]) is unused and will be removed from module krnl_vaddmul_gmem0_m_axi_write.
+WARNING: [Synth 8-3332] Sequential element (rs_wreq/FSM_sequential_state_reg[0]) is unused and will be removed from module krnl_vaddmul_gmem0_m_axi_write.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module krnl_vaddmul_gmem1_m_axi_reg_slice__1.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module krnl_vaddmul_gmem1_m_axi_reg_slice__1.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:43 ; elapsed = 00:02:53 . Memory (MB): peak = 4151.238 ; gain = 919.676 ; free physical = 43536 ; free virtual = 471522
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++---------------------------------------------+--------------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                                  | RTL Object         | PORT A (Depth x Width) | W | R | PORT B (Depth x Width)  | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++---------------------------------------------+--------------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+-----------------+
+|inst/i_0/\gmem0_m_axi_U/bus_read /buff_rdata | mem_reg            | 256 x 1027(READ_FIRST) | W |   | 256 x 1027(WRITE_FIRST) |   | R | Port A and B     | 1      | 14     |                 | 
+|inst/i_1/\gmem1_m_axi_U/bus_write            | buff_wdata/mem_reg | 256 x 1152(READ_FIRST) | W |   | 256 x 1152(WRITE_FIRST) |   | R | Port A and B     | 0      | 16     |                 | 
++---------------------------------------------+--------------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++-------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|krnl_vaddmul | A2*B2            | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A2*B  | 15     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A2*B  | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B2            | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A2*B  | 15     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A2*B  | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B2            | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A2*B  | 15     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A2*B  | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B2            | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A2*B  | 15     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A2*B  | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B             | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A*B   | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A2*B  | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B             | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A*B   | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A2*B  | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B             | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A*B   | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A2*B  | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B             | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A*B   | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A2*B  | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B             | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A*B   | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A2*B  | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B             | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A*B   | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A2*B  | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B             | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A*B   | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A2*B  | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B             | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A*B   | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A2*B  | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B             | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A*B   | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A2*B  | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B             | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A*B   | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A2*B  | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B             | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A*B   | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A2*B  | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B             | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A*B   | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A2*B  | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B             | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A*B   | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A2*B  | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B             | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A*B   | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A2*B  | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A''*B            | 18     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A*B2  | 15     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B''           | 18     | 18     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A2*B2 | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A''*B            | 18     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A*B2  | 15     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B''           | 18     | 18     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A2*B2 | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A''*B            | 18     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A*B2  | 15     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B''           | 18     | 18     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A2*B2 | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A''*B            | 18     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A*B2  | 15     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B''           | 18     | 18     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A2*B2 | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A''*B            | 18     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A*B2  | 15     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B''           | 18     | 18     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A2*B2 | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A''*B            | 18     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A*B2  | 15     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B''           | 18     | 18     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A2*B2 | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A''*B            | 18     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A*B2  | 15     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B''           | 18     | 18     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A2*B2 | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | (A2*(B:0x64))'   | 27     | 8      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|krnl_vaddmul | A2*(B:0x147b)    | 16     | 14     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A*B2  | 17     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*(B:0x147b)    | 18     | 14     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A2*B  | 18     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B             | 18     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A*B2  | 16     | 12     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|krnl_vaddmul | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|krnl_vaddmul | (PCIN>>17)+A2*B2 | 18     | 12     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
++-------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:55 ; elapsed = 00:03:08 . Memory (MB): peak = 4167.145 ; gain = 935.582 ; free physical = 42954 ; free virtual = 470940
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+INFO: [Common 17-14] Message 'Synth 8-6779' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:32 ; elapsed = 00:04:51 . Memory (MB): peak = 4637.551 ; gain = 1405.988 ; free physical = 41400 ; free virtual = 469429
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++---------------------------------------------+--------------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                                  | RTL Object         | PORT A (Depth x Width) | W | R | PORT B (Depth x Width)  | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++---------------------------------------------+--------------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+-----------------+
+|inst/i_1/\gmem1_m_axi_U/bus_write            | buff_wdata/mem_reg | 256 x 1152(READ_FIRST) | W |   | 256 x 1152(WRITE_FIRST) |   | R | Port A and B     | 0      | 16     |                 | 
+|inst/i_0/\gmem0_m_axi_U/bus_read /buff_rdata | mem_reg            | 256 x 1027(READ_FIRST) | W |   | 256 x 1027(WRITE_FIRST) |   | R | Port A and B     | 1      | 14     |                 | 
++---------------------------------------------+--------------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/bus_write/buff_wdata/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/bus_write/buff_wdata/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/bus_write/buff_wdata/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/bus_write/buff_wdata/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/bus_write/buff_wdata/mem_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/bus_write/buff_wdata/mem_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/bus_write/buff_wdata/mem_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/bus_write/buff_wdata/mem_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/bus_write/buff_wdata/mem_reg_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/bus_write/buff_wdata/mem_reg_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/bus_write/buff_wdata/mem_reg_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/bus_write/buff_wdata/mem_reg_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/bus_write/buff_wdata/mem_reg_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/bus_write/buff_wdata/mem_reg_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/bus_write/buff_wdata/mem_reg_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/bus_write/buff_wdata/mem_reg_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_read/buff_rdata/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_read/buff_rdata/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_read/buff_rdata/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_read/buff_rdata/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_read/buff_rdata/mem_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_read/buff_rdata/mem_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_read/buff_rdata/mem_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_read/buff_rdata/mem_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_read/buff_rdata/mem_reg_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_read/buff_rdata/mem_reg_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_read/buff_rdata/mem_reg_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_read/buff_rdata/mem_reg_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_read/buff_rdata/mem_reg_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_read/buff_rdata/mem_reg_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_read/buff_rdata/mem_reg_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:59 ; elapsed = 00:05:20 . Memory (MB): peak = 4637.551 ; gain = 1405.988 ; free physical = 41476 ; free virtual = 469493
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:04:13 ; elapsed = 00:05:34 . Memory (MB): peak = 4637.551 ; gain = 1405.988 ; free physical = 41473 ; free virtual = 469491
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:13 ; elapsed = 00:05:35 . Memory (MB): peak = 4637.551 ; gain = 1405.988 ; free physical = 41472 ; free virtual = 469490
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:19 ; elapsed = 00:05:41 . Memory (MB): peak = 4637.551 ; gain = 1405.988 ; free physical = 41497 ; free virtual = 469515
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:19 ; elapsed = 00:05:41 . Memory (MB): peak = 4637.551 ; gain = 1405.988 ; free physical = 41495 ; free virtual = 469513
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:23 ; elapsed = 00:05:45 . Memory (MB): peak = 4637.551 ; gain = 1405.988 ; free physical = 41444 ; free virtual = 469461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:23 ; elapsed = 00:05:45 . Memory (MB): peak = 4637.551 ; gain = 1405.988 ; free physical = 41444 ; free virtual = 469461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------+-----------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name  | RTL Name                                                                                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------+-----------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|krnl_vaddmul | grp_krnl_vaddmul_Pipeline_L_vops_vops1_fu_116/icmp_ln57_reg_1625_pp0_iter18_reg_reg[0]  | 17     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|krnl_vaddmul | grp_krnl_vaddmul_Pipeline_L_vops_vops1_fu_116/icmp_ln57_reg_1625_pp0_iter37_reg_reg[0]  | 18     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|krnl_vaddmul | grp_krnl_vaddmul_Pipeline_L_vops_vops1_fu_116/icmp_ln62_reg_1689_pp0_iter18_reg_reg[0]  | 17     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|krnl_vaddmul | grp_krnl_vaddmul_Pipeline_L_vops_vops1_fu_116/icmp_ln61_reg_1664_pp0_iter18_reg_reg[0]  | 17     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|krnl_vaddmul | grp_krnl_vaddmul_Pipeline_L_vops_vops1_fu_116/trunc_ln61_reg_1644_pp0_iter18_reg_reg[6] | 18     | 7     | NO           | NO                 | YES               | 0      | 7       | 
+|krnl_vaddmul | grp_krnl_vaddmul_Pipeline_L_vops_vops1_fu_116/zext_ln61_reg_1652_pp0_iter19_reg_reg[34] | 18     | 35    | NO           | NO                 | YES               | 0      | 35      | 
+|krnl_vaddmul | grp_krnl_vaddmul_Pipeline_L_vops_vops1_fu_116/add_ln61_1_reg_1659_pp0_iter19_reg_reg[6] | 18     | 7     | NO           | NO                 | YES               | 0      | 7       | 
+|krnl_vaddmul | grp_krnl_vaddmul_Pipeline_L_vops_vops1_fu_116/add_ln62_1_reg_1684_pp0_iter19_reg_reg[6] | 18     | 7     | NO           | NO                 | YES               | 0      | 7       | 
++-------------+-----------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+-------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name    | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+-------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | mem_reg[68] | 8      | 8          | 0      | 24      | 16     | 8      | 0      | 
+|dsrl__1     | mem_reg[68] | 96     | 96         | 0      | 288     | 192    | 96     | 0      | 
+|dsrl__2     | mem_reg[14] | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__3     | mem_reg[68] | 2      | 2          | 0      | 6       | 4      | 2      | 0      | 
+|dsrl__4     | mem_reg[15] | 72     | 72         | 72     | 0       | 0      | 0      | 0      | 
+|dsrl__5     | mem_reg[15] | 1153   | 1153       | 1153   | 0       | 0      | 0      | 0      | 
+|dsrl__6     | mem_reg[68] | 8      | 8          | 0      | 24      | 16     | 8      | 0      | 
+|dsrl__7     | mem_reg[68] | 96     | 96         | 0      | 288     | 192    | 96     | 0      | 
+|dsrl__8     | mem_reg[14] | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__9     | mem_reg[68] | 2      | 2          | 0      | 6       | 4      | 2      | 0      | 
+|dsrl__10    | mem_reg[15] | 72     | 72         | 72     | 0       | 0      | 0      | 0      | 
+|dsrl__11    | mem_reg[15] | 1153   | 1153       | 1153   | 0       | 0      | 0      | 0      | 
++------------+-------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |   286|
+|2     |DSP_ALU         |    84|
+|3     |DSP_A_B_DATA    |    84|
+|8     |DSP_C_DATA      |    84|
+|10    |DSP_MULTIPLIER  |    84|
+|11    |DSP_M_DATA      |    84|
+|12    |DSP_OUTPUT      |    84|
+|14    |DSP_PREADD      |    84|
+|15    |DSP_PREADD_DATA |    84|
+|16    |LUT1            |    61|
+|17    |LUT2            |  2466|
+|18    |LUT3            |  6470|
+|19    |LUT4            |  2031|
+|20    |LUT5            |  3859|
+|21    |LUT6            | 11140|
+|22    |MUXF7           |   124|
+|23    |RAMB18E2        |     1|
+|24    |RAMB36E2        |    30|
+|25    |SRL16E          |  1219|
+|26    |SRLC32E         |   423|
+|27    |FDRE            | 23860|
+|28    |FDSE            |   126|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:23 ; elapsed = 00:05:45 . Memory (MB): peak = 4637.551 ; gain = 1405.988 ; free physical = 41444 ; free virtual = 469461
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 21215 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:03 ; elapsed = 00:05:19 . Memory (MB): peak = 4641.461 ; gain = 976.055 ; free physical = 43455 ; free virtual = 471472
+Synthesis Optimization Complete : Time (s): cpu = 00:04:28 ; elapsed = 00:05:51 . Memory (MB): peak = 4641.461 ; gain = 1409.898 ; free physical = 43403 ; free virtual = 471420
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.66 ; elapsed = 00:00:00.65 . Memory (MB): peak = 4641.461 ; gain = 0.000 ; free physical = 43271 ; free virtual = 471289
+INFO: [Netlist 29-17] Analyzing 494 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4641.461 ; gain = 0.000 ; free physical = 43429 ; free virtual = 471447
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 84 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 84 instances
+
+Synth Design complete, checksum: f27e5f43
+INFO: [Common 17-83] Releasing license: Synthesis
+152 Infos, 217 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:04:51 ; elapsed = 00:06:22 . Memory (MB): peak = 4641.461 ; gain = 1903.551 ; free physical = 43721 ; free virtual = 471739
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint '/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_krnl_vaddmul_4_0_synth_1/pfm_dynamic_krnl_vaddmul_4_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 4641.461 ; gain = 0.000 ; free physical = 43830 ; free virtual = 471855
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP pfm_dynamic_krnl_vaddmul_4_0, cache-ID = 6da6ed2c7ee27394
+INFO: [Coretcl 2-1174] Renamed 54 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_25.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_krnl_vaddmul_4_0_synth_1/pfm_dynamic_krnl_vaddmul_4_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 4641.461 ; gain = 0.000 ; free physical = 43702 ; free virtual = 471767
+INFO: [runtcl-4] Executing : report_utilization -file pfm_dynamic_krnl_vaddmul_4_0_utilization_synth.rpt -pb pfm_dynamic_krnl_vaddmul_4_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 17 09:11:00 2024...

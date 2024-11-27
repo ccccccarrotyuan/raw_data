@@ -1,0 +1,688 @@
+
+*** Running vivado
+    with args -log pfm_dynamic_hmss_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source pfm_dynamic_hmss_0_0.tcl
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source pfm_dynamic_hmss_0_0.tcl -notrace
+INFO: Dispatch client connection id - 34147
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 2740.648 ; gain = 0.023 ; free physical = 55196 ; free virtual = 490532
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/int/xo/ip_repo/xilinx_com_hls_krnl_vaddmul_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/.local/hw_platform/iprepo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2021.2/data/cache/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2021.2/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.2/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:00.80 ; elapsed = 00:00:06 . Memory (MB): peak = 2740.648 ; gain = 0.000 ; free physical = 55005 ; free virtual = 490350
+Command: synth_design -top pfm_dynamic_hmss_0_0 -part xcu280-fsvh2892-2L-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Device 21-403] Loading part xcu280-fsvh2892-2L-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3987951
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3610.969 ; gain = 277.668 ; free physical = 49226 ; free virtual = 484836
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_hmss_0_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/synth/pfm_dynamic_hmss_0_0.v:80]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:10]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_axi_apb_bridge_inst_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_axi_apb_bridge_inst_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_axi_apb_bridge_inst_0' (1#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_axi_apb_bridge_inst_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_hbm_inst_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_hbm_inst_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_hbm_inst_0' (2#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_hbm_inst_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'AXI_00_RDATA_PARITY' of module 'bd_5dca_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:1856]
+WARNING: [Synth 8-7071] port 'AXI_00_RID' of module 'bd_5dca_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:1856]
+WARNING: [Synth 8-7071] port 'AXI_00_BID' of module 'bd_5dca_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:1856]
+WARNING: [Synth 8-7071] port 'AXI_01_RDATA_PARITY' of module 'bd_5dca_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:1856]
+WARNING: [Synth 8-7071] port 'AXI_01_RID' of module 'bd_5dca_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:1856]
+WARNING: [Synth 8-7071] port 'AXI_01_BID' of module 'bd_5dca_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:1856]
+WARNING: [Synth 8-7071] port 'AXI_04_RDATA_PARITY' of module 'bd_5dca_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:1856]
+WARNING: [Synth 8-7071] port 'AXI_04_RID' of module 'bd_5dca_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:1856]
+WARNING: [Synth 8-7071] port 'AXI_04_BID' of module 'bd_5dca_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:1856]
+WARNING: [Synth 8-7071] port 'AXI_05_RDATA_PARITY' of module 'bd_5dca_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:1856]
+WARNING: [Synth 8-7071] port 'AXI_05_RID' of module 'bd_5dca_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:1856]
+WARNING: [Synth 8-7071] port 'AXI_05_BID' of module 'bd_5dca_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:1856]
+WARNING: [Synth 8-7071] port 'AXI_06_RDATA_PARITY' of module 'bd_5dca_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:1856]
+WARNING: [Synth 8-7071] port 'AXI_06_RID' of module 'bd_5dca_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:1856]
+WARNING: [Synth 8-7071] port 'AXI_06_BID' of module 'bd_5dca_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:1856]
+WARNING: [Synth 8-7071] port 'AXI_08_RDATA_PARITY' of module 'bd_5dca_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:1856]
+WARNING: [Synth 8-7071] port 'AXI_08_RID' of module 'bd_5dca_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:1856]
+WARNING: [Synth 8-7071] port 'AXI_08_BID' of module 'bd_5dca_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:1856]
+WARNING: [Synth 8-7071] port 'AXI_09_RDATA_PARITY' of module 'bd_5dca_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:1856]
+WARNING: [Synth 8-7071] port 'AXI_09_RID' of module 'bd_5dca_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:1856]
+WARNING: [Synth 8-7071] port 'AXI_09_BID' of module 'bd_5dca_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:1856]
+WARNING: [Synth 8-7071] port 'AXI_12_RDATA_PARITY' of module 'bd_5dca_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:1856]
+WARNING: [Synth 8-7071] port 'AXI_12_RID' of module 'bd_5dca_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:1856]
+WARNING: [Synth 8-7071] port 'AXI_12_BID' of module 'bd_5dca_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:1856]
+WARNING: [Synth 8-7071] port 'AXI_13_RDATA_PARITY' of module 'bd_5dca_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:1856]
+WARNING: [Synth 8-7071] port 'AXI_13_RID' of module 'bd_5dca_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:1856]
+WARNING: [Synth 8-7071] port 'AXI_13_BID' of module 'bd_5dca_hbm_inst_0' is unconnected for instance 'hbm_inst' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:1856]
+WARNING: [Synth 8-7023] instance 'hbm_inst' of module 'bd_5dca_hbm_inst_0' has 311 connections declared, but only 284 given [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:1856]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_hbm_reset_sync_SLR0_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_hbm_reset_sync_SLR0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_hbm_reset_sync_SLR0_0' (3#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_hbm_reset_sync_SLR0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_5dca_hbm_reset_sync_SLR0_0' is unconnected for instance 'hbm_reset_sync_SLR0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2141]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_5dca_hbm_reset_sync_SLR0_0' is unconnected for instance 'hbm_reset_sync_SLR0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2141]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_5dca_hbm_reset_sync_SLR0_0' is unconnected for instance 'hbm_reset_sync_SLR0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2141]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_5dca_hbm_reset_sync_SLR0_0' is unconnected for instance 'hbm_reset_sync_SLR0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2141]
+WARNING: [Synth 8-7023] instance 'hbm_reset_sync_SLR0' of module 'bd_5dca_hbm_reset_sync_SLR0_0' has 10 connections declared, but only 6 given [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2141]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_hbm_reset_sync_SLR2_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_hbm_reset_sync_SLR2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_hbm_reset_sync_SLR2_0' (4#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_hbm_reset_sync_SLR2_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_5dca_hbm_reset_sync_SLR2_0' is unconnected for instance 'hbm_reset_sync_SLR2' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2148]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_5dca_hbm_reset_sync_SLR2_0' is unconnected for instance 'hbm_reset_sync_SLR2' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2148]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_5dca_hbm_reset_sync_SLR2_0' is unconnected for instance 'hbm_reset_sync_SLR2' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2148]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_5dca_hbm_reset_sync_SLR2_0' is unconnected for instance 'hbm_reset_sync_SLR2' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2148]
+WARNING: [Synth 8-7023] instance 'hbm_reset_sync_SLR2' of module 'bd_5dca_hbm_reset_sync_SLR2_0' has 10 connections declared, but only 6 given [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2148]
+INFO: [Synth 8-6157] synthesizing module 'init_logic_imp_156LN22' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:3298]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_init_concat_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_31/synth/bd_5dca_init_concat_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (5#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_init_concat_0' (6#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_31/synth/bd_5dca_init_concat_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_init_reduce_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_init_reduce_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_init_reduce_0' (7#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_init_reduce_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'init_logic_imp_156LN22' (8#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:3298]
+INFO: [Synth 8-6157] synthesizing module 'path_0_imp_D0DQII' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:3318]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_interconnect1_0_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_interconnect1_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_interconnect1_0_0' (9#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_interconnect1_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_slice1_0_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_slice1_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_slice1_0_0' (10#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_slice1_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awsize' of module 'bd_5dca_slice1_0_0' is unconnected for instance 'slice1_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:3696]
+WARNING: [Synth 8-7071] port 'm_axi_arsize' of module 'bd_5dca_slice1_0_0' is unconnected for instance 'slice1_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:3696]
+WARNING: [Synth 8-7023] instance 'slice1_0' of module 'bd_5dca_slice1_0_0' has 68 connections declared, but only 66 given [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:3696]
+INFO: [Synth 8-6155] done synthesizing module 'path_0_imp_D0DQII' (11#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:3318]
+INFO: [Synth 8-6157] synthesizing module 'path_1_imp_1QSHYAS' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:4659]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_interconnect2_1_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_interconnect2_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_interconnect2_1_0' (12#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_interconnect2_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_slice2_1_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_slice2_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_slice2_1_0' (13#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_slice2_1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awsize' of module 'bd_5dca_slice2_1_0' is unconnected for instance 'slice2_1' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:5037]
+WARNING: [Synth 8-7071] port 'm_axi_arsize' of module 'bd_5dca_slice2_1_0' is unconnected for instance 'slice2_1' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:5037]
+WARNING: [Synth 8-7023] instance 'slice2_1' of module 'bd_5dca_slice2_1_0' has 68 connections declared, but only 66 given [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:5037]
+INFO: [Synth 8-6155] done synthesizing module 'path_1_imp_1QSHYAS' (14#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:4659]
+INFO: [Synth 8-6157] synthesizing module 'path_12_imp_ZKKHAF' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:3765]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_interconnect7_12_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_interconnect7_12_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_interconnect7_12_0' (15#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_interconnect7_12_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_slice7_12_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_slice7_12_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_slice7_12_0' (16#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_slice7_12_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awsize' of module 'bd_5dca_slice7_12_0' is unconnected for instance 'slice7_12' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:4143]
+WARNING: [Synth 8-7071] port 'm_axi_arsize' of module 'bd_5dca_slice7_12_0' is unconnected for instance 'slice7_12' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:4143]
+WARNING: [Synth 8-7023] instance 'slice7_12' of module 'bd_5dca_slice7_12_0' has 68 connections declared, but only 66 given [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:4143]
+INFO: [Synth 8-6155] done synthesizing module 'path_12_imp_ZKKHAF' (17#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:3765]
+INFO: [Synth 8-6157] synthesizing module 'path_13_imp_L94V89' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:4212]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_interconnect8_13_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_interconnect8_13_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_interconnect8_13_0' (18#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_interconnect8_13_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_slice8_13_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_slice8_13_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_slice8_13_0' (19#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_slice8_13_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awsize' of module 'bd_5dca_slice8_13_0' is unconnected for instance 'slice8_13' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:4590]
+WARNING: [Synth 8-7071] port 'm_axi_arsize' of module 'bd_5dca_slice8_13_0' is unconnected for instance 'slice8_13' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:4590]
+WARNING: [Synth 8-7023] instance 'slice8_13' of module 'bd_5dca_slice8_13_0' has 68 connections declared, but only 66 given [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:4590]
+INFO: [Synth 8-6155] done synthesizing module 'path_13_imp_L94V89' (20#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:4212]
+INFO: [Synth 8-6157] synthesizing module 'path_4_imp_1BCVI4G' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:5106]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_interconnect3_4_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_interconnect3_4_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_interconnect3_4_0' (21#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_interconnect3_4_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_slice3_4_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_slice3_4_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_slice3_4_0' (22#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_slice3_4_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awsize' of module 'bd_5dca_slice3_4_0' is unconnected for instance 'slice3_4' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:5484]
+WARNING: [Synth 8-7071] port 'm_axi_arsize' of module 'bd_5dca_slice3_4_0' is unconnected for instance 'slice3_4' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:5484]
+WARNING: [Synth 8-7023] instance 'slice3_4' of module 'bd_5dca_slice3_4_0' has 68 connections declared, but only 66 given [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:5484]
+INFO: [Synth 8-6155] done synthesizing module 'path_4_imp_1BCVI4G' (23#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:5106]
+INFO: [Synth 8-6157] synthesizing module 'path_5_imp_SB0BHA' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:5553]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_interconnect4_5_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_interconnect4_5_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_interconnect4_5_0' (24#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_interconnect4_5_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_slice4_5_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_slice4_5_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_slice4_5_0' (25#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_slice4_5_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awsize' of module 'bd_5dca_slice4_5_0' is unconnected for instance 'slice4_5' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:5931]
+WARNING: [Synth 8-7071] port 'm_axi_arsize' of module 'bd_5dca_slice4_5_0' is unconnected for instance 'slice4_5' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:5931]
+WARNING: [Synth 8-7023] instance 'slice4_5' of module 'bd_5dca_slice4_5_0' has 68 connections declared, but only 66 given [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:5931]
+INFO: [Synth 8-6155] done synthesizing module 'path_5_imp_SB0BHA' (26#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:5553]
+INFO: [Synth 8-6157] synthesizing module 'path_6_imp_1SIT5H9' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:6000]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_interconnect0_6_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_interconnect0_6_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_interconnect0_6_0' (27#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_interconnect0_6_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_slice0_6_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_slice0_6_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_slice0_6_0' (28#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_slice0_6_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awsize' of module 'bd_5dca_slice0_6_0' is unconnected for instance 'slice0_6' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:6398]
+WARNING: [Synth 8-7071] port 'm_axi_arsize' of module 'bd_5dca_slice0_6_0' is unconnected for instance 'slice0_6' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:6398]
+WARNING: [Synth 8-7023] instance 'slice0_6' of module 'bd_5dca_slice0_6_0' has 68 connections declared, but only 66 given [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:6398]
+INFO: [Synth 8-6155] done synthesizing module 'path_6_imp_1SIT5H9' (29#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:6000]
+INFO: [Synth 8-6157] synthesizing module 'path_8_imp_1Y76OJZ' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:6467]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_interconnect5_8_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_interconnect5_8_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_interconnect5_8_0' (30#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_interconnect5_8_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_slice5_8_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_slice5_8_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_slice5_8_0' (31#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_slice5_8_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awsize' of module 'bd_5dca_slice5_8_0' is unconnected for instance 'slice5_8' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:6845]
+WARNING: [Synth 8-7071] port 'm_axi_arsize' of module 'bd_5dca_slice5_8_0' is unconnected for instance 'slice5_8' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:6845]
+WARNING: [Synth 8-7023] instance 'slice5_8' of module 'bd_5dca_slice5_8_0' has 68 connections declared, but only 66 given [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:6845]
+INFO: [Synth 8-6155] done synthesizing module 'path_8_imp_1Y76OJZ' (32#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:6467]
+INFO: [Synth 8-6157] synthesizing module 'path_9_imp_DS4AXD' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:6914]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_interconnect6_9_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_interconnect6_9_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_interconnect6_9_0' (33#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_interconnect6_9_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_slice6_9_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_slice6_9_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_slice6_9_0' (34#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_slice6_9_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awsize' of module 'bd_5dca_slice6_9_0' is unconnected for instance 'slice6_9' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:7292]
+WARNING: [Synth 8-7071] port 'm_axi_arsize' of module 'bd_5dca_slice6_9_0' is unconnected for instance 'slice6_9' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:7292]
+WARNING: [Synth 8-7023] instance 'slice6_9' of module 'bd_5dca_slice6_9_0' has 68 connections declared, but only 66 given [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:7292]
+INFO: [Synth 8-6155] done synthesizing module 'path_9_imp_DS4AXD' (35#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:6914]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_vip_S00_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_vip_S00_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_vip_S00_0' (36#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_vip_S00_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awlock' of module 'bd_5dca_vip_S00_0' is unconnected for instance 'vip_S00' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2783]
+WARNING: [Synth 8-7071] port 'm_axi_awcache' of module 'bd_5dca_vip_S00_0' is unconnected for instance 'vip_S00' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2783]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'bd_5dca_vip_S00_0' is unconnected for instance 'vip_S00' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2783]
+WARNING: [Synth 8-7071] port 'm_axi_awqos' of module 'bd_5dca_vip_S00_0' is unconnected for instance 'vip_S00' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2783]
+WARNING: [Synth 8-7071] port 'm_axi_arlock' of module 'bd_5dca_vip_S00_0' is unconnected for instance 'vip_S00' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2783]
+WARNING: [Synth 8-7071] port 'm_axi_arcache' of module 'bd_5dca_vip_S00_0' is unconnected for instance 'vip_S00' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2783]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'bd_5dca_vip_S00_0' is unconnected for instance 'vip_S00' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2783]
+WARNING: [Synth 8-7071] port 'm_axi_arqos' of module 'bd_5dca_vip_S00_0' is unconnected for instance 'vip_S00' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2783]
+WARNING: [Synth 8-7023] instance 'vip_S00' of module 'bd_5dca_vip_S00_0' has 64 connections declared, but only 56 given [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2783]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_vip_S01_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_vip_S01_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_vip_S01_0' (37#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_vip_S01_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awlock' of module 'bd_5dca_vip_S01_0' is unconnected for instance 'vip_S01' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2840]
+WARNING: [Synth 8-7071] port 'm_axi_awcache' of module 'bd_5dca_vip_S01_0' is unconnected for instance 'vip_S01' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2840]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'bd_5dca_vip_S01_0' is unconnected for instance 'vip_S01' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2840]
+WARNING: [Synth 8-7071] port 'm_axi_awqos' of module 'bd_5dca_vip_S01_0' is unconnected for instance 'vip_S01' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2840]
+WARNING: [Synth 8-7071] port 'm_axi_arlock' of module 'bd_5dca_vip_S01_0' is unconnected for instance 'vip_S01' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2840]
+WARNING: [Synth 8-7071] port 'm_axi_arcache' of module 'bd_5dca_vip_S01_0' is unconnected for instance 'vip_S01' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2840]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'bd_5dca_vip_S01_0' is unconnected for instance 'vip_S01' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2840]
+WARNING: [Synth 8-7071] port 'm_axi_arqos' of module 'bd_5dca_vip_S01_0' is unconnected for instance 'vip_S01' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2840]
+WARNING: [Synth 8-7023] instance 'vip_S01' of module 'bd_5dca_vip_S01_0' has 64 connections declared, but only 56 given [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2840]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_vip_S02_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_vip_S02_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_vip_S02_0' (38#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_vip_S02_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awlock' of module 'bd_5dca_vip_S02_0' is unconnected for instance 'vip_S02' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2897]
+WARNING: [Synth 8-7071] port 'm_axi_awcache' of module 'bd_5dca_vip_S02_0' is unconnected for instance 'vip_S02' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2897]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'bd_5dca_vip_S02_0' is unconnected for instance 'vip_S02' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2897]
+WARNING: [Synth 8-7071] port 'm_axi_awqos' of module 'bd_5dca_vip_S02_0' is unconnected for instance 'vip_S02' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2897]
+WARNING: [Synth 8-7071] port 'm_axi_arlock' of module 'bd_5dca_vip_S02_0' is unconnected for instance 'vip_S02' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2897]
+WARNING: [Synth 8-7071] port 'm_axi_arcache' of module 'bd_5dca_vip_S02_0' is unconnected for instance 'vip_S02' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2897]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'bd_5dca_vip_S02_0' is unconnected for instance 'vip_S02' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2897]
+WARNING: [Synth 8-7071] port 'm_axi_arqos' of module 'bd_5dca_vip_S02_0' is unconnected for instance 'vip_S02' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2897]
+WARNING: [Synth 8-7023] instance 'vip_S02' of module 'bd_5dca_vip_S02_0' has 64 connections declared, but only 56 given [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2897]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_vip_S03_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_vip_S03_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_vip_S03_0' (39#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_vip_S03_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awlock' of module 'bd_5dca_vip_S03_0' is unconnected for instance 'vip_S03' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2954]
+WARNING: [Synth 8-7071] port 'm_axi_awcache' of module 'bd_5dca_vip_S03_0' is unconnected for instance 'vip_S03' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2954]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'bd_5dca_vip_S03_0' is unconnected for instance 'vip_S03' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2954]
+WARNING: [Synth 8-7071] port 'm_axi_awqos' of module 'bd_5dca_vip_S03_0' is unconnected for instance 'vip_S03' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2954]
+WARNING: [Synth 8-7071] port 'm_axi_arlock' of module 'bd_5dca_vip_S03_0' is unconnected for instance 'vip_S03' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2954]
+WARNING: [Synth 8-7071] port 'm_axi_arcache' of module 'bd_5dca_vip_S03_0' is unconnected for instance 'vip_S03' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2954]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'bd_5dca_vip_S03_0' is unconnected for instance 'vip_S03' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2954]
+WARNING: [Synth 8-7071] port 'm_axi_arqos' of module 'bd_5dca_vip_S03_0' is unconnected for instance 'vip_S03' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2954]
+WARNING: [Synth 8-7023] instance 'vip_S03' of module 'bd_5dca_vip_S03_0' has 64 connections declared, but only 56 given [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:2954]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_vip_S04_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_vip_S04_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_vip_S04_0' (40#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_vip_S04_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awlock' of module 'bd_5dca_vip_S04_0' is unconnected for instance 'vip_S04' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:3011]
+WARNING: [Synth 8-7071] port 'm_axi_awcache' of module 'bd_5dca_vip_S04_0' is unconnected for instance 'vip_S04' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:3011]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'bd_5dca_vip_S04_0' is unconnected for instance 'vip_S04' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:3011]
+WARNING: [Synth 8-7071] port 'm_axi_awqos' of module 'bd_5dca_vip_S04_0' is unconnected for instance 'vip_S04' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:3011]
+WARNING: [Synth 8-7071] port 'm_axi_arlock' of module 'bd_5dca_vip_S04_0' is unconnected for instance 'vip_S04' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:3011]
+WARNING: [Synth 8-7071] port 'm_axi_arcache' of module 'bd_5dca_vip_S04_0' is unconnected for instance 'vip_S04' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:3011]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'bd_5dca_vip_S04_0' is unconnected for instance 'vip_S04' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:3011]
+WARNING: [Synth 8-7071] port 'm_axi_arqos' of module 'bd_5dca_vip_S04_0' is unconnected for instance 'vip_S04' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:3011]
+WARNING: [Synth 8-7023] instance 'vip_S04' of module 'bd_5dca_vip_S04_0' has 64 connections declared, but only 56 given [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:3011]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_vip_S05_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_vip_S05_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_vip_S05_0' (41#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_vip_S05_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awlock' of module 'bd_5dca_vip_S05_0' is unconnected for instance 'vip_S05' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:3068]
+WARNING: [Synth 8-7071] port 'm_axi_awcache' of module 'bd_5dca_vip_S05_0' is unconnected for instance 'vip_S05' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:3068]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'bd_5dca_vip_S05_0' is unconnected for instance 'vip_S05' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:3068]
+WARNING: [Synth 8-7071] port 'm_axi_awqos' of module 'bd_5dca_vip_S05_0' is unconnected for instance 'vip_S05' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:3068]
+WARNING: [Synth 8-7071] port 'm_axi_arlock' of module 'bd_5dca_vip_S05_0' is unconnected for instance 'vip_S05' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:3068]
+WARNING: [Synth 8-7071] port 'm_axi_arcache' of module 'bd_5dca_vip_S05_0' is unconnected for instance 'vip_S05' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:3068]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'bd_5dca_vip_S05_0' is unconnected for instance 'vip_S05' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:3068]
+INFO: [Common 17-14] Message 'Synth 8-7071' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7023] instance 'vip_S05' of module 'bd_5dca_vip_S05_0' has 64 connections declared, but only 56 given [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:3068]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_vip_S06_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_vip_S06_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_vip_S06_0' (42#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_vip_S06_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'vip_S06' of module 'bd_5dca_vip_S06_0' has 64 connections declared, but only 56 given [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:3125]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_vip_S07_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_vip_S07_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_vip_S07_0' (43#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_vip_S07_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'vip_S07' of module 'bd_5dca_vip_S07_0' has 64 connections declared, but only 56 given [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:3182]
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_vip_S08_0' [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_vip_S08_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_vip_S08_0' (44#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/.Xil/Vivado-3987468-hacc-gpu0/realtime/bd_5dca_vip_S08_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'vip_S08' of module 'bd_5dca_vip_S08_0' has 64 connections declared, but only 56 given [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:3239]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca' (45#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/synth/bd_5dca.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_hmss_0_0' (46#1) [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/synth/pfm_dynamic_hmss_0_0.v:80]
+WARNING: [Synth 8-7129] Port In1[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In2[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In3[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In98[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3700.875 ; gain = 367.574 ; free physical = 49624 ; free virtual = 485267
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 3715.719 ; gain = 382.418 ; free physical = 49576 ; free virtual = 485229
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 3715.719 ; gain = 382.418 ; free physical = 49576 ; free virtual = 485229
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.18 . Memory (MB): peak = 3715.719 ; gain = 0.000 ; free physical = 49543 ; free virtual = 485204
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_0/bd_5dca_hbm_inst_0/bd_5dca_hbm_inst_0_in_context.xdc] for cell 'inst/hbm_inst'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_0/bd_5dca_hbm_inst_0/bd_5dca_hbm_inst_0_in_context.xdc] for cell 'inst/hbm_inst'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_1/bd_5dca_hbm_reset_sync_SLR0_0/bd_5dca_hbm_reset_sync_SLR0_0_in_context.xdc] for cell 'inst/hbm_reset_sync_SLR0'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_1/bd_5dca_hbm_reset_sync_SLR0_0/bd_5dca_hbm_reset_sync_SLR0_0_in_context.xdc] for cell 'inst/hbm_reset_sync_SLR0'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_2/bd_5dca_hbm_reset_sync_SLR2_0/bd_5dca_hbm_reset_sync_SLR0_0_in_context.xdc] for cell 'inst/hbm_reset_sync_SLR2'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_2/bd_5dca_hbm_reset_sync_SLR2_0/bd_5dca_hbm_reset_sync_SLR0_0_in_context.xdc] for cell 'inst/hbm_reset_sync_SLR2'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_5/bd_5dca_vip_S01_0/bd_5dca_vip_S01_0_in_context.xdc] for cell 'inst/vip_S01'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_5/bd_5dca_vip_S01_0/bd_5dca_vip_S01_0_in_context.xdc] for cell 'inst/vip_S01'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_8/bd_5dca_vip_S02_0/bd_5dca_vip_S01_0_in_context.xdc] for cell 'inst/vip_S02'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_8/bd_5dca_vip_S02_0/bd_5dca_vip_S01_0_in_context.xdc] for cell 'inst/vip_S02'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_11/bd_5dca_vip_S03_0/bd_5dca_vip_S01_0_in_context.xdc] for cell 'inst/vip_S03'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_11/bd_5dca_vip_S03_0/bd_5dca_vip_S01_0_in_context.xdc] for cell 'inst/vip_S03'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_14/bd_5dca_vip_S04_0/bd_5dca_vip_S01_0_in_context.xdc] for cell 'inst/vip_S04'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_14/bd_5dca_vip_S04_0/bd_5dca_vip_S01_0_in_context.xdc] for cell 'inst/vip_S04'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_17/bd_5dca_vip_S00_0/bd_5dca_vip_S01_0_in_context.xdc] for cell 'inst/vip_S00'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_17/bd_5dca_vip_S00_0/bd_5dca_vip_S01_0_in_context.xdc] for cell 'inst/vip_S00'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_20/bd_5dca_vip_S05_0/bd_5dca_vip_S01_0_in_context.xdc] for cell 'inst/vip_S05'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_20/bd_5dca_vip_S05_0/bd_5dca_vip_S01_0_in_context.xdc] for cell 'inst/vip_S05'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_23/bd_5dca_vip_S06_0/bd_5dca_vip_S01_0_in_context.xdc] for cell 'inst/vip_S06'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_23/bd_5dca_vip_S06_0/bd_5dca_vip_S01_0_in_context.xdc] for cell 'inst/vip_S06'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_26/bd_5dca_vip_S07_0/bd_5dca_vip_S01_0_in_context.xdc] for cell 'inst/vip_S07'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_26/bd_5dca_vip_S07_0/bd_5dca_vip_S01_0_in_context.xdc] for cell 'inst/vip_S07'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_29/bd_5dca_vip_S08_0/bd_5dca_vip_S01_0_in_context.xdc] for cell 'inst/vip_S08'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_29/bd_5dca_vip_S08_0/bd_5dca_vip_S01_0_in_context.xdc] for cell 'inst/vip_S08'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_30/bd_5dca_axi_apb_bridge_inst_0/bd_5dca_axi_apb_bridge_inst_0_in_context.xdc] for cell 'inst/axi_apb_bridge_inst'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_30/bd_5dca_axi_apb_bridge_inst_0/bd_5dca_axi_apb_bridge_inst_0_in_context.xdc] for cell 'inst/axi_apb_bridge_inst'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_3/bd_5dca_interconnect1_0_0/bd_5dca_interconnect1_0_0_in_context.xdc] for cell 'inst/path_0/interconnect1_0'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_3/bd_5dca_interconnect1_0_0/bd_5dca_interconnect1_0_0_in_context.xdc] for cell 'inst/path_0/interconnect1_0'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_4/bd_5dca_slice1_0_0/bd_5dca_slice12_11_0_in_context.xdc] for cell 'inst/path_0/slice1_0'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_4/bd_5dca_slice1_0_0/bd_5dca_slice12_11_0_in_context.xdc] for cell 'inst/path_0/slice1_0'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_6/bd_5dca_interconnect2_1_0/bd_5dca_interconnect2_1_0_in_context.xdc] for cell 'inst/path_1/interconnect2_1'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_6/bd_5dca_interconnect2_1_0/bd_5dca_interconnect2_1_0_in_context.xdc] for cell 'inst/path_1/interconnect2_1'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_7/bd_5dca_slice2_1_0/bd_5dca_slice12_11_0_in_context.xdc] for cell 'inst/path_1/slice2_1'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_7/bd_5dca_slice2_1_0/bd_5dca_slice12_11_0_in_context.xdc] for cell 'inst/path_1/slice2_1'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_9/bd_5dca_interconnect3_4_0/bd_5dca_interconnect3_4_0_in_context.xdc] for cell 'inst/path_4/interconnect3_4'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_9/bd_5dca_interconnect3_4_0/bd_5dca_interconnect3_4_0_in_context.xdc] for cell 'inst/path_4/interconnect3_4'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_10/bd_5dca_slice3_4_0/bd_5dca_slice12_11_0_in_context.xdc] for cell 'inst/path_4/slice3_4'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_10/bd_5dca_slice3_4_0/bd_5dca_slice12_11_0_in_context.xdc] for cell 'inst/path_4/slice3_4'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_12/bd_5dca_interconnect4_5_0/bd_5dca_interconnect4_5_0_in_context.xdc] for cell 'inst/path_5/interconnect4_5'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_12/bd_5dca_interconnect4_5_0/bd_5dca_interconnect4_5_0_in_context.xdc] for cell 'inst/path_5/interconnect4_5'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_13/bd_5dca_slice4_5_0/bd_5dca_slice12_11_0_in_context.xdc] for cell 'inst/path_5/slice4_5'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_13/bd_5dca_slice4_5_0/bd_5dca_slice12_11_0_in_context.xdc] for cell 'inst/path_5/slice4_5'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_15/bd_5dca_interconnect0_6_0/bd_5dca_interconnect0_6_0_in_context.xdc] for cell 'inst/path_6/interconnect0_6'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_15/bd_5dca_interconnect0_6_0/bd_5dca_interconnect0_6_0_in_context.xdc] for cell 'inst/path_6/interconnect0_6'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_16/bd_5dca_slice0_6_0/bd_5dca_slice0_12_0_in_context.xdc] for cell 'inst/path_6/slice0_6'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_16/bd_5dca_slice0_6_0/bd_5dca_slice0_12_0_in_context.xdc] for cell 'inst/path_6/slice0_6'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_18/bd_5dca_interconnect5_8_0/bd_5dca_interconnect5_8_0_in_context.xdc] for cell 'inst/path_8/interconnect5_8'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_18/bd_5dca_interconnect5_8_0/bd_5dca_interconnect5_8_0_in_context.xdc] for cell 'inst/path_8/interconnect5_8'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_19/bd_5dca_slice5_8_0/bd_5dca_slice12_11_0_in_context.xdc] for cell 'inst/path_8/slice5_8'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_19/bd_5dca_slice5_8_0/bd_5dca_slice12_11_0_in_context.xdc] for cell 'inst/path_8/slice5_8'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_21/bd_5dca_interconnect6_9_0/bd_5dca_interconnect6_9_0_in_context.xdc] for cell 'inst/path_9/interconnect6_9'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_21/bd_5dca_interconnect6_9_0/bd_5dca_interconnect6_9_0_in_context.xdc] for cell 'inst/path_9/interconnect6_9'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_22/bd_5dca_slice6_9_0/bd_5dca_slice12_11_0_in_context.xdc] for cell 'inst/path_9/slice6_9'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_22/bd_5dca_slice6_9_0/bd_5dca_slice12_11_0_in_context.xdc] for cell 'inst/path_9/slice6_9'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_24/bd_5dca_interconnect7_12_0/bd_5dca_interconnect7_12_0_in_context.xdc] for cell 'inst/path_12/interconnect7_12'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_24/bd_5dca_interconnect7_12_0/bd_5dca_interconnect7_12_0_in_context.xdc] for cell 'inst/path_12/interconnect7_12'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_25/bd_5dca_slice7_12_0/bd_5dca_slice12_11_0_in_context.xdc] for cell 'inst/path_12/slice7_12'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_25/bd_5dca_slice7_12_0/bd_5dca_slice12_11_0_in_context.xdc] for cell 'inst/path_12/slice7_12'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_27/bd_5dca_interconnect8_13_0/bd_5dca_interconnect8_13_0_in_context.xdc] for cell 'inst/path_13/interconnect8_13'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_27/bd_5dca_interconnect8_13_0/bd_5dca_interconnect8_13_0_in_context.xdc] for cell 'inst/path_13/interconnect8_13'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_28/bd_5dca_slice8_13_0/bd_5dca_slice12_11_0_in_context.xdc] for cell 'inst/path_13/slice8_13'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_28/bd_5dca_slice8_13_0/bd_5dca_slice12_11_0_in_context.xdc] for cell 'inst/path_13/slice8_13'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_32/bd_5dca_init_reduce_0/bd_5dca_init_reduce_0_in_context.xdc] for cell 'inst/init_logic/init_reduce'
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_32/bd_5dca_init_reduce_0/bd_5dca_init_reduce_0_in_context.xdc] for cell 'inst/init_logic/init_reduce'
+Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3807.031 ; gain = 0.000 ; free physical = 47988 ; free virtual = 483657
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.44 ; elapsed = 00:00:00.81 . Memory (MB): peak = 3810.000 ; gain = 2.969 ; free physical = 47827 ; free virtual = 483501
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:51 . Memory (MB): peak = 3810.000 ; gain = 476.699 ; free physical = 48350 ; free virtual = 484071
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu280-fsvh2892-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:51 . Memory (MB): peak = 3810.000 ; gain = 476.699 ; free physical = 48350 ; free virtual = 484071
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/hbm_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/hbm_reset_sync_SLR0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/hbm_reset_sync_SLR2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/vip_S01. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/vip_S02. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/vip_S03. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/vip_S04. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/vip_S00. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/vip_S05. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/vip_S06. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/vip_S07. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/vip_S08. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_apb_bridge_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/path_0/interconnect1_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/path_0/slice1_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/path_1/interconnect2_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/path_1/slice2_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/path_4/interconnect3_4. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/path_4/slice3_4. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/path_5/interconnect4_5. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/path_5/slice4_5. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/path_6/interconnect0_6. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/path_6/slice0_6. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/path_8/interconnect5_8. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/path_8/slice5_8. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/path_9/interconnect6_9. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/path_9/slice6_9. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/path_12/interconnect7_12. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/path_12/slice7_12. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/path_13/interconnect8_13. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/path_13/slice8_13. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/init_logic/init_concat. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/init_logic/init_reduce. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:51 . Memory (MB): peak = 3810.000 ; gain = 476.699 ; free physical = 48356 ; free virtual = 484078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:57 . Memory (MB): peak = 3810.000 ; gain = 476.699 ; free physical = 48245 ; free virtual = 484083
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 9024 (col length:94)
+BRAMs: 4032 (col length: RAMB18 288 RAMB36 144)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:01:03 . Memory (MB): peak = 3810.000 ; gain = 476.699 ; free physical = 47677 ; free virtual = 483780
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:01:18 . Memory (MB): peak = 4128.359 ; gain = 795.059 ; free physical = 46774 ; free virtual = 482976
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:01:18 . Memory (MB): peak = 4137.359 ; gain = 804.059 ; free physical = 46742 ; free virtual = 482952
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:01:19 . Memory (MB): peak = 4176.398 ; gain = 843.098 ; free physical = 46663 ; free virtual = 482873
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:01:22 . Memory (MB): peak = 4176.398 ; gain = 843.098 ; free physical = 46547 ; free virtual = 482783
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:01:22 . Memory (MB): peak = 4176.398 ; gain = 843.098 ; free physical = 46547 ; free virtual = 482783
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:01:23 . Memory (MB): peak = 4176.398 ; gain = 843.098 ; free physical = 46532 ; free virtual = 482776
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:01:23 . Memory (MB): peak = 4176.398 ; gain = 843.098 ; free physical = 46531 ; free virtual = 482775
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:01:23 . Memory (MB): peak = 4176.398 ; gain = 843.098 ; free physical = 46531 ; free virtual = 482775
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:01:23 . Memory (MB): peak = 4176.398 ; gain = 843.098 ; free physical = 46529 ; free virtual = 482773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------+----------+
+|      |BlackBox name                 |Instances |
++------+------------------------------+----------+
+|1     |bd_5dca_axi_apb_bridge_inst_0 |         1|
+|2     |bd_5dca_hbm_inst_0            |         1|
+|3     |bd_5dca_hbm_reset_sync_SLR0_0 |         1|
+|4     |bd_5dca_hbm_reset_sync_SLR2_0 |         1|
+|5     |bd_5dca_vip_S00_0             |         1|
+|6     |bd_5dca_vip_S01_0             |         1|
+|7     |bd_5dca_vip_S02_0             |         1|
+|8     |bd_5dca_vip_S03_0             |         1|
+|9     |bd_5dca_vip_S04_0             |         1|
+|10    |bd_5dca_vip_S05_0             |         1|
+|11    |bd_5dca_vip_S06_0             |         1|
+|12    |bd_5dca_vip_S07_0             |         1|
+|13    |bd_5dca_vip_S08_0             |         1|
+|14    |bd_5dca_init_reduce_0         |         1|
+|15    |bd_5dca_interconnect1_0_0     |         1|
+|16    |bd_5dca_slice1_0_0            |         1|
+|17    |bd_5dca_interconnect2_1_0     |         1|
+|18    |bd_5dca_slice2_1_0            |         1|
+|19    |bd_5dca_interconnect7_12_0    |         1|
+|20    |bd_5dca_slice7_12_0           |         1|
+|21    |bd_5dca_interconnect8_13_0    |         1|
+|22    |bd_5dca_slice8_13_0           |         1|
+|23    |bd_5dca_interconnect3_4_0     |         1|
+|24    |bd_5dca_slice3_4_0            |         1|
+|25    |bd_5dca_interconnect4_5_0     |         1|
+|26    |bd_5dca_slice4_5_0            |         1|
+|27    |bd_5dca_interconnect0_6_0     |         1|
+|28    |bd_5dca_slice0_6_0            |         1|
+|29    |bd_5dca_interconnect5_8_0     |         1|
+|30    |bd_5dca_slice5_8_0            |         1|
+|31    |bd_5dca_interconnect6_9_0     |         1|
+|32    |bd_5dca_slice6_9_0            |         1|
++------+------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------+------+
+|      |Cell                        |Count |
++------+----------------------------+------+
+|1     |bd_5dca_axi_apb_bridge_inst |     1|
+|2     |bd_5dca_hbm_inst            |     1|
+|3     |bd_5dca_hbm_reset_sync_SLR0 |     1|
+|4     |bd_5dca_hbm_reset_sync_SLR2 |     1|
+|5     |bd_5dca_init_reduce         |     1|
+|6     |bd_5dca_interconnect0_6     |     1|
+|7     |bd_5dca_interconnect1_0     |     1|
+|8     |bd_5dca_interconnect2_1     |     1|
+|9     |bd_5dca_interconnect3_4     |     1|
+|10    |bd_5dca_interconnect4_5     |     1|
+|11    |bd_5dca_interconnect5_8     |     1|
+|12    |bd_5dca_interconnect6_9     |     1|
+|13    |bd_5dca_interconnect7_12    |     1|
+|14    |bd_5dca_interconnect8_13    |     1|
+|15    |bd_5dca_slice0_6            |     1|
+|16    |bd_5dca_slice1_0            |     1|
+|17    |bd_5dca_slice2_1            |     1|
+|18    |bd_5dca_slice3_4            |     1|
+|19    |bd_5dca_slice4_5            |     1|
+|20    |bd_5dca_slice5_8            |     1|
+|21    |bd_5dca_slice6_9            |     1|
+|22    |bd_5dca_slice7_12           |     1|
+|23    |bd_5dca_slice8_13           |     1|
+|24    |bd_5dca_vip_S00             |     1|
+|25    |bd_5dca_vip_S01             |     1|
+|26    |bd_5dca_vip_S02             |     1|
+|27    |bd_5dca_vip_S03             |     1|
+|28    |bd_5dca_vip_S04             |     1|
+|29    |bd_5dca_vip_S05             |     1|
+|30    |bd_5dca_vip_S06             |     1|
+|31    |bd_5dca_vip_S07             |     1|
+|32    |bd_5dca_vip_S08             |     1|
++------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:01:23 . Memory (MB): peak = 4176.398 ; gain = 843.098 ; free physical = 46529 ; free virtual = 482773
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:50 . Memory (MB): peak = 4176.398 ; gain = 748.816 ; free physical = 46562 ; free virtual = 482806
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:01:23 . Memory (MB): peak = 4176.406 ; gain = 843.098 ; free physical = 46655 ; free virtual = 482899
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.19 . Memory (MB): peak = 4176.406 ; gain = 0.000 ; free physical = 46504 ; free virtual = 482766
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4300.023 ; gain = 0.000 ; free physical = 45941 ; free virtual = 482226
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: cdb40871
+INFO: [Common 17-83] Releasing license: Synthesis
+114 Infos, 222 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:01:48 . Memory (MB): peak = 4313.961 ; gain = 1573.312 ; free physical = 46109 ; free virtual = 482394
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint '/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/pfm_dynamic_hmss_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 4313.961 ; gain = 0.000 ; free physical = 44636 ; free virtual = 480991
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP pfm_dynamic_hmss_0_0, cache-ID = 98a49d0190b90536
+INFO: [Coretcl 2-1174] Renamed 44 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/ziyuanwang/hbm/Vitis_Accel_Examples/performance/hbm_bandwidth/_x_4cores_gem0011_19.hw.xilinx_u280_xdma_201920_3/link/vivado/vpl/prj/prj.runs/pfm_dynamic_hmss_0_0_synth_1/pfm_dynamic_hmss_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 4313.961 ; gain = 0.000 ; free physical = 44246 ; free virtual = 480642
+INFO: [runtcl-4] Executing : report_utilization -file pfm_dynamic_hmss_0_0_utilization_synth.rpt -pb pfm_dynamic_hmss_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 16 22:49:55 2024...
