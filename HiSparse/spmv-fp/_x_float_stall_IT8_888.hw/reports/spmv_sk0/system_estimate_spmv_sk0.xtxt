@@ -1,0 +1,1281 @@
+===============================================================================
+Version:    v++ v2021.2 (64-bit)
+Build:      SW Build 3363252 on 2021-10-14-04:41:01
+Copyright:  Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+Created:    Thu Dec  5 13:55:28 2024
+===============================================================================
+
+-------------------------------------------------------------------------------
+Design Name:             spmv_sk0
+Target Device:           xilinx:u280:xdma:201920.3
+Target Clock:            300.000000MHz
+Total number of kernels: 1
+-------------------------------------------------------------------------------
+
+Kernel Summary
+Kernel Name  Type  Target              OpenCL Library  Compute Units
+-----------  ----  ------------------  --------------  -------------
+spmv_sk0     c     fpga0:OCL_REGION_0  spmv_sk0        1
+
+
+-------------------------------------------------------------------------------
+OpenCL Binary:     spmv_sk0
+Kernels mapped to: clc_region
+
+Timing Information (MHz)
+Compute Unit  Kernel Name  Module Name                                               Target Frequency  Estimated Frequency
+------------  -----------  --------------------------------------------------------  ----------------  -------------------
+spmv_sk0_1    spmv_sk0     axis_duplicate_4u_s                                       300.300293        821.692688
+spmv_sk0_1    spmv_sk0     spmv_vector_unpacker                                      300.300293        434.404846
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_Pipeline_VITIS_LOOP_55_2               300.300293        411.015198
+spmv_sk0_1    spmv_sk0     array_max_unsigned_int_8u_1                               300.300293        460.405182
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_Pipeline_loop_matrix_loader            300.300293        411.015198
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader                                        300.300293        411.015198
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_Pipeline_loop_sync_on_SOD          300.300293        92.8074265
+spmv_sk0_1    spmv_sk0     arbiter_1p_8u_s                                           300.300293        414.078674
+spmv_sk0_1    spmv_sk0     shuffler_core_8u_Pipeline_loop_shuffle_pipeline           300.300293        212.224121
+spmv_sk0_1    spmv_sk0     shuffler_core_8u_s                                        300.300293        212.224121
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_Pipeline_loop_sync_on_SOD_EOS      300.300293        123.931091
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_s                                  300.300293        92.8074265
+spmv_sk0_1    spmv_sk0     vecbuf_writer_0_4096u_8u_s                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_0_4096u_8u_s                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1                         300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc208                              300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_0_4096u_8u_s                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     vecbuf_writer_1_4096u_8u_s                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_1_4096u_8u_s                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1150                      300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc204                              300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_1_4096u_8u_s                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     vecbuf_writer_2_4096u_8u_s                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_2_4096u_8u_s                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1154                      300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc200                              300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_2_4096u_8u_s                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     vecbuf_writer_3_4096u_8u_s                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_3_4096u_8u_s                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1158                      300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc196                              300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_3_4096u_8u_s                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     vecbuf_writer_4_4096u_8u_s                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_4_4096u_8u_s                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1162                      300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc192                              300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_4_4096u_8u_s                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     vecbuf_writer_5_4096u_8u_s                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_5_4096u_8u_s                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1166                      300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc188                              300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_5_4096u_8u_s                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     vecbuf_writer_6_4096u_8u_s                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_6_4096u_8u_s                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1170                      300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc184                              300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_6_4096u_8u_s                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     vecbuf_writer_7_4096u_8u_s                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_7_4096u_8u_s                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1174                      300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc180                              300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_7_4096u_8u_s                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_Pipeline_loop_sync_on_SOD        300.300293        92.8074265
+spmv_sk0_1    spmv_sk0     arbiter_1p_8u_1                                           300.300293        414.078674
+spmv_sk0_1    spmv_sk0     shuffler_core_8u_1_Pipeline_loop_shuffle_pipeline         300.300293        212.224121
+spmv_sk0_1    spmv_sk0     shuffler_core_8u_1                                        300.300293        212.224121
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_Pipeline_loop_sync_on_SOD_EOS    300.300293        123.931091
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_s                                300.300293        92.8074265
+spmv_sk0_1    spmv_sk0     spmv_cluster_0_Block_split215_proc                        300.300293        inf
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_Pipeline_loop_reset_ob                      300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_Pipeline_pe_sync_SOD                        300.300293        700.280151
+spmv_sk0_1    spmv_sk0     float_pe_mul_Pipeline_VITIS_LOOP_44_1                     300.300293        430.663208
+spmv_sk0_1    spmv_sk0     float_pe_mul                                              300.300293        430.663208
+spmv_sk0_1    spmv_sk0     float_pe_acc_8192u_8u_s                                   300.300293        336.021484
+spmv_sk0_1    spmv_sk0     float_pe_process_0_8192u_8u_s                             300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_Pipeline_pe_sync_SODEOS                     300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_Pipeline_pe_output_loop                     300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_s                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_Pipeline_loop_reset_ob                      300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_Pipeline_pe_sync_SOD                        300.300293        700.280151
+spmv_sk0_1    spmv_sk0     float_pe_mul_1_Pipeline_VITIS_LOOP_44_1                   300.300293        430.663208
+spmv_sk0_1    spmv_sk0     float_pe_mul_1                                            300.300293        430.663208
+spmv_sk0_1    spmv_sk0     float_pe_acc_8192u_8u_1                                   300.300293        336.021484
+spmv_sk0_1    spmv_sk0     float_pe_process_1_8192u_8u_s                             300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_Pipeline_pe_sync_SODEOS                     300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_Pipeline_pe_output_loop                     300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_s                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_Pipeline_loop_reset_ob                      300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_Pipeline_pe_sync_SOD                        300.300293        700.280151
+spmv_sk0_1    spmv_sk0     float_pe_mul_2_Pipeline_VITIS_LOOP_44_1                   300.300293        430.663208
+spmv_sk0_1    spmv_sk0     float_pe_mul_2                                            300.300293        430.663208
+spmv_sk0_1    spmv_sk0     float_pe_acc_8192u_8u_2                                   300.300293        336.021484
+spmv_sk0_1    spmv_sk0     float_pe_process_2_8192u_8u_s                             300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_Pipeline_pe_sync_SODEOS                     300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_Pipeline_pe_output_loop                     300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_s                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_Pipeline_loop_reset_ob                      300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_Pipeline_pe_sync_SOD                        300.300293        700.280151
+spmv_sk0_1    spmv_sk0     float_pe_mul_3_Pipeline_VITIS_LOOP_44_1                   300.300293        430.663208
+spmv_sk0_1    spmv_sk0     float_pe_mul_3                                            300.300293        430.663208
+spmv_sk0_1    spmv_sk0     float_pe_acc_8192u_8u_3                                   300.300293        336.021484
+spmv_sk0_1    spmv_sk0     float_pe_process_3_8192u_8u_s                             300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_Pipeline_pe_sync_SODEOS                     300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_Pipeline_pe_output_loop                     300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_s                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_Pipeline_loop_reset_ob                      300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_Pipeline_pe_sync_SOD                        300.300293        700.280151
+spmv_sk0_1    spmv_sk0     float_pe_mul_4_Pipeline_VITIS_LOOP_44_1                   300.300293        430.663208
+spmv_sk0_1    spmv_sk0     float_pe_mul_4                                            300.300293        430.663208
+spmv_sk0_1    spmv_sk0     float_pe_acc_8192u_8u_4                                   300.300293        336.021484
+spmv_sk0_1    spmv_sk0     float_pe_process_4_8192u_8u_s                             300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_Pipeline_pe_sync_SODEOS                     300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_Pipeline_pe_output_loop                     300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_s                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_Pipeline_loop_reset_ob                      300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_Pipeline_pe_sync_SOD                        300.300293        700.280151
+spmv_sk0_1    spmv_sk0     float_pe_mul_5_Pipeline_VITIS_LOOP_44_1                   300.300293        430.663208
+spmv_sk0_1    spmv_sk0     float_pe_mul_5                                            300.300293        430.663208
+spmv_sk0_1    spmv_sk0     float_pe_acc_8192u_8u_5                                   300.300293        336.021484
+spmv_sk0_1    spmv_sk0     float_pe_process_5_8192u_8u_s                             300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_Pipeline_pe_sync_SODEOS                     300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_Pipeline_pe_output_loop                     300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_s                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_Pipeline_loop_reset_ob                      300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_Pipeline_pe_sync_SOD                        300.300293        700.280151
+spmv_sk0_1    spmv_sk0     float_pe_mul_6_Pipeline_VITIS_LOOP_44_1                   300.300293        430.663208
+spmv_sk0_1    spmv_sk0     float_pe_mul_6                                            300.300293        430.663208
+spmv_sk0_1    spmv_sk0     float_pe_acc_8192u_8u_6                                   300.300293        336.021484
+spmv_sk0_1    spmv_sk0     float_pe_process_6_8192u_8u_s                             300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_Pipeline_pe_sync_SODEOS                     300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_Pipeline_pe_output_loop                     300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_s                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_Pipeline_loop_reset_ob                      300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_Pipeline_pe_sync_SOD                        300.300293        700.280151
+spmv_sk0_1    spmv_sk0     float_pe_mul_7_Pipeline_VITIS_LOOP_44_1                   300.300293        430.663208
+spmv_sk0_1    spmv_sk0     float_pe_mul_7                                            300.300293        430.663208
+spmv_sk0_1    spmv_sk0     float_pe_acc_8192u_8u_7                                   300.300293        336.021484
+spmv_sk0_1    spmv_sk0     float_pe_process_7_8192u_8u_s                             300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_Pipeline_pe_sync_SODEOS                     300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_Pipeline_pe_output_loop                     300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_s                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     spmv_result_packer                                        300.300293        178.157852
+spmv_sk0_1    spmv_sk0     spmv_cluster_0_s                                          300.300293        92.8074265
+spmv_sk0_1    spmv_sk0     spmv_vector_unpacker_1                                    300.300293        434.404846
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_1_Pipeline_VITIS_LOOP_55_2             300.300293        411.015198
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_1_Pipeline_loop_matrix_loader          300.300293        411.015198
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_1                                      300.300293        411.015198
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_1_Pipeline_loop_sync_on_SOD        300.300293        92.8074265
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_1_Pipeline_loop_sync_on_SOD_EOS    300.300293        123.931091
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_1                                  300.300293        92.8074265
+spmv_sk0_1    spmv_sk0     vecbuf_writer_0_4096u_8u_1                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_0_4096u_8u_1                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1147                      300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc207                              300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_0_4096u_8u_1                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     vecbuf_writer_1_4096u_8u_1                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_1_4096u_8u_1                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1151                      300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc203                              300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_1_4096u_8u_1                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     vecbuf_writer_2_4096u_8u_1                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_2_4096u_8u_1                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1155                      300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc199                              300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_2_4096u_8u_1                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     vecbuf_writer_3_4096u_8u_1                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_3_4096u_8u_1                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1159                      300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc195                              300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_3_4096u_8u_1                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     vecbuf_writer_4_4096u_8u_1                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_4_4096u_8u_1                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1163                      300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc191                              300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_4_4096u_8u_1                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     vecbuf_writer_5_4096u_8u_1                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_5_4096u_8u_1                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1167                      300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc187                              300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_5_4096u_8u_1                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     vecbuf_writer_6_4096u_8u_1                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_6_4096u_8u_1                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1171                      300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc183                              300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_6_4096u_8u_1                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     vecbuf_writer_7_4096u_8u_1                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_7_4096u_8u_1                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1175                      300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc179                              300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_7_4096u_8u_1                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_1_Pipeline_loop_sync_on_SOD      300.300293        92.8074265
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_1_Pipeline_loop_sync_on_SOD_EOS  300.300293        123.931091
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_1                                300.300293        92.8074265
+spmv_sk0_1    spmv_sk0     spmv_cluster_1_Block_split215_proc                        300.300293        inf
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_1_Pipeline_loop_reset_ob                    300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_1_Pipeline_pe_sync_SOD                      300.300293        700.280151
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_1_Pipeline_pe_sync_SODEOS                   300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_1_Pipeline_pe_output_loop                   300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_1                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_1_Pipeline_loop_reset_ob                    300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_1_Pipeline_pe_sync_SOD                      300.300293        700.280151
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_1_Pipeline_pe_sync_SODEOS                   300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_1_Pipeline_pe_output_loop                   300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_1                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_1_Pipeline_loop_reset_ob                    300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_1_Pipeline_pe_sync_SOD                      300.300293        700.280151
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_1_Pipeline_pe_sync_SODEOS                   300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_1_Pipeline_pe_output_loop                   300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_1                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_1_Pipeline_loop_reset_ob                    300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_1_Pipeline_pe_sync_SOD                      300.300293        700.280151
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_1_Pipeline_pe_sync_SODEOS                   300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_1_Pipeline_pe_output_loop                   300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_1                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_1_Pipeline_loop_reset_ob                    300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_1_Pipeline_pe_sync_SOD                      300.300293        700.280151
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_1_Pipeline_pe_sync_SODEOS                   300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_1_Pipeline_pe_output_loop                   300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_1                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_1_Pipeline_loop_reset_ob                    300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_1_Pipeline_pe_sync_SOD                      300.300293        700.280151
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_1_Pipeline_pe_sync_SODEOS                   300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_1_Pipeline_pe_output_loop                   300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_1                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_1_Pipeline_loop_reset_ob                    300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_1_Pipeline_pe_sync_SOD                      300.300293        700.280151
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_1_Pipeline_pe_sync_SODEOS                   300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_1_Pipeline_pe_output_loop                   300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_1                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_1_Pipeline_loop_reset_ob                    300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_1_Pipeline_pe_sync_SOD                      300.300293        700.280151
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_1_Pipeline_pe_sync_SODEOS                   300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_1_Pipeline_pe_output_loop                   300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_1                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     spmv_result_packer_1                                      300.300293        178.157852
+spmv_sk0_1    spmv_sk0     spmv_cluster_1_s                                          300.300293        92.8074265
+spmv_sk0_1    spmv_sk0     spmv_vector_unpacker_2                                    300.300293        434.404846
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_2_Pipeline_VITIS_LOOP_55_2             300.300293        411.015198
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_2_Pipeline_loop_matrix_loader          300.300293        411.015198
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_2                                      300.300293        411.015198
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_2_Pipeline_loop_sync_on_SOD        300.300293        92.8074265
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_2_Pipeline_loop_sync_on_SOD_EOS    300.300293        123.931091
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_2                                  300.300293        92.8074265
+spmv_sk0_1    spmv_sk0     vecbuf_writer_0_4096u_8u_2                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_0_4096u_8u_2                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1148                      300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc206                              300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_0_4096u_8u_2                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     vecbuf_writer_1_4096u_8u_2                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_1_4096u_8u_2                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1152                      300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc202                              300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_1_4096u_8u_2                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     vecbuf_writer_2_4096u_8u_2                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_2_4096u_8u_2                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1156                      300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc198                              300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_2_4096u_8u_2                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     vecbuf_writer_3_4096u_8u_2                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_3_4096u_8u_2                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1160                      300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc194                              300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_3_4096u_8u_2                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     vecbuf_writer_4_4096u_8u_2                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_4_4096u_8u_2                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1164                      300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc190                              300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_4_4096u_8u_2                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     vecbuf_writer_5_4096u_8u_2                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_5_4096u_8u_2                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1168                      300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc186                              300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_5_4096u_8u_2                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     vecbuf_writer_6_4096u_8u_2                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_6_4096u_8u_2                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1172                      300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc182                              300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_6_4096u_8u_2                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     vecbuf_writer_7_4096u_8u_2                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_7_4096u_8u_2                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1176                      300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc178                              300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_7_4096u_8u_2                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_2_Pipeline_loop_sync_on_SOD      300.300293        92.8074265
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_2_Pipeline_loop_sync_on_SOD_EOS  300.300293        123.931091
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_2                                300.300293        92.8074265
+spmv_sk0_1    spmv_sk0     spmv_cluster_2_Block_split215_proc                        300.300293        inf
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_2_Pipeline_loop_reset_ob                    300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_2_Pipeline_pe_sync_SOD                      300.300293        700.280151
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_2_Pipeline_pe_sync_SODEOS                   300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_2_Pipeline_pe_output_loop                   300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_2                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_2_Pipeline_loop_reset_ob                    300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_2_Pipeline_pe_sync_SOD                      300.300293        700.280151
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_2_Pipeline_pe_sync_SODEOS                   300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_2_Pipeline_pe_output_loop                   300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_2                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_2_Pipeline_loop_reset_ob                    300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_2_Pipeline_pe_sync_SOD                      300.300293        700.280151
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_2_Pipeline_pe_sync_SODEOS                   300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_2_Pipeline_pe_output_loop                   300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_2                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_2_Pipeline_loop_reset_ob                    300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_2_Pipeline_pe_sync_SOD                      300.300293        700.280151
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_2_Pipeline_pe_sync_SODEOS                   300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_2_Pipeline_pe_output_loop                   300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_2                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_2_Pipeline_loop_reset_ob                    300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_2_Pipeline_pe_sync_SOD                      300.300293        700.280151
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_2_Pipeline_pe_sync_SODEOS                   300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_2_Pipeline_pe_output_loop                   300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_2                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_2_Pipeline_loop_reset_ob                    300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_2_Pipeline_pe_sync_SOD                      300.300293        700.280151
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_2_Pipeline_pe_sync_SODEOS                   300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_2_Pipeline_pe_output_loop                   300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_2                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_2_Pipeline_loop_reset_ob                    300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_2_Pipeline_pe_sync_SOD                      300.300293        700.280151
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_2_Pipeline_pe_sync_SODEOS                   300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_2_Pipeline_pe_output_loop                   300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_2                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_2_Pipeline_loop_reset_ob                    300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_2_Pipeline_pe_sync_SOD                      300.300293        700.280151
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_2_Pipeline_pe_sync_SODEOS                   300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_2_Pipeline_pe_output_loop                   300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_2                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     spmv_result_packer_2                                      300.300293        178.157852
+spmv_sk0_1    spmv_sk0     spmv_cluster_2_s                                          300.300293        92.8074265
+spmv_sk0_1    spmv_sk0     spmv_vector_unpacker_3                                    300.300293        434.404846
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_3_Pipeline_VITIS_LOOP_55_2             300.300293        411.015198
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_3_Pipeline_loop_matrix_loader          300.300293        411.015198
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_3                                      300.300293        411.015198
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_3_Pipeline_loop_sync_on_SOD        300.300293        92.8074265
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_3_Pipeline_loop_sync_on_SOD_EOS    300.300293        123.931091
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_3                                  300.300293        92.8074265
+spmv_sk0_1    spmv_sk0     vecbuf_writer_0_4096u_8u_3                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_0_4096u_8u_3                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1149                      300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc205                              300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_0_4096u_8u_3                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     vecbuf_writer_1_4096u_8u_3                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_1_4096u_8u_3                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1153                      300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc201                              300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_1_4096u_8u_3                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     vecbuf_writer_2_4096u_8u_3                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_2_4096u_8u_3                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1157                      300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc197                              300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_2_4096u_8u_3                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     vecbuf_writer_3_4096u_8u_3                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_3_4096u_8u_3                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1161                      300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc193                              300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_3_4096u_8u_3                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     vecbuf_writer_4_4096u_8u_3                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_4_4096u_8u_3                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1165                      300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc189                              300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_4_4096u_8u_3                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     vecbuf_writer_5_4096u_8u_3                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_5_4096u_8u_3                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1169                      300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc185                              300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_5_4096u_8u_3                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     vecbuf_writer_6_4096u_8u_3                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_6_4096u_8u_3                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1173                      300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc181                              300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_6_4096u_8u_3                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     vecbuf_writer_7_4096u_8u_3                                300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_reader_7_4096u_8u_3                                300.300293        607.902771
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1177                      300.300293        507.614197
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc                                 300.300293        507.614197
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_7_4096u_8u_3                           300.300293        476.871735
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_3_Pipeline_loop_sync_on_SOD      300.300293        92.8074265
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_3_Pipeline_loop_sync_on_SOD_EOS  300.300293        123.931091
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_3                                300.300293        92.8074265
+spmv_sk0_1    spmv_sk0     spmv_cluster_3_Block_split215_proc                        300.300293        inf
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_3_Pipeline_loop_reset_ob                    300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_3_Pipeline_pe_sync_SOD                      300.300293        700.280151
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_3_Pipeline_pe_sync_SODEOS                   300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_3_Pipeline_pe_output_loop                   300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_3                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_3_Pipeline_loop_reset_ob                    300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_3_Pipeline_pe_sync_SOD                      300.300293        700.280151
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_3_Pipeline_pe_sync_SODEOS                   300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_3_Pipeline_pe_output_loop                   300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_3                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_3_Pipeline_loop_reset_ob                    300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_3_Pipeline_pe_sync_SOD                      300.300293        700.280151
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_3_Pipeline_pe_sync_SODEOS                   300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_3_Pipeline_pe_output_loop                   300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_3                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_3_Pipeline_loop_reset_ob                    300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_3_Pipeline_pe_sync_SOD                      300.300293        700.280151
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_3_Pipeline_pe_sync_SODEOS                   300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_3_Pipeline_pe_output_loop                   300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_3                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_3_Pipeline_loop_reset_ob                    300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_3_Pipeline_pe_sync_SOD                      300.300293        700.280151
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_3_Pipeline_pe_sync_SODEOS                   300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_3_Pipeline_pe_output_loop                   300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_3                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_3_Pipeline_loop_reset_ob                    300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_3_Pipeline_pe_sync_SOD                      300.300293        700.280151
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_3_Pipeline_pe_sync_SODEOS                   300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_3_Pipeline_pe_output_loop                   300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_3                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_3_Pipeline_loop_reset_ob                    300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_3_Pipeline_pe_sync_SOD                      300.300293        700.280151
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_3_Pipeline_pe_sync_SODEOS                   300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_3_Pipeline_pe_output_loop                   300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_3                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_3_Pipeline_loop_reset_ob                    300.300293        580.720093
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_3_Pipeline_pe_sync_SOD                      300.300293        700.280151
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_3_Pipeline_pe_sync_SODEOS                   300.300293        645.161316
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_3_Pipeline_pe_output_loop                   300.300293        438.596497
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_3                                           300.300293        336.021484
+spmv_sk0_1    spmv_sk0     spmv_result_packer_3                                      300.300293        178.157852
+spmv_sk0_1    spmv_sk0     spmv_cluster_3_s                                          300.300293        92.8074265
+spmv_sk0_1    spmv_sk0     axis_merge_4u_Pipeline_VITIS_LOOP_41_1                    300.300293        396.667999
+spmv_sk0_1    spmv_sk0     axis_merge_4u_s                                           300.300293        396.667999
+spmv_sk0_1    spmv_sk0     spmv_sk0                                                  300.300293        92.8074265
+
+Latency Information
+Compute Unit  Kernel Name  Module Name                                               Start Interval  Best (cycles)  Avg (cycles)  Worst (cycles)  Best (absolute)  Avg (absolute)  Worst (absolute)
+------------  -----------  --------------------------------------------------------  --------------  -------------  ------------  --------------  ---------------  --------------  ----------------
+spmv_sk0_1    spmv_sk0     axis_duplicate_4u_s                                       undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     spmv_vector_unpacker                                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_Pipeline_VITIS_LOOP_55_2               82              82             82            82              0.273 us         0.273 us        0.273 us
+spmv_sk0_1    spmv_sk0     array_max_unsigned_int_8u_1                               7               7              7             7               23.331 ns        23.331 ns       23.331 ns
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_Pipeline_loop_matrix_loader            undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader                                        undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_Pipeline_loop_sync_on_SOD          undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     arbiter_1p_8u_s                                           1               5              5             5               16.665 ns        16.665 ns       16.665 ns
+spmv_sk0_1    spmv_sk0     shuffler_core_8u_Pipeline_loop_shuffle_pipeline           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     shuffler_core_8u_s                                        undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_Pipeline_loop_sync_on_SOD_EOS      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_s                                  undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_0_4096u_8u_s                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_0_4096u_8u_s                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1                         undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc208                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_0_4096u_8u_s                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_1_4096u_8u_s                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_1_4096u_8u_s                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1150                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc204                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_1_4096u_8u_s                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_2_4096u_8u_s                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_2_4096u_8u_s                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1154                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc200                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_2_4096u_8u_s                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_3_4096u_8u_s                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_3_4096u_8u_s                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1158                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc196                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_3_4096u_8u_s                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_4_4096u_8u_s                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_4_4096u_8u_s                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1162                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc192                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_4_4096u_8u_s                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_5_4096u_8u_s                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_5_4096u_8u_s                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1166                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc188                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_5_4096u_8u_s                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_6_4096u_8u_s                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_6_4096u_8u_s                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1170                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc184                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_6_4096u_8u_s                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_7_4096u_8u_s                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_7_4096u_8u_s                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1174                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc180                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_7_4096u_8u_s                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_Pipeline_loop_sync_on_SOD        undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     arbiter_1p_8u_1                                           1               5              5             5               16.665 ns        16.665 ns       16.665 ns
+spmv_sk0_1    spmv_sk0     shuffler_core_8u_1_Pipeline_loop_shuffle_pipeline         undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     shuffler_core_8u_1                                        undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_Pipeline_loop_sync_on_SOD_EOS    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_s                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     spmv_cluster_0_Block_split215_proc                        0               0              0             0               0 ns             0 ns            0 ns
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_Pipeline_loop_reset_ob                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_Pipeline_pe_sync_SOD                        undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_mul_Pipeline_VITIS_LOOP_44_1                     undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_mul                                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_acc_8192u_8u_s                                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_process_0_8192u_8u_s                             undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_Pipeline_pe_sync_SODEOS                     undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_Pipeline_pe_output_loop                     undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_s                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_Pipeline_loop_reset_ob                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_Pipeline_pe_sync_SOD                        undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_mul_1_Pipeline_VITIS_LOOP_44_1                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_mul_1                                            undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_acc_8192u_8u_1                                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_process_1_8192u_8u_s                             undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_Pipeline_pe_sync_SODEOS                     undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_Pipeline_pe_output_loop                     undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_s                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_Pipeline_loop_reset_ob                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_Pipeline_pe_sync_SOD                        undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_mul_2_Pipeline_VITIS_LOOP_44_1                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_mul_2                                            undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_acc_8192u_8u_2                                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_process_2_8192u_8u_s                             undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_Pipeline_pe_sync_SODEOS                     undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_Pipeline_pe_output_loop                     undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_s                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_Pipeline_loop_reset_ob                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_Pipeline_pe_sync_SOD                        undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_mul_3_Pipeline_VITIS_LOOP_44_1                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_mul_3                                            undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_acc_8192u_8u_3                                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_process_3_8192u_8u_s                             undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_Pipeline_pe_sync_SODEOS                     undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_Pipeline_pe_output_loop                     undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_s                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_Pipeline_loop_reset_ob                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_Pipeline_pe_sync_SOD                        undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_mul_4_Pipeline_VITIS_LOOP_44_1                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_mul_4                                            undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_acc_8192u_8u_4                                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_process_4_8192u_8u_s                             undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_Pipeline_pe_sync_SODEOS                     undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_Pipeline_pe_output_loop                     undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_s                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_Pipeline_loop_reset_ob                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_Pipeline_pe_sync_SOD                        undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_mul_5_Pipeline_VITIS_LOOP_44_1                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_mul_5                                            undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_acc_8192u_8u_5                                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_process_5_8192u_8u_s                             undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_Pipeline_pe_sync_SODEOS                     undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_Pipeline_pe_output_loop                     undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_s                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_Pipeline_loop_reset_ob                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_Pipeline_pe_sync_SOD                        undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_mul_6_Pipeline_VITIS_LOOP_44_1                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_mul_6                                            undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_acc_8192u_8u_6                                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_process_6_8192u_8u_s                             undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_Pipeline_pe_sync_SODEOS                     undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_Pipeline_pe_output_loop                     undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_s                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_Pipeline_loop_reset_ob                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_Pipeline_pe_sync_SOD                        undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_mul_7_Pipeline_VITIS_LOOP_44_1                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_mul_7                                            undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_acc_8192u_8u_7                                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     float_pe_process_7_8192u_8u_s                             undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_Pipeline_pe_sync_SODEOS                     undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_Pipeline_pe_output_loop                     undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_s                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     spmv_result_packer                                        undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     spmv_cluster_0_s                                          undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     spmv_vector_unpacker_1                                    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_1_Pipeline_VITIS_LOOP_55_2             82              82             82            82              0.273 us         0.273 us        0.273 us
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_1_Pipeline_loop_matrix_loader          undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_1                                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_1_Pipeline_loop_sync_on_SOD        undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_1_Pipeline_loop_sync_on_SOD_EOS    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_1                                  undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_0_4096u_8u_1                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_0_4096u_8u_1                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1147                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc207                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_0_4096u_8u_1                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_1_4096u_8u_1                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_1_4096u_8u_1                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1151                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc203                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_1_4096u_8u_1                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_2_4096u_8u_1                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_2_4096u_8u_1                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1155                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc199                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_2_4096u_8u_1                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_3_4096u_8u_1                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_3_4096u_8u_1                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1159                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc195                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_3_4096u_8u_1                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_4_4096u_8u_1                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_4_4096u_8u_1                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1163                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc191                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_4_4096u_8u_1                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_5_4096u_8u_1                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_5_4096u_8u_1                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1167                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc187                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_5_4096u_8u_1                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_6_4096u_8u_1                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_6_4096u_8u_1                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1171                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc183                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_6_4096u_8u_1                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_7_4096u_8u_1                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_7_4096u_8u_1                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1175                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc179                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_7_4096u_8u_1                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_1_Pipeline_loop_sync_on_SOD      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_1_Pipeline_loop_sync_on_SOD_EOS  undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_1                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     spmv_cluster_1_Block_split215_proc                        0               0              0             0               0 ns             0 ns            0 ns
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_1_Pipeline_loop_reset_ob                    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_1_Pipeline_pe_sync_SOD                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_1_Pipeline_pe_sync_SODEOS                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_1_Pipeline_pe_output_loop                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_1                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_1_Pipeline_loop_reset_ob                    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_1_Pipeline_pe_sync_SOD                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_1_Pipeline_pe_sync_SODEOS                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_1_Pipeline_pe_output_loop                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_1                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_1_Pipeline_loop_reset_ob                    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_1_Pipeline_pe_sync_SOD                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_1_Pipeline_pe_sync_SODEOS                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_1_Pipeline_pe_output_loop                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_1                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_1_Pipeline_loop_reset_ob                    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_1_Pipeline_pe_sync_SOD                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_1_Pipeline_pe_sync_SODEOS                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_1_Pipeline_pe_output_loop                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_1                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_1_Pipeline_loop_reset_ob                    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_1_Pipeline_pe_sync_SOD                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_1_Pipeline_pe_sync_SODEOS                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_1_Pipeline_pe_output_loop                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_1                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_1_Pipeline_loop_reset_ob                    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_1_Pipeline_pe_sync_SOD                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_1_Pipeline_pe_sync_SODEOS                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_1_Pipeline_pe_output_loop                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_1                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_1_Pipeline_loop_reset_ob                    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_1_Pipeline_pe_sync_SOD                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_1_Pipeline_pe_sync_SODEOS                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_1_Pipeline_pe_output_loop                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_1                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_1_Pipeline_loop_reset_ob                    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_1_Pipeline_pe_sync_SOD                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_1_Pipeline_pe_sync_SODEOS                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_1_Pipeline_pe_output_loop                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_1                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     spmv_result_packer_1                                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     spmv_cluster_1_s                                          undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     spmv_vector_unpacker_2                                    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_2_Pipeline_VITIS_LOOP_55_2             82              82             82            82              0.273 us         0.273 us        0.273 us
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_2_Pipeline_loop_matrix_loader          undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_2                                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_2_Pipeline_loop_sync_on_SOD        undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_2_Pipeline_loop_sync_on_SOD_EOS    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_2                                  undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_0_4096u_8u_2                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_0_4096u_8u_2                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1148                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc206                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_0_4096u_8u_2                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_1_4096u_8u_2                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_1_4096u_8u_2                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1152                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc202                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_1_4096u_8u_2                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_2_4096u_8u_2                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_2_4096u_8u_2                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1156                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc198                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_2_4096u_8u_2                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_3_4096u_8u_2                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_3_4096u_8u_2                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1160                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc194                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_3_4096u_8u_2                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_4_4096u_8u_2                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_4_4096u_8u_2                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1164                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc190                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_4_4096u_8u_2                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_5_4096u_8u_2                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_5_4096u_8u_2                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1168                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc186                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_5_4096u_8u_2                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_6_4096u_8u_2                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_6_4096u_8u_2                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1172                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc182                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_6_4096u_8u_2                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_7_4096u_8u_2                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_7_4096u_8u_2                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1176                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc178                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_7_4096u_8u_2                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_2_Pipeline_loop_sync_on_SOD      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_2_Pipeline_loop_sync_on_SOD_EOS  undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_2                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     spmv_cluster_2_Block_split215_proc                        0               0              0             0               0 ns             0 ns            0 ns
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_2_Pipeline_loop_reset_ob                    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_2_Pipeline_pe_sync_SOD                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_2_Pipeline_pe_sync_SODEOS                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_2_Pipeline_pe_output_loop                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_2                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_2_Pipeline_loop_reset_ob                    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_2_Pipeline_pe_sync_SOD                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_2_Pipeline_pe_sync_SODEOS                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_2_Pipeline_pe_output_loop                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_2                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_2_Pipeline_loop_reset_ob                    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_2_Pipeline_pe_sync_SOD                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_2_Pipeline_pe_sync_SODEOS                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_2_Pipeline_pe_output_loop                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_2                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_2_Pipeline_loop_reset_ob                    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_2_Pipeline_pe_sync_SOD                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_2_Pipeline_pe_sync_SODEOS                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_2_Pipeline_pe_output_loop                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_2                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_2_Pipeline_loop_reset_ob                    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_2_Pipeline_pe_sync_SOD                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_2_Pipeline_pe_sync_SODEOS                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_2_Pipeline_pe_output_loop                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_2                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_2_Pipeline_loop_reset_ob                    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_2_Pipeline_pe_sync_SOD                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_2_Pipeline_pe_sync_SODEOS                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_2_Pipeline_pe_output_loop                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_2                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_2_Pipeline_loop_reset_ob                    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_2_Pipeline_pe_sync_SOD                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_2_Pipeline_pe_sync_SODEOS                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_2_Pipeline_pe_output_loop                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_2                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_2_Pipeline_loop_reset_ob                    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_2_Pipeline_pe_sync_SOD                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_2_Pipeline_pe_sync_SODEOS                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_2_Pipeline_pe_output_loop                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_2                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     spmv_result_packer_2                                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     spmv_cluster_2_s                                          undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     spmv_vector_unpacker_3                                    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_3_Pipeline_VITIS_LOOP_55_2             82              82             82            82              0.273 us         0.273 us        0.273 us
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_3_Pipeline_loop_matrix_loader          undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_3                                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_3_Pipeline_loop_sync_on_SOD        undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_3_Pipeline_loop_sync_on_SOD_EOS    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_3                                  undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_0_4096u_8u_3                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_0_4096u_8u_3                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1149                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc205                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_0_4096u_8u_3                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_1_4096u_8u_3                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_1_4096u_8u_3                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1153                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc201                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_1_4096u_8u_3                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_2_4096u_8u_3                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_2_4096u_8u_3                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1157                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc197                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_2_4096u_8u_3                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_3_4096u_8u_3                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_3_4096u_8u_3                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1161                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc193                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_3_4096u_8u_3                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_4_4096u_8u_3                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_4_4096u_8u_3                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1165                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc189                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_4_4096u_8u_3                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_5_4096u_8u_3                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_5_4096u_8u_3                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1169                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc185                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_5_4096u_8u_3                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_6_4096u_8u_3                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_6_4096u_8u_3                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1173                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc181                              undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_6_4096u_8u_3                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_writer_7_4096u_8u_3                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_reader_7_4096u_8u_3                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1177                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc                                 undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_7_4096u_8u_3                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_3_Pipeline_loop_sync_on_SOD      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_3_Pipeline_loop_sync_on_SOD_EOS  undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_3                                undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     spmv_cluster_3_Block_split215_proc                        0               0              0             0               0 ns             0 ns            0 ns
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_3_Pipeline_loop_reset_ob                    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_3_Pipeline_pe_sync_SOD                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_3_Pipeline_pe_sync_SODEOS                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_3_Pipeline_pe_output_loop                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_3                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_3_Pipeline_loop_reset_ob                    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_3_Pipeline_pe_sync_SOD                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_3_Pipeline_pe_sync_SODEOS                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_3_Pipeline_pe_output_loop                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_3                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_3_Pipeline_loop_reset_ob                    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_3_Pipeline_pe_sync_SOD                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_3_Pipeline_pe_sync_SODEOS                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_3_Pipeline_pe_output_loop                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_3                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_3_Pipeline_loop_reset_ob                    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_3_Pipeline_pe_sync_SOD                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_3_Pipeline_pe_sync_SODEOS                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_3_Pipeline_pe_output_loop                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_3                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_3_Pipeline_loop_reset_ob                    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_3_Pipeline_pe_sync_SOD                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_3_Pipeline_pe_sync_SODEOS                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_3_Pipeline_pe_output_loop                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_3                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_3_Pipeline_loop_reset_ob                    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_3_Pipeline_pe_sync_SOD                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_3_Pipeline_pe_sync_SODEOS                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_3_Pipeline_pe_output_loop                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_3                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_3_Pipeline_loop_reset_ob                    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_3_Pipeline_pe_sync_SOD                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_3_Pipeline_pe_sync_SODEOS                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_3_Pipeline_pe_output_loop                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_3                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_3_Pipeline_loop_reset_ob                    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_3_Pipeline_pe_sync_SOD                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_3_Pipeline_pe_sync_SODEOS                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_3_Pipeline_pe_output_loop                   undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_3                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     spmv_result_packer_3                                      undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     spmv_cluster_3_s                                          undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     axis_merge_4u_Pipeline_VITIS_LOOP_41_1                    undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     axis_merge_4u_s                                           undef           undef          undef         undef           undef            undef           undef
+spmv_sk0_1    spmv_sk0     spmv_sk0                                                  undef           undef          undef         undef           undef            undef           undef
+
+Area Information
+Compute Unit  Kernel Name  Module Name                                               FF      LUT     DSP  BRAM  URAM
+------------  -----------  --------------------------------------------------------  ------  ------  ---  ----  ----
+spmv_sk0_1    spmv_sk0     axis_duplicate_4u_s                                       2       64      0    0     0
+spmv_sk0_1    spmv_sk0     spmv_vector_unpacker                                      3       333     0    0     0
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_Pipeline_VITIS_LOOP_55_2               2683    5762    0    0     0
+spmv_sk0_1    spmv_sk0     array_max_unsigned_int_8u_1                               132     399     0    0     0
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_Pipeline_loop_matrix_loader            5327    2999    0    0     0
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader                                        11224   11797   0    0     0
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_Pipeline_loop_sync_on_SOD          12      440     0    0     0
+spmv_sk0_1    spmv_sk0     arbiter_1p_8u_s                                           5586    4517    0    0     0
+spmv_sk0_1    spmv_sk0     shuffler_core_8u_Pipeline_loop_shuffle_pipeline           8496    8401    0    0     0
+spmv_sk0_1    spmv_sk0     shuffler_core_8u_s                                        8509    8829    0    0     0
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_Pipeline_loop_sync_on_SOD_EOS      20      588     0    0     0
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_s                                  8579    10402   0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_writer_0_4096u_8u_s                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_0_4096u_8u_s                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1                         558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc208                              1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_0_4096u_8u_s                           1105    728     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_writer_1_4096u_8u_s                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_1_4096u_8u_s                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1150                      558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc204                              1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_1_4096u_8u_s                           1104    719     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_writer_2_4096u_8u_s                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_2_4096u_8u_s                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1154                      558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc200                              1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_2_4096u_8u_s                           1104    719     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_writer_3_4096u_8u_s                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_3_4096u_8u_s                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1158                      558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc196                              1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_3_4096u_8u_s                           1104    719     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_writer_4_4096u_8u_s                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_4_4096u_8u_s                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1162                      558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc192                              1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_4_4096u_8u_s                           1104    719     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_writer_5_4096u_8u_s                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_5_4096u_8u_s                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1166                      558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc188                              1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_5_4096u_8u_s                           1104    719     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_writer_6_4096u_8u_s                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_6_4096u_8u_s                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1170                      558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc184                              1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_6_4096u_8u_s                           1104    719     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_writer_7_4096u_8u_s                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_7_4096u_8u_s                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1174                      558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc180                              1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_7_4096u_8u_s                           1104    719     0    0     2
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_Pipeline_loop_sync_on_SOD        12      440     0    0     0
+spmv_sk0_1    spmv_sk0     arbiter_1p_8u_1                                           5586    4517    0    0     0
+spmv_sk0_1    spmv_sk0     shuffler_core_8u_1_Pipeline_loop_shuffle_pipeline         8496    8401    0    0     0
+spmv_sk0_1    spmv_sk0     shuffler_core_8u_1                                        8509    8829    0    0     0
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_Pipeline_loop_sync_on_SOD_EOS    20      588     0    0     0
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_s                                8579    10402   0    0     0
+spmv_sk0_1    spmv_sk0     spmv_cluster_0_Block_split215_proc                        234     83      0    0     0
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_Pipeline_loop_reset_ob                      61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_Pipeline_pe_sync_SOD                        2       28      0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_mul_Pipeline_VITIS_LOOP_44_1                     346     158     0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_mul                                              351     230     0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_acc_8192u_8u_s                                   1533    1337    0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_process_0_8192u_8u_s                             1891    1673    0    0     0
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_Pipeline_pe_sync_SODEOS                     4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_Pipeline_pe_output_loop                     92      103     0    0     0
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_s                                           2075    2273    0    0     2
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_Pipeline_loop_reset_ob                      61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_Pipeline_pe_sync_SOD                        2       28      0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_mul_1_Pipeline_VITIS_LOOP_44_1                   346     158     0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_mul_1                                            351     230     0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_acc_8192u_8u_1                                   1533    1337    0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_process_1_8192u_8u_s                             1891    1673    0    0     0
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_Pipeline_pe_sync_SODEOS                     4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_Pipeline_pe_output_loop                     92      135     0    0     0
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_s                                           2074    2296    0    0     2
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_Pipeline_loop_reset_ob                      61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_Pipeline_pe_sync_SOD                        2       28      0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_mul_2_Pipeline_VITIS_LOOP_44_1                   346     158     0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_mul_2                                            351     230     0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_acc_8192u_8u_2                                   1533    1337    0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_process_2_8192u_8u_s                             1891    1673    0    0     0
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_Pipeline_pe_sync_SODEOS                     4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_Pipeline_pe_output_loop                     92      135     0    0     0
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_s                                           2074    2296    0    0     2
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_Pipeline_loop_reset_ob                      61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_Pipeline_pe_sync_SOD                        2       28      0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_mul_3_Pipeline_VITIS_LOOP_44_1                   346     158     0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_mul_3                                            351     230     0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_acc_8192u_8u_3                                   1533    1337    0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_process_3_8192u_8u_s                             1891    1673    0    0     0
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_Pipeline_pe_sync_SODEOS                     4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_Pipeline_pe_output_loop                     92      135     0    0     0
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_s                                           2074    2296    0    0     2
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_Pipeline_loop_reset_ob                      61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_Pipeline_pe_sync_SOD                        2       28      0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_mul_4_Pipeline_VITIS_LOOP_44_1                   346     158     0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_mul_4                                            351     230     0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_acc_8192u_8u_4                                   1533    1337    0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_process_4_8192u_8u_s                             1891    1673    0    0     0
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_Pipeline_pe_sync_SODEOS                     4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_Pipeline_pe_output_loop                     92      135     0    0     0
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_s                                           2074    2296    0    0     2
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_Pipeline_loop_reset_ob                      61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_Pipeline_pe_sync_SOD                        2       28      0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_mul_5_Pipeline_VITIS_LOOP_44_1                   346     158     0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_mul_5                                            351     230     0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_acc_8192u_8u_5                                   1533    1337    0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_process_5_8192u_8u_s                             1891    1673    0    0     0
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_Pipeline_pe_sync_SODEOS                     4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_Pipeline_pe_output_loop                     92      135     0    0     0
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_s                                           2074    2296    0    0     2
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_Pipeline_loop_reset_ob                      61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_Pipeline_pe_sync_SOD                        2       28      0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_mul_6_Pipeline_VITIS_LOOP_44_1                   346     158     0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_mul_6                                            351     230     0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_acc_8192u_8u_6                                   1533    1337    0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_process_6_8192u_8u_s                             1891    1673    0    0     0
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_Pipeline_pe_sync_SODEOS                     4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_Pipeline_pe_output_loop                     92      135     0    0     0
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_s                                           2074    2296    0    0     2
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_Pipeline_loop_reset_ob                      61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_Pipeline_pe_sync_SOD                        2       28      0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_mul_7_Pipeline_VITIS_LOOP_44_1                   346     158     0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_mul_7                                            351     230     0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_acc_8192u_8u_7                                   1533    1337    0    0     0
+spmv_sk0_1    spmv_sk0     float_pe_process_7_8192u_8u_s                             1891    1673    0    0     0
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_Pipeline_pe_sync_SODEOS                     4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_Pipeline_pe_output_loop                     92      135     0    0     0
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_s                                           2074    2296    0    0     2
+spmv_sk0_1    spmv_sk0     spmv_result_packer                                        296     1290    0    0     0
+spmv_sk0_1    spmv_sk0     spmv_cluster_0_s                                          54873   72165   0    0     32
+spmv_sk0_1    spmv_sk0     spmv_vector_unpacker_1                                    3       333     0    0     0
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_1_Pipeline_VITIS_LOOP_55_2             2683    5762    0    0     0
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_1_Pipeline_loop_matrix_loader          5327    2999    0    0     0
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_1                                      11224   11797   0    0     0
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_1_Pipeline_loop_sync_on_SOD        12      440     0    0     0
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_1_Pipeline_loop_sync_on_SOD_EOS    20      588     0    0     0
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_1                                  8579    10402   0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_writer_0_4096u_8u_1                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_0_4096u_8u_1                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1147                      558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc207                              1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_0_4096u_8u_1                           1105    728     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_writer_1_4096u_8u_1                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_1_4096u_8u_1                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1151                      558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc203                              1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_1_4096u_8u_1                           1104    719     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_writer_2_4096u_8u_1                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_2_4096u_8u_1                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1155                      558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc199                              1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_2_4096u_8u_1                           1104    719     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_writer_3_4096u_8u_1                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_3_4096u_8u_1                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1159                      558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc195                              1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_3_4096u_8u_1                           1104    719     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_writer_4_4096u_8u_1                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_4_4096u_8u_1                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1163                      558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc191                              1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_4_4096u_8u_1                           1104    719     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_writer_5_4096u_8u_1                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_5_4096u_8u_1                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1167                      558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc187                              1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_5_4096u_8u_1                           1104    719     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_writer_6_4096u_8u_1                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_6_4096u_8u_1                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1171                      558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc183                              1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_6_4096u_8u_1                           1104    719     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_writer_7_4096u_8u_1                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_7_4096u_8u_1                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1175                      558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc179                              1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_7_4096u_8u_1                           1104    719     0    0     2
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_1_Pipeline_loop_sync_on_SOD      12      440     0    0     0
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_1_Pipeline_loop_sync_on_SOD_EOS  20      588     0    0     0
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_1                                8579    10402   0    0     0
+spmv_sk0_1    spmv_sk0     spmv_cluster_1_Block_split215_proc                        234     83      0    0     0
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_1_Pipeline_loop_reset_ob                    61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_1_Pipeline_pe_sync_SOD                      2       28      0    0     0
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_1_Pipeline_pe_sync_SODEOS                   4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_1_Pipeline_pe_output_loop                   92      103     0    0     0
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_1                                           2075    2273    0    0     2
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_1_Pipeline_loop_reset_ob                    61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_1_Pipeline_pe_sync_SOD                      2       28      0    0     0
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_1_Pipeline_pe_sync_SODEOS                   4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_1_Pipeline_pe_output_loop                   92      135     0    0     0
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_1                                           2074    2296    0    0     2
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_1_Pipeline_loop_reset_ob                    61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_1_Pipeline_pe_sync_SOD                      2       28      0    0     0
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_1_Pipeline_pe_sync_SODEOS                   4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_1_Pipeline_pe_output_loop                   92      135     0    0     0
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_1                                           2074    2296    0    0     2
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_1_Pipeline_loop_reset_ob                    61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_1_Pipeline_pe_sync_SOD                      2       28      0    0     0
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_1_Pipeline_pe_sync_SODEOS                   4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_1_Pipeline_pe_output_loop                   92      135     0    0     0
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_1                                           2074    2296    0    0     2
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_1_Pipeline_loop_reset_ob                    61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_1_Pipeline_pe_sync_SOD                      2       28      0    0     0
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_1_Pipeline_pe_sync_SODEOS                   4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_1_Pipeline_pe_output_loop                   92      135     0    0     0
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_1                                           2074    2296    0    0     2
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_1_Pipeline_loop_reset_ob                    61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_1_Pipeline_pe_sync_SOD                      2       28      0    0     0
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_1_Pipeline_pe_sync_SODEOS                   4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_1_Pipeline_pe_output_loop                   92      135     0    0     0
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_1                                           2074    2296    0    0     2
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_1_Pipeline_loop_reset_ob                    61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_1_Pipeline_pe_sync_SOD                      2       28      0    0     0
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_1_Pipeline_pe_sync_SODEOS                   4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_1_Pipeline_pe_output_loop                   92      135     0    0     0
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_1                                           2074    2296    0    0     2
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_1_Pipeline_loop_reset_ob                    61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_1_Pipeline_pe_sync_SOD                      2       28      0    0     0
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_1_Pipeline_pe_sync_SODEOS                   4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_1_Pipeline_pe_output_loop                   92      135     0    0     0
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_1                                           2074    2296    0    0     2
+spmv_sk0_1    spmv_sk0     spmv_result_packer_1                                      296     1290    0    0     0
+spmv_sk0_1    spmv_sk0     spmv_cluster_1_s                                          54872   72156   0    0     32
+spmv_sk0_1    spmv_sk0     spmv_vector_unpacker_2                                    3       333     0    0     0
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_2_Pipeline_VITIS_LOOP_55_2             2683    5762    0    0     0
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_2_Pipeline_loop_matrix_loader          5327    2999    0    0     0
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_2                                      11224   11797   0    0     0
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_2_Pipeline_loop_sync_on_SOD        12      440     0    0     0
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_2_Pipeline_loop_sync_on_SOD_EOS    20      588     0    0     0
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_2                                  8579    10402   0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_writer_0_4096u_8u_2                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_0_4096u_8u_2                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1148                      558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc206                              1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_0_4096u_8u_2                           1105    728     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_writer_1_4096u_8u_2                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_1_4096u_8u_2                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1152                      558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc202                              1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_1_4096u_8u_2                           1104    719     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_writer_2_4096u_8u_2                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_2_4096u_8u_2                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1156                      558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc198                              1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_2_4096u_8u_2                           1104    719     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_writer_3_4096u_8u_2                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_3_4096u_8u_2                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1160                      558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc194                              1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_3_4096u_8u_2                           1104    719     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_writer_4_4096u_8u_2                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_4_4096u_8u_2                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1164                      558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc190                              1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_4_4096u_8u_2                           1104    719     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_writer_5_4096u_8u_2                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_5_4096u_8u_2                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1168                      558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc186                              1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_5_4096u_8u_2                           1104    719     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_writer_6_4096u_8u_2                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_6_4096u_8u_2                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1172                      558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc182                              1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_6_4096u_8u_2                           1104    719     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_writer_7_4096u_8u_2                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_7_4096u_8u_2                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1176                      558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc178                              1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_7_4096u_8u_2                           1104    719     0    0     2
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_2_Pipeline_loop_sync_on_SOD      12      440     0    0     0
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_2_Pipeline_loop_sync_on_SOD_EOS  20      588     0    0     0
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_2                                8579    10402   0    0     0
+spmv_sk0_1    spmv_sk0     spmv_cluster_2_Block_split215_proc                        234     83      0    0     0
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_2_Pipeline_loop_reset_ob                    61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_2_Pipeline_pe_sync_SOD                      2       28      0    0     0
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_2_Pipeline_pe_sync_SODEOS                   4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_2_Pipeline_pe_output_loop                   92      103     0    0     0
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_2                                           2075    2273    0    0     2
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_2_Pipeline_loop_reset_ob                    61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_2_Pipeline_pe_sync_SOD                      2       28      0    0     0
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_2_Pipeline_pe_sync_SODEOS                   4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_2_Pipeline_pe_output_loop                   92      135     0    0     0
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_2                                           2074    2296    0    0     2
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_2_Pipeline_loop_reset_ob                    61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_2_Pipeline_pe_sync_SOD                      2       28      0    0     0
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_2_Pipeline_pe_sync_SODEOS                   4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_2_Pipeline_pe_output_loop                   92      135     0    0     0
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_2                                           2074    2296    0    0     2
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_2_Pipeline_loop_reset_ob                    61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_2_Pipeline_pe_sync_SOD                      2       28      0    0     0
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_2_Pipeline_pe_sync_SODEOS                   4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_2_Pipeline_pe_output_loop                   92      135     0    0     0
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_2                                           2074    2296    0    0     2
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_2_Pipeline_loop_reset_ob                    61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_2_Pipeline_pe_sync_SOD                      2       28      0    0     0
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_2_Pipeline_pe_sync_SODEOS                   4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_2_Pipeline_pe_output_loop                   92      135     0    0     0
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_2                                           2074    2296    0    0     2
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_2_Pipeline_loop_reset_ob                    61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_2_Pipeline_pe_sync_SOD                      2       28      0    0     0
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_2_Pipeline_pe_sync_SODEOS                   4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_2_Pipeline_pe_output_loop                   92      135     0    0     0
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_2                                           2074    2296    0    0     2
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_2_Pipeline_loop_reset_ob                    61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_2_Pipeline_pe_sync_SOD                      2       28      0    0     0
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_2_Pipeline_pe_sync_SODEOS                   4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_2_Pipeline_pe_output_loop                   92      135     0    0     0
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_2                                           2074    2296    0    0     2
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_2_Pipeline_loop_reset_ob                    61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_2_Pipeline_pe_sync_SOD                      2       28      0    0     0
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_2_Pipeline_pe_sync_SODEOS                   4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_2_Pipeline_pe_output_loop                   92      135     0    0     0
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_2                                           2074    2296    0    0     2
+spmv_sk0_1    spmv_sk0     spmv_result_packer_2                                      296     1290    0    0     0
+spmv_sk0_1    spmv_sk0     spmv_cluster_2_s                                          54872   72156   0    0     32
+spmv_sk0_1    spmv_sk0     spmv_vector_unpacker_3                                    3       333     0    0     0
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_3_Pipeline_VITIS_LOOP_55_2             2683    5762    0    0     0
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_3_Pipeline_loop_matrix_loader          5327    2999    0    0     0
+spmv_sk0_1    spmv_sk0     CPSR_matrix_loader_3                                      11224   11797   0    0     0
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_3_Pipeline_loop_sync_on_SOD        12      440     0    0     0
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_3_Pipeline_loop_sync_on_SOD_EOS    20      588     0    0     0
+spmv_sk0_1    spmv_sk0     shuffler_EDGE_PLD_T_8u_3                                  8579    10402   0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_writer_0_4096u_8u_3                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_0_4096u_8u_3                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1149                      558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc205                              1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_0_4096u_8u_3                           1105    728     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_writer_1_4096u_8u_3                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_1_4096u_8u_3                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1153                      558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc201                              1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_1_4096u_8u_3                           1104    719     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_writer_2_4096u_8u_3                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_2_4096u_8u_3                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1157                      558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc197                              1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_2_4096u_8u_3                           1104    719     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_writer_3_4096u_8u_3                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_3_4096u_8u_3                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1161                      558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc193                              1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_3_4096u_8u_3                           1104    719     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_writer_4_4096u_8u_3                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_4_4096u_8u_3                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1165                      558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc189                              1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_4_4096u_8u_3                           1104    719     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_writer_5_4096u_8u_3                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_5_4096u_8u_3                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1169                      558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc185                              1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_5_4096u_8u_3                           1104    719     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_writer_6_4096u_8u_3                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_6_4096u_8u_3                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1173                      558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc181                              1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_6_4096u_8u_3                           1104    719     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_writer_7_4096u_8u_3                                52      147     0    0     0
+spmv_sk0_1    spmv_sk0     vecbuf_reader_7_4096u_8u_3                                506     346     0    0     0
+spmv_sk0_1    spmv_sk0     dataflow_in_loop_VITIS_LOOP_158_1177                      558     495     0    0     2
+spmv_sk0_1    spmv_sk0     dataflow_parent_loop_proc                                 1066    615     0    0     2
+spmv_sk0_1    spmv_sk0     vecbuf_access_unit_7_4096u_8u_3                           1104    719     0    0     2
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_3_Pipeline_loop_sync_on_SOD      12      440     0    0     0
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_3_Pipeline_loop_sync_on_SOD_EOS  20      588     0    0     0
+spmv_sk0_1    spmv_sk0     shuffler_UPDATE_PLD_T_8u_3                                8579    10402   0    0     0
+spmv_sk0_1    spmv_sk0     spmv_cluster_3_Block_split215_proc                        234     83      0    0     0
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_3_Pipeline_loop_reset_ob                    61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_3_Pipeline_pe_sync_SOD                      2       28      0    0     0
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_3_Pipeline_pe_sync_SODEOS                   4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_3_Pipeline_pe_output_loop                   92      103     0    0     0
+spmv_sk0_1    spmv_sk0     pe_0_8192u_8u_3                                           2075    2273    0    0     2
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_3_Pipeline_loop_reset_ob                    61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_3_Pipeline_pe_sync_SOD                      2       28      0    0     0
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_3_Pipeline_pe_sync_SODEOS                   4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_3_Pipeline_pe_output_loop                   92      135     0    0     0
+spmv_sk0_1    spmv_sk0     pe_1_8192u_8u_3                                           2074    2296    0    0     2
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_3_Pipeline_loop_reset_ob                    61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_3_Pipeline_pe_sync_SOD                      2       28      0    0     0
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_3_Pipeline_pe_sync_SODEOS                   4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_3_Pipeline_pe_output_loop                   92      135     0    0     0
+spmv_sk0_1    spmv_sk0     pe_2_8192u_8u_3                                           2074    2296    0    0     2
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_3_Pipeline_loop_reset_ob                    61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_3_Pipeline_pe_sync_SOD                      2       28      0    0     0
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_3_Pipeline_pe_sync_SODEOS                   4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_3_Pipeline_pe_output_loop                   92      135     0    0     0
+spmv_sk0_1    spmv_sk0     pe_3_8192u_8u_3                                           2074    2296    0    0     2
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_3_Pipeline_loop_reset_ob                    61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_3_Pipeline_pe_sync_SOD                      2       28      0    0     0
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_3_Pipeline_pe_sync_SODEOS                   4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_3_Pipeline_pe_output_loop                   92      135     0    0     0
+spmv_sk0_1    spmv_sk0     pe_4_8192u_8u_3                                           2074    2296    0    0     2
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_3_Pipeline_loop_reset_ob                    61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_3_Pipeline_pe_sync_SOD                      2       28      0    0     0
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_3_Pipeline_pe_sync_SODEOS                   4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_3_Pipeline_pe_output_loop                   92      135     0    0     0
+spmv_sk0_1    spmv_sk0     pe_5_8192u_8u_3                                           2074    2296    0    0     2
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_3_Pipeline_loop_reset_ob                    61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_3_Pipeline_pe_sync_SOD                      2       28      0    0     0
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_3_Pipeline_pe_sync_SODEOS                   4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_3_Pipeline_pe_output_loop                   92      135     0    0     0
+spmv_sk0_1    spmv_sk0     pe_6_8192u_8u_3                                           2074    2296    0    0     2
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_3_Pipeline_loop_reset_ob                    61      92      0    0     0
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_3_Pipeline_pe_sync_SOD                      2       28      0    0     0
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_3_Pipeline_pe_sync_SODEOS                   4       62      0    0     0
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_3_Pipeline_pe_output_loop                   92      135     0    0     0
+spmv_sk0_1    spmv_sk0     pe_7_8192u_8u_3                                           2074    2296    0    0     2
+spmv_sk0_1    spmv_sk0     spmv_result_packer_3                                      296     1290    0    0     0
+spmv_sk0_1    spmv_sk0     spmv_cluster_3_s                                          54872   72156   0    0     32
+spmv_sk0_1    spmv_sk0     axis_merge_4u_Pipeline_VITIS_LOOP_41_1                    334     326     0    0     0
+spmv_sk0_1    spmv_sk0     axis_merge_4u_s                                           340     440     0    0     0
+spmv_sk0_1    spmv_sk0     spmv_sk0                                                  226046  304708  0    120   128
+-------------------------------------------------------------------------------

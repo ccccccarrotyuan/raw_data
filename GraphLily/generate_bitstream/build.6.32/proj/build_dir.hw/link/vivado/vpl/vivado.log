@@ -1,0 +1,618 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sat Nov 30 15:00:01 2024
+# Process ID: 2498403
+# Current directory: /home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl
+# Command line: vivado -log vivado.log -applog -messageDb vivado.pb -mode batch -source vpl.tcl -notrace
+# Log file: /home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/vivado.log
+# Journal file: /home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/vivado.jou
+# Running On: hacc-gpu0, OS: Linux, CPU Frequency: 1500.000 MHz, CPU Physical cores: 1, Host memory: 540672 MB
+#-----------------------------------------------------------
+source vpl.tcl -notrace
+INFO: Dispatch client connection id - 42483
+WARNING: failed to connect to dispatch server - client already initialized
+[15:00:13] Run vpl: Step create_project: Started
+INFO: [OCL_UTIL] current step: vpl.create_project
+Creating Vivado project.
+INFO: [OCL_UTIL] internal step: source .local/hw_platform/tcl_hooks/dynamic_prelink.tcl
+INFO: [OCL_UTIL] internal step: create_project -part xcu280-fsvh2892-2L-e -force prj prj
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 2750.312 ; gain = 0.023 ; free physical = 51836 ; free virtual = 500407
+INFO: [OCL_UTIL] set_property design_mode GateLvl [current_fileset]
+INFO: [Vivado 12-3498] Setting project source management mode (property SOURCE_MGMT_MODE) to "None".
+INFO: [OCL_UTIL] set_property PR_FLOW 1 [current_project]
+INFO: [OCL_UTIL] internal step: add_files .local/hw_platform/xilinx_u280_xdma_201920_3_bb_locked.dcp
+INFO: [OCL_UTIL] internal step: create_partition_def -name my_pd -module pfm_dynamic
+INFO: [OCL_UTIL] internal step: create_reconfig_module -name my_rm -partition_def [get_partition_defs my_pd ] -top pfm_dynamic
+INFO: [OCL_UTIL] set_property use_blackbox_stub false [get_filesets my_rm -of_objects [get_reconfig_modules my_rm]]
+INFO: [OCL_UTIL] set_property USE_BLACKBOX_STUB 0 [get_partition_defs my_pd]
+INFO: [OCL_UTIL] internal step: create_pr_configuration -name config_1 -partitions [list pfm_top_i/dynamic_region:my_rm]
+CRITICAL WARNING: [filemgmt 20-730] Could not find a top module in the fileset my_rm.
+Resolution: With the gui up, review the source files in the Sources window. Use Add Sources to add any needed sources. If the files are disabled, enable them. You can also select the file and choose Set Used In from the pop-up menu. Review if they are being used at the proper points of the flow.
+[15:00:27] Run vpl: Step create_project: Completed
+[15:00:27] Run vpl: Step create_bd: Started
+INFO: [OCL_UTIL] current step: vpl.create_bd
+INFO: [OCL_UTIL] set_property board_part_repo_paths .local/hw_platform/board [current_project]
+INFO: [OCL_UTIL] set_property board_part xilinx.com:au280:part0:1.0 [current_project]
+INFO: [OCL_UTIL] setting ip_repo_paths: /home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/int/xo/ip_repo/xilinx_com_hls_overlay_1_0 .local/hw_platform/iprepo /tools/Xilinx/Vitis/2021.2/data/cache/xilinx .local/hw_platform/ipcache /tools/Xilinx/Vitis/2021.2/data/ip
+INFO: [OCL_UTIL] internal step: update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/int/xo/ip_repo/xilinx_com_hls_overlay_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/.local/hw_platform/iprepo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2021.2/data/cache/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2021.2/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.2/data/ip'.
+INFO: [OCL_UTIL] internal step: config_ip_cache -use_cache_location /home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/.ipcache
+INFO: [OCL_UTIL] internal step: import_files -norecurse .local/hw_platform/bd/pfm_dynamic.bd -of_objects my_rm
+WARNING: [BD 41-2576] File '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/.local/hw_platform/bd/pfm_dynamic_sim_netlist.vhdl' referenced by design 'pfm_dynamic' could not be found.
+WARNING: [BD 41-2576] File '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/.local/hw_platform/bd/pfm_dynamic_sim_netlist.v' referenced by design 'pfm_dynamic' could not be found.
+WARNING: [BD 41-2576] File '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/.local/hw_platform/bd/pfm_dynamic_stub.vhdl' referenced by design 'pfm_dynamic' could not be found.
+WARNING: [BD 41-2576] File '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/.local/hw_platform/bd/pfm_dynamic_stub.v' referenced by design 'pfm_dynamic' could not be found.
+WARNING: [BD 41-2576] File '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/.local/hw_platform/bd/pfm_dynamic.dcp' referenced by design 'pfm_dynamic' could not be found.
+WARNING: [BD 41-2576] File '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/.local/hw_platform/bd/synth/pfm_dynamic.v' referenced by design 'pfm_dynamic' could not be found.
+WARNING: [BD 41-2576] File '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/.local/hw_platform/bd/sim/pfm_dynamic.v' referenced by design 'pfm_dynamic' could not be found.
+WARNING: [BD 41-2576] File '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/.local/hw_platform/bd/pfm_dynamic_ooc.xdc' referenced by design 'pfm_dynamic' could not be found.
+WARNING: [BD 41-2576] File '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/.local/hw_platform/bd/hw_handoff/pfm_dynamic.hwh' referenced by design 'pfm_dynamic' could not be found.
+WARNING: [BD 41-2576] File '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/.local/hw_platform/bd/hw_handoff/pfm_dynamic_bd.tcl' referenced by design 'pfm_dynamic' could not be found.
+WARNING: [BD 41-2576] File '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/.local/hw_platform/bd/synth/pfm_dynamic.hwdef' referenced by design 'pfm_dynamic' could not be found.
+WARNING: [BD 41-2576] File '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/.local/hw_platform/bd/sim/pfm_dynamic.protoinst' referenced by design 'pfm_dynamic' could not be found.
+INFO: [Project 1-1727] Source BDs should be added before importing the top BD /home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/.local/hw_platform/bd/pfm_dynamic.bd with BDC
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'pfm_dynamic.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+pfm_dynamic_s00_regslice_8
+pfm_dynamic_m01_regslice_5
+pfm_dynamic_s00_regslice_7
+pfm_dynamic_m00_regslice_0
+pfm_dynamic_xlconcat_interrupt_3_0
+pfm_dynamic_xlconstant_gnd_0
+pfm_dynamic_xlconcat_interrupt_2_0
+pfm_dynamic_axi_vip_ctrl_hbm_mgntpf_0
+pfm_dynamic_interconnect_axilite_user_slr2_0
+pfm_dynamic_init_cal_combine_mss_0
+pfm_dynamic_xlconcat_interrupt_1_0
+pfm_dynamic_auto_cc_0
+pfm_dynamic_axilite_user_input_reg_0
+pfm_dynamic_logic_reset_op_1
+pfm_dynamic_xlconcat_interrupt_0
+pfm_dynamic_debug_bridge_xsdbm_0
+pfm_dynamic_axi_vip_ctrl_mgntpf_0
+pfm_dynamic_xlconcat_interrupt_0_0
+pfm_dynamic_hmss_0_0
+pfm_dynamic_util_and2_hbm_0
+pfm_dynamic_regslice_pipe_ctrl_mgntpf_0
+pfm_dynamic_interconnect_axilite_user_slr0_0
+pfm_dynamic_s00_regslice_6
+pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0
+pfm_dynamic_axi_vip_data_0
+pfm_dynamic_m02_regslice_0
+pfm_dynamic_axi_cdc_xdma_0
+pfm_dynamic_memory_subsystem_0
+pfm_dynamic_axi_vip_ctrl_userpf_0
+pfm_dynamic_m01_regslice_4
+pfm_dynamic_util_and2_hbm_ctrl_reset_0
+pfm_dynamic_axi_gpio_null_slr1_0
+pfm_dynamic_axi_gpio_null_slr0_0
+pfm_dynamic_logic_reset_op_0
+pfm_dynamic_interconnect_axilite_user_slr1_0
+pfm_dynamic_xdma_smartconnect_0
+pfm_dynamic_util_and2_slr0_0
+pfm_dynamic_xbar_0
+pfm_dynamic_util_and2_slr1_0
+pfm_dynamic_sdx_mss_regslice_0
+pfm_dynamic_axi_gpio_null_slr2_0
+pfm_dynamic_xbar_1
+pfm_dynamic_axi_interconnect_0_0
+pfm_dynamic_dna_self_check_placeholder_0_0
+pfm_dynamic_util_and2_slr2_0
+
+CRITICAL WARNING: [BD 41-2597] Failed to copy '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/.local/hw_platform/bd/pfm_dynamic_sim_netlist.vhdl' to '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/pfm_dynamic_sim_netlist.vhdl'
+CRITICAL WARNING: [BD 41-2597] Failed to copy '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/.local/hw_platform/bd/pfm_dynamic_sim_netlist.v' to '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/pfm_dynamic_sim_netlist.v'
+CRITICAL WARNING: [BD 41-2597] Failed to copy '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/.local/hw_platform/bd/pfm_dynamic_stub.vhdl' to '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/pfm_dynamic_stub.vhdl'
+CRITICAL WARNING: [BD 41-2597] Failed to copy '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/.local/hw_platform/bd/pfm_dynamic_stub.v' to '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/pfm_dynamic_stub.v'
+CRITICAL WARNING: [BD 41-2597] Failed to copy '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/.local/hw_platform/bd/pfm_dynamic.dcp' to '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/pfm_dynamic.dcp'
+WARNING: [IP_Flow 19-2162] IP 'pfm_dynamic_axi_vip_ctrl_hbm_mgntpf_0' is locked:
+* IP definition 'AXI Verification IP (1.1)' for IP 'pfm_dynamic_axi_vip_ctrl_hbm_mgntpf_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'pfm_dynamic_axi_vip_ctrl_mgntpf_0' is locked:
+* IP definition 'AXI Verification IP (1.1)' for IP 'pfm_dynamic_axi_vip_ctrl_mgntpf_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'pfm_dynamic_axi_vip_ctrl_userpf_0' is locked:
+* IP definition 'AXI Verification IP (1.1)' for IP 'pfm_dynamic_axi_vip_ctrl_userpf_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'pfm_dynamic_axi_vip_data_0' is locked:
+* IP definition 'AXI Verification IP (1.1)' for IP 'pfm_dynamic_axi_vip_data_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'pfm_dynamic_axilite_user_input_reg_0' is locked:
+* IP definition 'AXI Register Slice (2.1)' for IP 'pfm_dynamic_axilite_user_input_reg_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'pfm_dynamic_debug_bridge_xsdbm_0' is locked:
+* IP definition 'Debug Bridge (3.0)' for IP 'pfm_dynamic_debug_bridge_xsdbm_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_5dca_hbm_inst_0' is locked:
+* IP definition 'HBM IP (1.0)' for IP 'bd_5dca_hbm_inst_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_5dca_vip_S00_0' is locked:
+* IP definition 'AXI Verification IP (1.1)' for IP 'bd_5dca_vip_S00_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_5dca_axi_apb_bridge_inst_0' is locked:
+* IP definition 'AXI APB Bridge (3.0)' for IP 'bd_5dca_axi_apb_bridge_inst_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_5dca_util_vector_logic_0' is locked:
+* The IP Data in the repository is incompatible with the current instance (despite having identical Version and Revision). You will need to upgrade the IP before viewing the customization and generating outputs.
+WARNING: [IP_Flow 19-2162] IP 'bd_074a_one_0' is locked:
+* IP definition 'Constant (1.1)' for IP 'bd_074a_one_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_074a_s00mmu_0' is locked:
+* IP definition 'SC MMU (1.0)' for IP 'bd_074a_s00mmu_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_074a_s00tr_0' is locked:
+* IP definition 'SC TRANSACTION_REGULATOR (1.0)' for IP 'bd_074a_s00tr_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_074a_s00sic_0' is locked:
+* IP definition 'SC SI_CONVERTER (1.0)' for IP 'bd_074a_s00sic_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_074a_sarn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_074a_sarn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_074a_srn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_074a_srn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_074a_sawn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_074a_sawn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_074a_swn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_074a_swn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_074a_sbn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_074a_sbn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_074a_m00e_0' is locked:
+* IP definition 'SC EXIT (1.0)' for IP 'bd_074a_m00e_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_5dca_interconnect0_12_0' is locked:
+* IP definition 'AXI SmartConnect (1.0)' for IP 'bd_5dca_interconnect0_12_0' (customized with software release 2019.2) has a different revision in the IP Catalog. * IP 'bd_5dca_interconnect0_12_0' contains one or more locked subcores.
+WARNING: [IP_Flow 19-2162] IP 'bd_5dca_slice0_12_0' is locked:
+* IP definition 'AXI Register Slice (2.1)' for IP 'bd_5dca_slice0_12_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_5dca_init_concat_0' is locked:
+* IP definition 'Concat (2.1)' for IP 'bd_5dca_init_concat_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'pfm_dynamic_hmss_0_0' is locked:
+* IP 'pfm_dynamic_hmss_0_0' contains one or more locked subcores.
+WARNING: [IP_Flow 19-2162] IP 'pfm_dynamic_xlconcat_interrupt_0' is locked:
+* IP definition 'Concat (2.1)' for IP 'pfm_dynamic_xlconcat_interrupt_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'pfm_dynamic_xlconcat_interrupt_0_0' is locked:
+* IP definition 'Concat (2.1)' for IP 'pfm_dynamic_xlconcat_interrupt_0_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'pfm_dynamic_xlconcat_interrupt_1_0' is locked:
+* IP definition 'Concat (2.1)' for IP 'pfm_dynamic_xlconcat_interrupt_1_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'pfm_dynamic_xlconcat_interrupt_2_0' is locked:
+* IP definition 'Concat (2.1)' for IP 'pfm_dynamic_xlconcat_interrupt_2_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'pfm_dynamic_xlconcat_interrupt_3_0' is locked:
+* IP definition 'Concat (2.1)' for IP 'pfm_dynamic_xlconcat_interrupt_3_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'pfm_dynamic_xlconstant_gnd_0' is locked:
+* IP definition 'Constant (1.1)' for IP 'pfm_dynamic_xlconstant_gnd_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_one_0' is locked:
+* IP definition 'Constant (1.1)' for IP 'bd_4bfa_one_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_s00mmu_0' is locked:
+* IP definition 'SC MMU (1.0)' for IP 'bd_4bfa_s00mmu_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_s00tr_0' is locked:
+* IP definition 'SC TRANSACTION_REGULATOR (1.0)' for IP 'bd_4bfa_s00tr_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_s00sic_0' is locked:
+* IP definition 'SC SI_CONVERTER (1.0)' for IP 'bd_4bfa_s00sic_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_sarn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_sarn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_srn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_srn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_sawn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_sawn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_swn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_swn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_sbn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_sbn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m00arn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m00arn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m00rn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m00rn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m00awn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m00awn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m00wn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m00wn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m00bn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m00bn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m00e_0' is locked:
+* IP definition 'SC EXIT (1.0)' for IP 'bd_4bfa_m00e_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m01arn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m01arn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m01rn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m01rn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m01awn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m01awn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m01wn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m01wn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m01bn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m01bn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m01e_0' is locked:
+* IP definition 'SC EXIT (1.0)' for IP 'bd_4bfa_m01e_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m02arn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m02arn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m02rn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m02rn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m02awn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m02awn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m02wn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m02wn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m02bn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m02bn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m02e_0' is locked:
+* IP definition 'SC EXIT (1.0)' for IP 'bd_4bfa_m02e_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m03arn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m03arn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m03rn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m03rn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m03awn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m03awn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m03wn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m03wn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m03bn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m03bn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m03e_0' is locked:
+* IP definition 'SC EXIT (1.0)' for IP 'bd_4bfa_m03e_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m04arn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m04arn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m04rn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m04rn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m04awn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m04awn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m04wn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m04wn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m04bn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m04bn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m04e_0' is locked:
+* IP definition 'SC EXIT (1.0)' for IP 'bd_4bfa_m04e_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m05arn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m05arn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m05rn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m05rn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m05awn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m05awn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m05wn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m05wn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m05bn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m05bn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m05e_0' is locked:
+* IP definition 'SC EXIT (1.0)' for IP 'bd_4bfa_m05e_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m06arn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m06arn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m06rn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m06rn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m06awn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m06awn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m06wn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m06wn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m06bn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m06bn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m06e_0' is locked:
+* IP definition 'SC EXIT (1.0)' for IP 'bd_4bfa_m06e_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m07arn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m07arn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m07rn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m07rn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m07awn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m07awn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m07wn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m07wn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m07bn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_4bfa_m07bn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_4bfa_m07e_0' is locked:
+* IP definition 'SC EXIT (1.0)' for IP 'bd_4bfa_m07e_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_d216_interconnect_S00_AXI_0' is locked:
+* IP definition 'AXI SmartConnect (1.0)' for IP 'bd_d216_interconnect_S00_AXI_0' (customized with software release 2019.2) has a different revision in the IP Catalog. * IP 'bd_d216_interconnect_S00_AXI_0' contains one or more locked subcores.
+WARNING: [IP_Flow 19-2162] IP 'bd_27a1_one_0' is locked:
+* IP definition 'Constant (1.1)' for IP 'bd_27a1_one_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_27a1_s00mmu_0' is locked:
+* IP definition 'SC MMU (1.0)' for IP 'bd_27a1_s00mmu_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_27a1_s00tr_0' is locked:
+* IP definition 'SC TRANSACTION_REGULATOR (1.0)' for IP 'bd_27a1_s00tr_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_27a1_s00sic_0' is locked:
+* IP definition 'SC SI_CONVERTER (1.0)' for IP 'bd_27a1_s00sic_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_27a1_sarn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_27a1_sarn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_27a1_srn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_27a1_srn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_27a1_sawn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_27a1_sawn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_27a1_swn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_27a1_swn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_27a1_sbn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_27a1_sbn_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_27a1_m00e_0' is locked:
+* IP definition 'SC EXIT (1.0)' for IP 'bd_27a1_m00e_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_d216_interconnect_DDR4_MEM00_0' is locked:
+* IP definition 'AXI SmartConnect (1.0)' for IP 'bd_d216_interconnect_DDR4_MEM00_0' (customized with software release 2019.2) has a different revision in the IP Catalog. * IP 'bd_d216_interconnect_DDR4_MEM00_0' contains one or more locked subcores.
+WARNING: [IP_Flow 19-2162] IP 'bd_e7f0_one_0' is locked:
+* IP definition 'Constant (1.1)' for IP 'bd_e7f0_one_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+INFO: [Common 17-14] Message 'IP_Flow 19-2162' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [BD 41-2597] Failed to copy '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/.local/hw_platform/bd/synth/pfm_dynamic.v' to '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v'
+CRITICAL WARNING: [BD 41-2597] Failed to copy '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/.local/hw_platform/bd/sim/pfm_dynamic.v' to '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/sim/pfm_dynamic.v'
+CRITICAL WARNING: [BD 41-2597] Failed to copy '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/.local/hw_platform/bd/pfm_dynamic_ooc.xdc' to '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/pfm_dynamic_ooc.xdc'
+CRITICAL WARNING: [BD 41-2597] Failed to copy '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/.local/hw_platform/bd/hw_handoff/pfm_dynamic.hwh' to '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/hw_handoff/pfm_dynamic.hwh'
+CRITICAL WARNING: [BD 41-2597] Failed to copy '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/.local/hw_platform/bd/hw_handoff/pfm_dynamic_bd.tcl' to '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/hw_handoff/pfm_dynamic_bd.tcl'
+CRITICAL WARNING: [BD 41-2597] Failed to copy '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/.local/hw_platform/bd/synth/pfm_dynamic.hwdef' to '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.hwdef'
+CRITICAL WARNING: [BD 41-2597] Failed to copy '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/.local/hw_platform/bd/sim/pfm_dynamic.protoinst' to '/home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/sim/pfm_dynamic.protoinst'
+import_files: Time (s): cpu = 00:00:31 ; elapsed = 00:08:48 . Memory (MB): peak = 2750.312 ; gain = 0.000 ; free physical = 48441 ; free virtual = 497631
+INFO: [OCL_UTIL] internal step: open_bd_design -auto_upgrade [get_files pfm_dynamic.bd]
+Reading block design file </home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/pfm_dynamic.bd>...
+WARNING: [BD 41-1284] Cannot set parameter CAN_DEBUG on port /ddrmem_0_C0_DDR4_ck_t
+WARNING: [BD 41-1284] Cannot set parameter TIMEPERIOD_PS on port /ddrmem_0_C0_DDR4_ck_t
+WARNING: [BD 41-1284] Cannot set parameter MEMORY_TYPE on port /ddrmem_0_C0_DDR4_ck_t
+WARNING: [BD 41-1284] Cannot set parameter MEMORY_PART on port /ddrmem_0_C0_DDR4_ck_t
+WARNING: [BD 41-1284] Cannot set parameter DATA_WIDTH on port /ddrmem_0_C0_DDR4_ck_t
+WARNING: [BD 41-1284] Cannot set parameter CS_ENABLED on port /ddrmem_0_C0_DDR4_ck_t
+WARNING: [BD 41-1284] Cannot set parameter DATA_MASK_ENABLED on port /ddrmem_0_C0_DDR4_ck_t
+WARNING: [BD 41-1284] Cannot set parameter SLOT on port /ddrmem_0_C0_DDR4_ck_t
+WARNING: [BD 41-1284] Cannot set parameter CUSTOM_PARTS on port /ddrmem_0_C0_DDR4_ck_t
+WARNING: [BD 41-1284] Cannot set parameter MEM_ADDR_MAP on port /ddrmem_0_C0_DDR4_ck_t
+WARNING: [BD 41-1284] Cannot set parameter BURST_LENGTH on port /ddrmem_0_C0_DDR4_ck_t
+WARNING: [BD 41-1284] Cannot set parameter AXI_ARBITRATION_SCHEME on port /ddrmem_0_C0_DDR4_ck_t
+WARNING: [BD 41-1284] Cannot set parameter CAS_LATENCY on port /ddrmem_0_C0_DDR4_ck_t
+WARNING: [BD 41-1284] Cannot set parameter CAS_WRITE_LATENCY on port /ddrmem_0_C0_DDR4_ck_t
+WARNING: [BD 41-1284] Cannot set parameter CAN_DEBUG on port /ddrmem_0_C0_DDR4_ck_c
+WARNING: [BD 41-1284] Cannot set parameter TIMEPERIOD_PS on port /ddrmem_0_C0_DDR4_ck_c
+WARNING: [BD 41-1284] Cannot set parameter MEMORY_TYPE on port /ddrmem_0_C0_DDR4_ck_c
+WARNING: [BD 41-1284] Cannot set parameter MEMORY_PART on port /ddrmem_0_C0_DDR4_ck_c
+WARNING: [BD 41-1284] Cannot set parameter DATA_WIDTH on port /ddrmem_0_C0_DDR4_ck_c
+WARNING: [BD 41-1284] Cannot set parameter CS_ENABLED on port /ddrmem_0_C0_DDR4_ck_c
+WARNING: [BD 41-1284] Cannot set parameter DATA_MASK_ENABLED on port /ddrmem_0_C0_DDR4_ck_c
+WARNING: [BD 41-1284] Cannot set parameter SLOT on port /ddrmem_0_C0_DDR4_ck_c
+WARNING: [BD 41-1284] Cannot set parameter CUSTOM_PARTS on port /ddrmem_0_C0_DDR4_ck_c
+WARNING: [BD 41-1284] Cannot set parameter MEM_ADDR_MAP on port /ddrmem_0_C0_DDR4_ck_c
+WARNING: [BD 41-1284] Cannot set parameter BURST_LENGTH on port /ddrmem_0_C0_DDR4_ck_c
+WARNING: [BD 41-1284] Cannot set parameter AXI_ARBITRATION_SCHEME on port /ddrmem_0_C0_DDR4_ck_c
+WARNING: [BD 41-1284] Cannot set parameter CAS_LATENCY on port /ddrmem_0_C0_DDR4_ck_c
+WARNING: [BD 41-1284] Cannot set parameter CAS_WRITE_LATENCY on port /ddrmem_0_C0_DDR4_ck_c
+WARNING: [BD 41-1284] Cannot set parameter CAN_DEBUG on port /ddrmem_1_C0_DDR4_ck_t
+WARNING: [BD 41-1284] Cannot set parameter TIMEPERIOD_PS on port /ddrmem_1_C0_DDR4_ck_t
+WARNING: [BD 41-1284] Cannot set parameter MEMORY_TYPE on port /ddrmem_1_C0_DDR4_ck_t
+WARNING: [BD 41-1284] Cannot set parameter MEMORY_PART on port /ddrmem_1_C0_DDR4_ck_t
+WARNING: [BD 41-1284] Cannot set parameter DATA_WIDTH on port /ddrmem_1_C0_DDR4_ck_t
+WARNING: [BD 41-1284] Cannot set parameter CS_ENABLED on port /ddrmem_1_C0_DDR4_ck_t
+WARNING: [BD 41-1284] Cannot set parameter DATA_MASK_ENABLED on port /ddrmem_1_C0_DDR4_ck_t
+WARNING: [BD 41-1284] Cannot set parameter SLOT on port /ddrmem_1_C0_DDR4_ck_t
+WARNING: [BD 41-1284] Cannot set parameter CUSTOM_PARTS on port /ddrmem_1_C0_DDR4_ck_t
+WARNING: [BD 41-1284] Cannot set parameter MEM_ADDR_MAP on port /ddrmem_1_C0_DDR4_ck_t
+WARNING: [BD 41-1284] Cannot set parameter BURST_LENGTH on port /ddrmem_1_C0_DDR4_ck_t
+WARNING: [BD 41-1284] Cannot set parameter AXI_ARBITRATION_SCHEME on port /ddrmem_1_C0_DDR4_ck_t
+WARNING: [BD 41-1284] Cannot set parameter CAS_LATENCY on port /ddrmem_1_C0_DDR4_ck_t
+WARNING: [BD 41-1284] Cannot set parameter CAS_WRITE_LATENCY on port /ddrmem_1_C0_DDR4_ck_t
+WARNING: [BD 41-1284] Cannot set parameter CAN_DEBUG on port /ddrmem_1_C0_DDR4_ck_c
+WARNING: [BD 41-1284] Cannot set parameter TIMEPERIOD_PS on port /ddrmem_1_C0_DDR4_ck_c
+WARNING: [BD 41-1284] Cannot set parameter MEMORY_TYPE on port /ddrmem_1_C0_DDR4_ck_c
+WARNING: [BD 41-1284] Cannot set parameter MEMORY_PART on port /ddrmem_1_C0_DDR4_ck_c
+WARNING: [BD 41-1284] Cannot set parameter DATA_WIDTH on port /ddrmem_1_C0_DDR4_ck_c
+WARNING: [BD 41-1284] Cannot set parameter CS_ENABLED on port /ddrmem_1_C0_DDR4_ck_c
+WARNING: [BD 41-1284] Cannot set parameter DATA_MASK_ENABLED on port /ddrmem_1_C0_DDR4_ck_c
+WARNING: [BD 41-1284] Cannot set parameter SLOT on port /ddrmem_1_C0_DDR4_ck_c
+WARNING: [BD 41-1284] Cannot set parameter CUSTOM_PARTS on port /ddrmem_1_C0_DDR4_ck_c
+WARNING: [BD 41-1284] Cannot set parameter MEM_ADDR_MAP on port /ddrmem_1_C0_DDR4_ck_c
+WARNING: [BD 41-1284] Cannot set parameter BURST_LENGTH on port /ddrmem_1_C0_DDR4_ck_c
+WARNING: [BD 41-1284] Cannot set parameter AXI_ARBITRATION_SCHEME on port /ddrmem_1_C0_DDR4_ck_c
+WARNING: [BD 41-1284] Cannot set parameter CAS_LATENCY on port /ddrmem_1_C0_DDR4_ck_c
+WARNING: [BD 41-1284] Cannot set parameter CAS_WRITE_LATENCY on port /ddrmem_1_C0_DDR4_ck_c
+WARNING: [BD 41-1284] Cannot set parameter CAN_DEBUG on port /c0_sys_clk_p
+WARNING: [BD 41-1284] Cannot set parameter CAN_DEBUG on port /c0_sys_clk_n
+WARNING: [BD 41-1284] Cannot set parameter CAN_DEBUG on port /c1_sys_clk_p
+WARNING: [BD 41-1284] Cannot set parameter CAN_DEBUG on port /c1_sys_clk_n
+Adding component instance block -- xilinx.com:ip:axi_vip:1.1 - axi_vip_ctrl_hbm_mgntpf
+Adding component instance block -- xilinx.com:ip:axi_vip:1.1 - axi_vip_ctrl_mgntpf
+Adding component instance block -- xilinx.com:ip:axi_vip:1.1 - axi_vip_ctrl_userpf
+Adding component instance block -- xilinx.com:ip:axi_vip:1.1 - axi_vip_data
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - axilite_user_input_reg
+Adding component instance block -- xilinx.com:ip:debug_bridge:3.0 - debug_bridge_xsdbm
+Adding component instance block -- xilinx.com:ip:hbm_memory_subsystem:1.0 - hmss_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_interrupt
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_interrupt_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_interrupt_1
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_interrupt_2
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_interrupt_3
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_gnd
+Adding component instance block -- xilinx.com:ip:sdx_memory_subsystem:1.0 - memory_subsystem
+Adding component instance block -- xilinx.com:ip:util_reduced_logic:2.0 - init_combine_mss
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - init_cal_combine_mss
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - regslice_pipe_ctrl_hbm_mgntpf
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - regslice_pipe_ctrl_mgntpf
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_null_slr0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - logic_reset_op
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - psreset_gate_pr_control
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - psreset_gate_pr_data
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - psreset_gate_pr_dataclk
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - psreset_gate_pr_kernel
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - psreset_gate_pr_kernel2
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_and2_hbm
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_and2_hbm_ctrl_reset
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_and2_slr0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - util_slice_hbm
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - util_slice_slr0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - interconnect_axilite_user_slr0
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - axi_cdc_xdma
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_null_slr1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - psreset_gate_pr_control
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - psreset_gate_pr_data
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - psreset_gate_pr_dataclk
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - psreset_gate_pr_ddr
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - psreset_gate_pr_kernel
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - psreset_gate_pr_kernel2
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_and2_slr1
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - util_slice_slr1
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - interconnect_axilite_user_slr1
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - sdx_mss_regslice
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_null_slr2
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - dna_self_check_placeholder_0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - logic_reset_op
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - psreset_gate_pr_control
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - psreset_gate_pr_data
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - psreset_gate_pr_dataclk
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - psreset_gate_pr_kernel
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - psreset_gate_pr_kernel2
+Adding component instance block -- xilinx.com:user:freq_counter:1.0 - freq_counter_0
+Adding component instance block -- xilinx.com:user:freq_counter:1.0 - freq_counter_1
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - interconnect_axilite_user_slr2
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_and2_slr2
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - util_slice_slr2
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - xdma_smartconnect
+Successfully read diagram <pfm_dynamic> from block design file </home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/pfm_dynamic.bd>
+INFO: [BD 41-1799] The block design contains upgradeable cell(s), automatically upgrading to newest version...
+INFO: [IP_Flow 19-3422] Upgraded pfm_dynamic_interconnect_axilite_user_slr0_0 (AXI Interconnect 2.1) from revision 21 to revision 26
+INFO: [IP_Flow 19-3422] Upgraded pfm_dynamic_interconnect_axilite_user_slr1_0 (AXI Interconnect 2.1) from revision 21 to revision 26
+INFO: [IP_Flow 19-3422] Upgraded pfm_dynamic_axi_interconnect_0_0 (AXI Interconnect 2.1) from revision 21 to revision 26
+INFO: [IP_Flow 19-3422] Upgraded pfm_dynamic_interconnect_axilite_user_slr2_0 (AXI Interconnect 2.1) from revision 21 to revision 26
+INFO: [BD 41-1799] The block design contains upgradeable cell(s), automatically upgrading to newest version...
+INFO: [IP_Flow 19-3422] Upgraded pfm_dynamic_axi_vip_ctrl_hbm_mgntpf_0 (AXI Verification IP 1.1) from revision 6 to revision 11
+WARNING: AXI VIP is in passthrough mode and all user parameters are in propogate mode. Change of SUPPORTS_NARROW will be ignored in validation
+WARNING: AXI VIP is in passthrough mode and all user parameters are in propogate mode. Change of HAS_BURST will be ignored in validation
+WARNING: AXI VIP is in passthrough mode and all user parameters are in propogate mode. Change of HAS_CACHE will be ignored in validation
+WARNING: AXI VIP is in passthrough mode and all user parameters are in propogate mode. Change of HAS_REGION will be ignored in validation
+WARNING: AXI VIP is in passthrough mode and all user parameters are in propogate mode. Change of HAS_QOS will be ignored in validation
+WARNING: AXI VIP is in passthrough mode and all user parameters are in propogate mode. Change of HAS_LOCK will be ignored in validation
+INFO: [IP_Flow 19-3422] Upgraded pfm_dynamic_axi_vip_ctrl_mgntpf_0 (AXI Verification IP 1.1) from revision 6 to revision 11
+WARNING: AXI VIP is in passthrough mode and all user parameters are in propogate mode. Change of SUPPORTS_NARROW will be ignored in validation
+WARNING: AXI VIP is in passthrough mode and all user parameters are in propogate mode. Change of HAS_BURST will be ignored in validation
+WARNING: AXI VIP is in passthrough mode and all user parameters are in propogate mode. Change of HAS_CACHE will be ignored in validation
+WARNING: AXI VIP is in passthrough mode and all user parameters are in propogate mode. Change of HAS_REGION will be ignored in validation
+WARNING: AXI VIP is in passthrough mode and all user parameters are in propogate mode. Change of HAS_QOS will be ignored in validation
+WARNING: AXI VIP is in passthrough mode and all user parameters are in propogate mode. Change of HAS_LOCK will be ignored in validation
+INFO: [IP_Flow 19-3422] Upgraded pfm_dynamic_axi_vip_ctrl_userpf_0 (AXI Verification IP 1.1) from revision 6 to revision 11
+WARNING: AXI VIP is in passthrough mode and all user parameters are in propogate mode. Change of SUPPORTS_NARROW will be ignored in validation
+WARNING: AXI VIP is in passthrough mode and all user parameters are in propogate mode. Change of HAS_BURST will be ignored in validation
+WARNING: AXI VIP is in passthrough mode and all user parameters are in propogate mode. Change of HAS_CACHE will be ignored in validation
+WARNING: AXI VIP is in passthrough mode and all user parameters are in propogate mode. Change of HAS_REGION will be ignored in validation
+WARNING: AXI VIP is in passthrough mode and all user parameters are in propogate mode. Change of HAS_QOS will be ignored in validation
+WARNING: AXI VIP is in passthrough mode and all user parameters are in propogate mode. Change of HAS_LOCK will be ignored in validation
+INFO: [IP_Flow 19-3422] Upgraded pfm_dynamic_axi_vip_data_0 (AXI Verification IP 1.1) from revision 6 to revision 11
+INFO: [IP_Flow 19-3422] Upgraded pfm_dynamic_axilite_user_input_reg_0 (AXI Register Slice 2.1) from revision 20 to revision 25
+INFO: [xilinx.com:ip:debug_bridge:3.0-0] pfm_dynamic_debug_bridge_xsdbm_0:  Update boundary has completed 
+INFO: [xilinx.com:ip:debug_bridge:3.0-0] pfm_dynamic_debug_bridge_xsdbm_0:  Update boundary has started running 
+INFO: [xilinx.com:ip:debug_bridge:3.0-0] pfm_dynamic_debug_bridge_xsdbm_0:  Update content has started running 
+create_bd_cell: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3673.457 ; gain = 854.359 ; free physical = 46685 ; free virtual = 495868
+INFO: [IP_Flow 19-3422] Upgraded pfm_dynamic_debug_bridge_xsdbm_0 (Debug Bridge 3.0) from revision 5 to revision 7
+INFO: [IP_Flow 19-3420] Updated pfm_dynamic_hmss_0_0 to use current project options
+INFO: [IP_Flow 19-3422] Upgraded pfm_dynamic_xlconcat_interrupt_0 (Concat 2.1) from revision 3 to revision 4
+INFO: [IP_Flow 19-3422] Upgraded pfm_dynamic_xlconcat_interrupt_0_0 (Concat 2.1) from revision 3 to revision 4
+INFO: [IP_Flow 19-3422] Upgraded pfm_dynamic_xlconcat_interrupt_1_0 (Concat 2.1) from revision 3 to revision 4
+INFO: [IP_Flow 19-3422] Upgraded pfm_dynamic_xlconcat_interrupt_2_0 (Concat 2.1) from revision 3 to revision 4
+INFO: [IP_Flow 19-3422] Upgraded pfm_dynamic_xlconcat_interrupt_3_0 (Concat 2.1) from revision 3 to revision 4
+INFO: [IP_Flow 19-3422] Upgraded pfm_dynamic_xlconstant_gnd_0 (Constant 1.1) from revision 6 to revision 7
+INFO: [IP_Flow 19-3422] Upgraded pfm_dynamic_memory_subsystem_0 (SDx Memory Subsystem 1.0) from revision 5 to revision 11
+INFO: [IP_Flow 19-3420] Updated pfm_dynamic_init_cal_combine_mss_0 to use current project options
+INFO: [IP_Flow 19-3422] Upgraded pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0 (AXI Register Slice 2.1) from revision 20 to revision 25
+INFO: [IP_Flow 19-3422] Upgraded pfm_dynamic_regslice_pipe_ctrl_mgntpf_0 (AXI Register Slice 2.1) from revision 20 to revision 25
+INFO: [IP_Flow 19-3422] Upgraded pfm_dynamic_axi_gpio_null_slr0_0 (AXI GPIO 2.0) from revision 22 to revision 27
+INFO: [IP_Flow 19-3420] Updated pfm_dynamic_logic_reset_op_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated pfm_dynamic_util_and2_hbm_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated pfm_dynamic_util_and2_hbm_ctrl_reset_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated pfm_dynamic_util_and2_slr0_0 to use current project options
+INFO: [IP_Flow 19-3422] Upgraded pfm_dynamic_axi_cdc_xdma_0 (AXI Clock Converter 2.1) from revision 19 to revision 24
+INFO: [IP_Flow 19-3422] Upgraded pfm_dynamic_axi_gpio_null_slr1_0 (AXI GPIO 2.0) from revision 22 to revision 27
+INFO: [IP_Flow 19-3420] Updated pfm_dynamic_util_and2_slr1_0 to use current project options
+INFO: [IP_Flow 19-3422] Upgraded pfm_dynamic_sdx_mss_regslice_0 (AXI Register Slice 2.1) from revision 20 to revision 25
+INFO: [IP_Flow 19-3422] Upgraded pfm_dynamic_axi_gpio_null_slr2_0 (AXI GPIO 2.0) from revision 22 to revision 27
+INFO: [IP_Flow 19-3422] Upgraded pfm_dynamic_dna_self_check_placeholder_0_0 (Constant 1.1) from revision 6 to revision 7
+INFO: [IP_Flow 19-3420] Updated pfm_dynamic_logic_reset_op_1 to use current project options
+INFO: [IP_Flow 19-3420] Updated pfm_dynamic_util_and2_slr2_0 to use current project options
+INFO: [IP_Flow 19-3422] Upgraded pfm_dynamic_xdma_smartconnect_0 (AXI SmartConnect 1.0) from revision 12 to revision 17
+Wrote  : </home/ziyuanwang/GraphLily/generate_bitstream/build.6.32/proj/build_dir.hw/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/pfm_dynamic.bd> 
+open_bd_design: Time (s): cpu = 00:00:14 ; elapsed = 00:03:22 . Memory (MB): peak = 3673.457 ; gain = 879.898 ; free physical = 48408 ; free virtual = 497293
+INFO: [OCL_UTIL] internal step: report locked IPs
+INFO: [OCL_UTIL] internal step: source .local/dr.bd.tcl
+delete_bd_objs: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:06 . Memory (MB): peak = 3673.457 ; gain = 0.000 ; free physical = 48467 ; free virtual = 497295
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S01_AXI/DDR4_MEM00'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S01_AXI/DDR4_MEM01'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S01_AXI/PLRAM_MEM00'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S01_AXI/PLRAM_MEM01'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S01_AXI/PLRAM_MEM02'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S01_AXI/PLRAM_MEM03'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S01_AXI/PLRAM_MEM04'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S01_AXI/PLRAM_MEM05'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S01_AXI/DDR4_MEM00'
+INFO: [sdx_memory_subsystem 1-1] Mapped memory resource DDR4_MEM00 from /memory_subsystem into /overlay_1/m_axi_spmspv_gmem0
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S01_AXI/DDR4_MEM01'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S01_AXI/PLRAM_MEM00'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S01_AXI/PLRAM_MEM01'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S01_AXI/PLRAM_MEM02'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S01_AXI/PLRAM_MEM03'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S01_AXI/PLRAM_MEM04'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S01_AXI/PLRAM_MEM05'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S02_AXI/DDR4_MEM00'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S02_AXI/DDR4_MEM01'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S02_AXI/PLRAM_MEM00'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S02_AXI/PLRAM_MEM01'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S02_AXI/PLRAM_MEM02'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S02_AXI/PLRAM_MEM03'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S02_AXI/PLRAM_MEM04'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S02_AXI/PLRAM_MEM05'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S02_AXI/DDR4_MEM00'
+INFO: [sdx_memory_subsystem 1-1] Mapped memory resource DDR4_MEM00 from /memory_subsystem into /overlay_1/m_axi_spmspv_gmem1
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S01_AXI/DDR4_MEM01'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S01_AXI/PLRAM_MEM00'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S01_AXI/PLRAM_MEM01'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S01_AXI/PLRAM_MEM02'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S01_AXI/PLRAM_MEM03'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S01_AXI/PLRAM_MEM04'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S01_AXI/PLRAM_MEM05'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S02_AXI/DDR4_MEM01'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S02_AXI/PLRAM_MEM00'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S02_AXI/PLRAM_MEM01'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S02_AXI/PLRAM_MEM02'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S02_AXI/PLRAM_MEM03'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S02_AXI/PLRAM_MEM04'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S02_AXI/PLRAM_MEM05'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S03_AXI/DDR4_MEM00'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S03_AXI/DDR4_MEM01'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S03_AXI/PLRAM_MEM00'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S03_AXI/PLRAM_MEM01'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S03_AXI/PLRAM_MEM02'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S03_AXI/PLRAM_MEM03'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S03_AXI/PLRAM_MEM04'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S03_AXI/PLRAM_MEM05'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of /memory_subsystem/S03_AXI/DDR4_MEM00'
+INFO: [sdx_memory_subsystem 1-1] Mapped memory resource DDR4_MEM00 from /memory_subsystem into /overlay_1/m_axi_spmspv_gmem2
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem0 on HMSS port 1.
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem1 on HMSS port 2.
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem2 on HMSS port 3.
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem3 on HMSS port 4.
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem4 on HMSS port 5.
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem5 on HMSS port 6.
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem6 on HMSS port 7.
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem7 on HMSS port 8.
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem8 on HMSS port 9.
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem9 on HMSS port 10.
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem10 on HMSS port 11.
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem11 on HMSS port 12.
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem12 on HMSS port 13.
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem13 on HMSS port 14.
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem14 on HMSS port 15.
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem15 on HMSS port 16.
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem16 on HMSS port 17.
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem17 on HMSS port 18.
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem18 on HMSS port 19.
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem19 on HMSS port 20.
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem20 on HMSS port 21.
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem21 on HMSS port 22.
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem22 on HMSS port 23.
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem23 on HMSS port 24.
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem24 on HMSS port 25.
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem25 on HMSS port 26.
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem26 on HMSS port 27.
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem27 on HMSS port 28.
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem28 on HMSS port 29.
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem29 on HMSS port 30.
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem30 on HMSS port 31.
+INFO: [hbm_memory_subsystem 1-1] Mapping resources for kernel master /overlay_1/m_axi_spmv_gmem31 on HMSS port 32.
+ERROR: [hbm_memory_subsystem 1-1] You have run out of port connections on /hmss_0. All 33 connections are used (0 ports prohibited)...
+ERROR: caught error: ERROR: [Common 17-39] 'send_msg_id' failed due to earlier errors.
+
+    while executing
+"send_msg_id {hbm_memory_subsystem 1-1} ERROR "You have run out of port connections on $hmss_cell. All $total_available_port connections are used ($hbm..."
+    (procedure "hbm_memory_subsystem::map_memory_resource" line 158)
+    invoked from within
+"hbm_memory_subsystem::map_memory_resource \
+  [get_bd_intf_pins -auto_enable /overlay_1/m_axi_spmv_gmem32] \
+  [get_bd_cells /hmss_0] [list HBM_MEM20]"
+    (file ".local/dr.bd.tcl" line 200)
+    invoked from within
+"source $dr_bd_tcl"
+[15:13:50] Run vpl: Step create_bd: Failed
+INFO: [OCL_UTIL] current step: vpl.create_bd failed. To rerun the existing project please use --from_step vpl.create_bd
+Failed to update block diagram in project required for hardware synthesis.The project is 'prj'. The block diagram update script is '.local/dr.bd.tcl'. The block diagram update script was generated by system linker. An error stack with function names and arguments may be available in the 'vivado.log'.
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 30 15:13:50 2024...

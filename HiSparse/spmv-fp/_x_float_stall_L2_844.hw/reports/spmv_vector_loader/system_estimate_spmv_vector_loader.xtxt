@@ -1,0 +1,54 @@
+===============================================================================
+Version:    v++ v2021.2 (64-bit)
+Build:      SW Build 3363252 on 2021-10-14-04:41:01
+Copyright:  Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+Created:    Tue Dec  3 11:25:18 2024
+===============================================================================
+
+-------------------------------------------------------------------------------
+Design Name:             spmv_vector_loader
+Target Device:           xilinx:u280:xdma:201920.3
+Target Clock:            300.000000MHz
+Total number of kernels: 1
+-------------------------------------------------------------------------------
+
+Kernel Summary
+Kernel Name         Type  Target              OpenCL Library      Compute Units
+------------------  ----  ------------------  ------------------  -------------
+spmv_vector_loader  c     fpga0:OCL_REGION_0  spmv_vector_loader  1
+
+
+-------------------------------------------------------------------------------
+OpenCL Binary:     spmv_vector_loader
+Kernels mapped to: clc_region
+
+Timing Information (MHz)
+Compute Unit          Kernel Name         Module Name                                       Target Frequency  Estimated Frequency
+--------------------  ------------------  ------------------------------------------------  ----------------  -------------------
+spmv_vector_loader_1  spmv_vector_loader  load_duplicate_Pipeline_loop_load_vector_packets  300.300293        411.015198
+spmv_vector_loader_1  spmv_vector_loader  load_duplicate                                    300.300293        411.015198
+spmv_vector_loader_1  spmv_vector_loader  write_k2ks                                        300.300293        641.025635
+spmv_vector_loader_1  spmv_vector_loader  write_k2ks_1                                      300.300293        641.025635
+spmv_vector_loader_1  spmv_vector_loader  write_k2ks_2                                      300.300293        641.025635
+spmv_vector_loader_1  spmv_vector_loader  spmv_vector_loader                                300.300293        411.015198
+
+Latency Information
+Compute Unit          Kernel Name         Module Name                                       Start Interval  Best (cycles)  Avg (cycles)  Worst (cycles)  Best (absolute)  Avg (absolute)  Worst (absolute)
+--------------------  ------------------  ------------------------------------------------  --------------  -------------  ------------  --------------  ---------------  --------------  ----------------
+spmv_vector_loader_1  spmv_vector_loader  load_duplicate_Pipeline_loop_load_vector_packets  74 ~ 4169       74             undef         4169            0.247 us         undef           13.895 us
+spmv_vector_loader_1  spmv_vector_loader  load_duplicate                                    undef           undef          undef         undef           undef            undef           undef
+spmv_vector_loader_1  spmv_vector_loader  write_k2ks                                        undef           undef          undef         undef           undef            undef           undef
+spmv_vector_loader_1  spmv_vector_loader  write_k2ks_1                                      undef           undef          undef         undef           undef            undef           undef
+spmv_vector_loader_1  spmv_vector_loader  write_k2ks_2                                      undef           undef          undef         undef           undef            undef           undef
+spmv_vector_loader_1  spmv_vector_loader  spmv_vector_loader                                undef           undef          undef         undef           undef            undef           undef
+
+Area Information
+Compute Unit          Kernel Name         Module Name                                       FF    LUT   DSP  BRAM  URAM
+--------------------  ------------------  ------------------------------------------------  ----  ----  ---  ----  ----
+spmv_vector_loader_1  spmv_vector_loader  load_duplicate_Pipeline_loop_load_vector_packets  633   193   0    0     0
+spmv_vector_loader_1  spmv_vector_loader  load_duplicate                                    798   644   0    0     0
+spmv_vector_loader_1  spmv_vector_loader  write_k2ks                                        4     54    0    0     0
+spmv_vector_loader_1  spmv_vector_loader  write_k2ks_1                                      4     54    0    0     0
+spmv_vector_loader_1  spmv_vector_loader  write_k2ks_2                                      4     54    0    0     0
+spmv_vector_loader_1  spmv_vector_loader  spmv_vector_loader                                6492  4578  0    16    0
+-------------------------------------------------------------------------------
