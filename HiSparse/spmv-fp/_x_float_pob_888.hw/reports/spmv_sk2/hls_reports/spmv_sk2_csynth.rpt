@@ -1,0 +1,496 @@
+
+
+================================================================
+== Vitis HLS Report for 'spmv_sk2'
+================================================================
+* Date:           Tue Dec 24 05:43:40 2024
+
+* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:47:39 MDT 2021)
+* Project:        spmv_sk2
+* Solution:       solution (Vitis Kernel Flow Target)
+* Product family: virtexuplus
+* Target device:  xcu280-fsvh2892-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+-----------+------------+
+    |  Clock |  Target | Estimated | Uncertainty|
+    +--------+---------+-----------+------------+
+    |ap_clk  |  3.33 ns|  10.775 ns|     0.90 ns|
+    +--------+---------+-----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|  dataflow|
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------+---------------------+---------+---------+----------+----------+-----+-----+----------+
+        |                      |                     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+        |       Instance       |        Module       |   min   |   max   |    min   |    max   | min | max |   Type   |
+        +----------------------+---------------------+---------+---------+----------+----------+-----+-----+----------+
+        |axis_duplicate_6u_U0  |axis_duplicate_6u_s  |        ?|        ?|         ?|         ?|    ?|    ?|        no|
+        |spmv_cluster_10_U0    |spmv_cluster_10_s    |        ?|        ?|         ?|         ?|    ?|    ?|  dataflow|
+        |spmv_cluster_11_U0    |spmv_cluster_11_s    |        ?|        ?|         ?|         ?|    ?|    ?|  dataflow|
+        |spmv_cluster_12_U0    |spmv_cluster_12_s    |        ?|        ?|         ?|         ?|    ?|    ?|  dataflow|
+        |spmv_cluster_13_U0    |spmv_cluster_13_s    |        ?|        ?|         ?|         ?|    ?|    ?|  dataflow|
+        |spmv_cluster_14_U0    |spmv_cluster_14_s    |        ?|        ?|         ?|         ?|    ?|    ?|  dataflow|
+        |spmv_cluster_15_U0    |spmv_cluster_15_s    |        ?|        ?|         ?|         ?|    ?|    ?|  dataflow|
+        |axis_merge_6u_U0      |axis_merge_6u_s      |        ?|        ?|         ?|         ?|    ?|    ?|        no|
+        +----------------------+---------------------+---------+---------+----------+----------+-----+-----+----------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|       32|    -|
+|FIFO                 |        -|     -|      108|    12528|    -|
+|Instance             |      852|   930|   418381|   447883|   96|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|       63|    -|
+|Register             |        -|     -|       10|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |      852|   930|   418499|   460506|   96|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1344|  3008|   869120|   434560|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |       63|    30|       48|      105|   30|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4032|  9024|  2607360|  1303680|  960|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |       21|    10|       16|       35|   10|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------+---------------------+---------+-----+-------+-------+-----+
+    |       Instance       |        Module       | BRAM_18K| DSP |   FF  |  LUT  | URAM|
+    +----------------------+---------------------+---------+-----+-------+-------+-----+
+    |axis_duplicate_6u_U0  |axis_duplicate_6u_s  |        0|    0|      2|     82|    0|
+    |axis_merge_6u_U0      |axis_merge_6u_s      |        0|    0|    343|    524|    0|
+    |control_s_axi_U       |control_s_axi        |        0|    0|    615|   1066|    0|
+    |spmv_cluster_10_U0    |spmv_cluster_10_s    |      112|  155|  68156|  72791|   16|
+    |spmv_cluster_11_U0    |spmv_cluster_11_s    |      112|  155|  68155|  72782|   16|
+    |spmv_cluster_12_U0    |spmv_cluster_12_s    |      112|  155|  68155|  72782|   16|
+    |spmv_cluster_13_U0    |spmv_cluster_13_s    |      112|  155|  68155|  72782|   16|
+    |spmv_cluster_14_U0    |spmv_cluster_14_s    |      112|  155|  68155|  72782|   16|
+    |spmv_cluster_15_U0    |spmv_cluster_15_s    |      112|  155|  68155|  72782|   16|
+    |spmv_mat10_m_axi_U    |spmv_mat10_m_axi     |       30|    0|   1415|   1585|    0|
+    |spmv_mat11_m_axi_U    |spmv_mat11_m_axi     |       30|    0|   1415|   1585|    0|
+    |spmv_mat12_m_axi_U    |spmv_mat12_m_axi     |       30|    0|   1415|   1585|    0|
+    |spmv_mat13_m_axi_U    |spmv_mat13_m_axi     |       30|    0|   1415|   1585|    0|
+    |spmv_mat14_m_axi_U    |spmv_mat14_m_axi     |       30|    0|   1415|   1585|    0|
+    |spmv_mat15_m_axi_U    |spmv_mat15_m_axi     |       30|    0|   1415|   1585|    0|
+    +----------------------+---------------------+---------+-----+-------+-------+-----+
+    |Total                 |                     |      852|  930| 418381| 447883|   96|
+    +----------------------+---------------------+---------+-----+-------+-------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +-------------+---------+---+----+-----+------+-----+---------+
+    |     Name    | BRAM_18K| FF| LUT| URAM| Depth| Bits| Size:D*B|
+    +-------------+---------+---+----+-----+------+-----+---------+
+    |res_0_U      |        0|  9|   0|    -|    64|  290|    18560|
+    |res_1_U      |        0|  9|   0|    -|    64|  290|    18560|
+    |res_2_U      |        0|  9|   0|    -|    64|  290|    18560|
+    |res_3_U      |        0|  9|   0|    -|    64|  290|    18560|
+    |res_4_U      |        0|  9|   0|    -|    64|  290|    18560|
+    |res_5_U      |        0|  9|   0|    -|    64|  290|    18560|
+    |vec_dup_0_U  |        0|  9|   0|    -|    64|  290|    18560|
+    |vec_dup_1_U  |        0|  9|   0|    -|    64|  290|    18560|
+    |vec_dup_2_U  |        0|  9|   0|    -|    64|  290|    18560|
+    |vec_dup_3_U  |        0|  9|   0|    -|    64|  290|    18560|
+    |vec_dup_4_U  |        0|  9|   0|    -|    64|  290|    18560|
+    |vec_dup_5_U  |        0|  9|   0|    -|    64|  290|    18560|
+    +-------------+---------+---+----+-----+------+-----+---------+
+    |Total        |        0|108|   0|    0|   768| 3480|   222720|
+    +-------------+---------+---+----+-----+------+-----+---------+
+
+    * Expression: 
+    +---------------------------------------+----------+----+---+----+------------+------------+
+    |             Variable Name             | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------------------+----------+----+---+----+------------+------------+
+    |ap_idle                                |       and|   0|  0|   2|           1|           1|
+    |ap_sync_ready                          |       and|   0|  0|   2|           1|           1|
+    |axis_duplicate_6u_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |spmv_cluster_10_U0_ap_start            |       and|   0|  0|   2|           1|           1|
+    |spmv_cluster_11_U0_ap_start            |       and|   0|  0|   2|           1|           1|
+    |spmv_cluster_12_U0_ap_start            |       and|   0|  0|   2|           1|           1|
+    |spmv_cluster_13_U0_ap_start            |       and|   0|  0|   2|           1|           1|
+    |spmv_cluster_14_U0_ap_start            |       and|   0|  0|   2|           1|           1|
+    |spmv_cluster_15_U0_ap_start            |       and|   0|  0|   2|           1|           1|
+    |ap_sync_axis_duplicate_6u_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_spmv_cluster_10_U0_ap_ready    |        or|   0|  0|   2|           1|           1|
+    |ap_sync_spmv_cluster_11_U0_ap_ready    |        or|   0|  0|   2|           1|           1|
+    |ap_sync_spmv_cluster_12_U0_ap_ready    |        or|   0|  0|   2|           1|           1|
+    |ap_sync_spmv_cluster_13_U0_ap_ready    |        or|   0|  0|   2|           1|           1|
+    |ap_sync_spmv_cluster_14_U0_ap_ready    |        or|   0|  0|   2|           1|           1|
+    |ap_sync_spmv_cluster_15_U0_ap_ready    |        or|   0|  0|   2|           1|           1|
+    +---------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                  |          |   0|  0|  32|          16|          16|
+    +---------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------------------------+----+-----------+-----+-----------+
+    |                    Name                   | LUT| Input Size| Bits| Total Bits|
+    +-------------------------------------------+----+-----------+-----+-----------+
+    |ap_sync_reg_axis_duplicate_6u_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_spmv_cluster_10_U0_ap_ready    |   9|          2|    1|          2|
+    |ap_sync_reg_spmv_cluster_11_U0_ap_ready    |   9|          2|    1|          2|
+    |ap_sync_reg_spmv_cluster_12_U0_ap_ready    |   9|          2|    1|          2|
+    |ap_sync_reg_spmv_cluster_13_U0_ap_ready    |   9|          2|    1|          2|
+    |ap_sync_reg_spmv_cluster_14_U0_ap_ready    |   9|          2|    1|          2|
+    |ap_sync_reg_spmv_cluster_15_U0_ap_ready    |   9|          2|    1|          2|
+    +-------------------------------------------+----+-----------+-----+-----------+
+    |Total                                      |  63|         14|    7|         14|
+    +-------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------+---+----+-----+-----------+
+    |                    Name                   | FF| LUT| Bits| Const Bits|
+    +-------------------------------------------+---+----+-----+-----------+
+    |ap_rst_n_inv                               |  1|   0|    1|          0|
+    |ap_rst_reg_1                               |  1|   0|    1|          0|
+    |ap_rst_reg_2                               |  1|   0|    1|          0|
+    |ap_sync_reg_axis_duplicate_6u_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_spmv_cluster_10_U0_ap_ready    |  1|   0|    1|          0|
+    |ap_sync_reg_spmv_cluster_11_U0_ap_ready    |  1|   0|    1|          0|
+    |ap_sync_reg_spmv_cluster_12_U0_ap_ready    |  1|   0|    1|          0|
+    |ap_sync_reg_spmv_cluster_13_U0_ap_ready    |  1|   0|    1|          0|
+    |ap_sync_reg_spmv_cluster_14_U0_ap_ready    |  1|   0|    1|          0|
+    |ap_sync_reg_spmv_cluster_15_U0_ap_ready    |  1|   0|    1|          0|
+    +-------------------------------------------+---+----+-----+-----------+
+    |Total                                      | 10|   0|   10|          0|
+    +-------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------+-----+------+---------------+--------------+--------------+
+|         RTL Ports         | Dir | Bits |    Protocol   | Source Object|    C Type    |
++---------------------------+-----+------+---------------+--------------+--------------+
+|s_axi_control_AWVALID      |   in|     1|          s_axi|       control|        scalar|
+|s_axi_control_AWREADY      |  out|     1|          s_axi|       control|        scalar|
+|s_axi_control_AWADDR       |   in|     7|          s_axi|       control|        scalar|
+|s_axi_control_WVALID       |   in|     1|          s_axi|       control|        scalar|
+|s_axi_control_WREADY       |  out|     1|          s_axi|       control|        scalar|
+|s_axi_control_WDATA        |   in|    32|          s_axi|       control|        scalar|
+|s_axi_control_WSTRB        |   in|     4|          s_axi|       control|        scalar|
+|s_axi_control_ARVALID      |   in|     1|          s_axi|       control|        scalar|
+|s_axi_control_ARREADY      |  out|     1|          s_axi|       control|        scalar|
+|s_axi_control_ARADDR       |   in|     7|          s_axi|       control|        scalar|
+|s_axi_control_RVALID       |  out|     1|          s_axi|       control|        scalar|
+|s_axi_control_RREADY       |   in|     1|          s_axi|       control|        scalar|
+|s_axi_control_RDATA        |  out|    32|          s_axi|       control|        scalar|
+|s_axi_control_RRESP        |  out|     2|          s_axi|       control|        scalar|
+|s_axi_control_BVALID       |  out|     1|          s_axi|       control|        scalar|
+|s_axi_control_BREADY       |   in|     1|          s_axi|       control|        scalar|
+|s_axi_control_BRESP        |  out|     2|          s_axi|       control|        scalar|
+|ap_local_block             |  out|     1|  ap_ctrl_chain|      spmv_sk2|  return value|
+|ap_clk                     |   in|     1|  ap_ctrl_chain|      spmv_sk2|  return value|
+|ap_rst_n                   |   in|     1|  ap_ctrl_chain|      spmv_sk2|  return value|
+|interrupt                  |  out|     1|  ap_ctrl_chain|      spmv_sk2|  return value|
+|m_axi_spmv_mat10_AWVALID   |  out|     1|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_AWREADY   |   in|     1|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_AWADDR    |  out|    64|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_AWID      |  out|     1|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_AWLEN     |  out|     8|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_AWSIZE    |  out|     3|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_AWBURST   |  out|     2|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_AWLOCK    |  out|     2|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_AWCACHE   |  out|     4|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_AWPROT    |  out|     3|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_AWQOS     |  out|     4|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_AWREGION  |  out|     4|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_AWUSER    |  out|     1|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_WVALID    |  out|     1|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_WREADY    |   in|     1|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_WDATA     |  out|   512|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_WSTRB     |  out|    64|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_WLAST     |  out|     1|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_WID       |  out|     1|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_WUSER     |  out|     1|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_ARVALID   |  out|     1|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_ARREADY   |   in|     1|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_ARADDR    |  out|    64|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_ARID      |  out|     1|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_ARLEN     |  out|     8|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_ARSIZE    |  out|     3|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_ARBURST   |  out|     2|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_ARLOCK    |  out|     2|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_ARCACHE   |  out|     4|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_ARPROT    |  out|     3|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_ARQOS     |  out|     4|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_ARREGION  |  out|     4|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_ARUSER    |  out|     1|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_RVALID    |   in|     1|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_RREADY    |  out|     1|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_RDATA     |   in|   512|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_RLAST     |   in|     1|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_RID       |   in|     1|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_RUSER     |   in|     1|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_RRESP     |   in|     2|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_BVALID    |   in|     1|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_BREADY    |  out|     1|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_BRESP     |   in|     2|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_BID       |   in|     1|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat10_BUSER     |   in|     1|          m_axi|    spmv_mat10|       pointer|
+|m_axi_spmv_mat11_AWVALID   |  out|     1|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_AWREADY   |   in|     1|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_AWADDR    |  out|    64|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_AWID      |  out|     1|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_AWLEN     |  out|     8|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_AWSIZE    |  out|     3|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_AWBURST   |  out|     2|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_AWLOCK    |  out|     2|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_AWCACHE   |  out|     4|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_AWPROT    |  out|     3|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_AWQOS     |  out|     4|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_AWREGION  |  out|     4|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_AWUSER    |  out|     1|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_WVALID    |  out|     1|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_WREADY    |   in|     1|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_WDATA     |  out|   512|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_WSTRB     |  out|    64|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_WLAST     |  out|     1|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_WID       |  out|     1|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_WUSER     |  out|     1|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_ARVALID   |  out|     1|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_ARREADY   |   in|     1|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_ARADDR    |  out|    64|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_ARID      |  out|     1|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_ARLEN     |  out|     8|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_ARSIZE    |  out|     3|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_ARBURST   |  out|     2|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_ARLOCK    |  out|     2|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_ARCACHE   |  out|     4|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_ARPROT    |  out|     3|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_ARQOS     |  out|     4|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_ARREGION  |  out|     4|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_ARUSER    |  out|     1|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_RVALID    |   in|     1|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_RREADY    |  out|     1|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_RDATA     |   in|   512|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_RLAST     |   in|     1|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_RID       |   in|     1|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_RUSER     |   in|     1|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_RRESP     |   in|     2|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_BVALID    |   in|     1|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_BREADY    |  out|     1|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_BRESP     |   in|     2|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_BID       |   in|     1|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat11_BUSER     |   in|     1|          m_axi|    spmv_mat11|       pointer|
+|m_axi_spmv_mat12_AWVALID   |  out|     1|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_AWREADY   |   in|     1|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_AWADDR    |  out|    64|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_AWID      |  out|     1|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_AWLEN     |  out|     8|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_AWSIZE    |  out|     3|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_AWBURST   |  out|     2|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_AWLOCK    |  out|     2|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_AWCACHE   |  out|     4|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_AWPROT    |  out|     3|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_AWQOS     |  out|     4|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_AWREGION  |  out|     4|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_AWUSER    |  out|     1|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_WVALID    |  out|     1|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_WREADY    |   in|     1|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_WDATA     |  out|   512|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_WSTRB     |  out|    64|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_WLAST     |  out|     1|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_WID       |  out|     1|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_WUSER     |  out|     1|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_ARVALID   |  out|     1|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_ARREADY   |   in|     1|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_ARADDR    |  out|    64|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_ARID      |  out|     1|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_ARLEN     |  out|     8|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_ARSIZE    |  out|     3|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_ARBURST   |  out|     2|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_ARLOCK    |  out|     2|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_ARCACHE   |  out|     4|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_ARPROT    |  out|     3|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_ARQOS     |  out|     4|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_ARREGION  |  out|     4|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_ARUSER    |  out|     1|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_RVALID    |   in|     1|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_RREADY    |  out|     1|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_RDATA     |   in|   512|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_RLAST     |   in|     1|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_RID       |   in|     1|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_RUSER     |   in|     1|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_RRESP     |   in|     2|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_BVALID    |   in|     1|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_BREADY    |  out|     1|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_BRESP     |   in|     2|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_BID       |   in|     1|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat12_BUSER     |   in|     1|          m_axi|    spmv_mat12|       pointer|
+|m_axi_spmv_mat13_AWVALID   |  out|     1|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_AWREADY   |   in|     1|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_AWADDR    |  out|    64|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_AWID      |  out|     1|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_AWLEN     |  out|     8|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_AWSIZE    |  out|     3|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_AWBURST   |  out|     2|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_AWLOCK    |  out|     2|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_AWCACHE   |  out|     4|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_AWPROT    |  out|     3|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_AWQOS     |  out|     4|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_AWREGION  |  out|     4|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_AWUSER    |  out|     1|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_WVALID    |  out|     1|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_WREADY    |   in|     1|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_WDATA     |  out|   512|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_WSTRB     |  out|    64|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_WLAST     |  out|     1|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_WID       |  out|     1|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_WUSER     |  out|     1|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_ARVALID   |  out|     1|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_ARREADY   |   in|     1|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_ARADDR    |  out|    64|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_ARID      |  out|     1|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_ARLEN     |  out|     8|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_ARSIZE    |  out|     3|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_ARBURST   |  out|     2|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_ARLOCK    |  out|     2|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_ARCACHE   |  out|     4|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_ARPROT    |  out|     3|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_ARQOS     |  out|     4|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_ARREGION  |  out|     4|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_ARUSER    |  out|     1|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_RVALID    |   in|     1|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_RREADY    |  out|     1|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_RDATA     |   in|   512|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_RLAST     |   in|     1|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_RID       |   in|     1|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_RUSER     |   in|     1|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_RRESP     |   in|     2|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_BVALID    |   in|     1|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_BREADY    |  out|     1|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_BRESP     |   in|     2|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_BID       |   in|     1|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat13_BUSER     |   in|     1|          m_axi|    spmv_mat13|       pointer|
+|m_axi_spmv_mat14_AWVALID   |  out|     1|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_AWREADY   |   in|     1|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_AWADDR    |  out|    64|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_AWID      |  out|     1|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_AWLEN     |  out|     8|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_AWSIZE    |  out|     3|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_AWBURST   |  out|     2|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_AWLOCK    |  out|     2|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_AWCACHE   |  out|     4|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_AWPROT    |  out|     3|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_AWQOS     |  out|     4|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_AWREGION  |  out|     4|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_AWUSER    |  out|     1|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_WVALID    |  out|     1|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_WREADY    |   in|     1|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_WDATA     |  out|   512|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_WSTRB     |  out|    64|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_WLAST     |  out|     1|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_WID       |  out|     1|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_WUSER     |  out|     1|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_ARVALID   |  out|     1|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_ARREADY   |   in|     1|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_ARADDR    |  out|    64|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_ARID      |  out|     1|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_ARLEN     |  out|     8|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_ARSIZE    |  out|     3|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_ARBURST   |  out|     2|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_ARLOCK    |  out|     2|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_ARCACHE   |  out|     4|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_ARPROT    |  out|     3|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_ARQOS     |  out|     4|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_ARREGION  |  out|     4|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_ARUSER    |  out|     1|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_RVALID    |   in|     1|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_RREADY    |  out|     1|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_RDATA     |   in|   512|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_RLAST     |   in|     1|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_RID       |   in|     1|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_RUSER     |   in|     1|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_RRESP     |   in|     2|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_BVALID    |   in|     1|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_BREADY    |  out|     1|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_BRESP     |   in|     2|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_BID       |   in|     1|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat14_BUSER     |   in|     1|          m_axi|    spmv_mat14|       pointer|
+|m_axi_spmv_mat15_AWVALID   |  out|     1|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_AWREADY   |   in|     1|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_AWADDR    |  out|    64|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_AWID      |  out|     1|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_AWLEN     |  out|     8|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_AWSIZE    |  out|     3|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_AWBURST   |  out|     2|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_AWLOCK    |  out|     2|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_AWCACHE   |  out|     4|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_AWPROT    |  out|     3|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_AWQOS     |  out|     4|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_AWREGION  |  out|     4|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_AWUSER    |  out|     1|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_WVALID    |  out|     1|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_WREADY    |   in|     1|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_WDATA     |  out|   512|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_WSTRB     |  out|    64|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_WLAST     |  out|     1|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_WID       |  out|     1|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_WUSER     |  out|     1|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_ARVALID   |  out|     1|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_ARREADY   |   in|     1|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_ARADDR    |  out|    64|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_ARID      |  out|     1|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_ARLEN     |  out|     8|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_ARSIZE    |  out|     3|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_ARBURST   |  out|     2|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_ARLOCK    |  out|     2|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_ARCACHE   |  out|     4|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_ARPROT    |  out|     3|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_ARQOS     |  out|     4|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_ARREGION  |  out|     4|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_ARUSER    |  out|     1|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_RVALID    |   in|     1|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_RREADY    |  out|     1|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_RDATA     |   in|   512|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_RLAST     |   in|     1|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_RID       |   in|     1|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_RUSER     |   in|     1|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_RRESP     |   in|     2|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_BVALID    |   in|     1|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_BREADY    |  out|     1|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_BRESP     |   in|     2|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_BID       |   in|     1|          m_axi|    spmv_mat15|       pointer|
+|m_axi_spmv_mat15_BUSER     |   in|     1|          m_axi|    spmv_mat15|       pointer|
+|vec_in_TDATA               |   in|  1024|           axis|        vec_in|       pointer|
+|vec_in_TVALID              |   in|     1|           axis|        vec_in|       pointer|
+|vec_in_TREADY              |  out|     1|           axis|        vec_in|       pointer|
+|res_out_TDATA              |  out|  1024|           axis|       res_out|       pointer|
+|res_out_TVALID             |  out|     1|           axis|       res_out|       pointer|
+|res_out_TREADY             |   in|     1|           axis|       res_out|       pointer|
++---------------------------+-----+------+---------------+--------------+--------------+
+

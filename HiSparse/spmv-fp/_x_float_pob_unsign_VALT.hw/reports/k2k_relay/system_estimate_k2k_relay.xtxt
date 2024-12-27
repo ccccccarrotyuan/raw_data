@@ -1,0 +1,39 @@
+===============================================================================
+Version:    v++ v2021.2 (64-bit)
+Build:      SW Build 3363252 on 2021-10-14-04:41:01
+Copyright:  Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+Created:    Fri Dec 20 18:55:47 2024
+===============================================================================
+
+-------------------------------------------------------------------------------
+Design Name:             k2k_relay
+Target Device:           xilinx:u280:xdma:201920.3
+Target Clock:            300.000000MHz
+Total number of kernels: 1
+-------------------------------------------------------------------------------
+
+Kernel Summary
+Kernel Name  Type  Target              OpenCL Library  Compute Units
+-----------  ----  ------------------  --------------  -------------
+k2k_relay    c     fpga0:OCL_REGION_0  k2k_relay       1
+
+
+-------------------------------------------------------------------------------
+OpenCL Binary:     k2k_relay
+Kernels mapped to: clc_region
+
+Timing Information (MHz)
+Compute Unit  Kernel Name  Module Name  Target Frequency  Estimated Frequency
+------------  -----------  -----------  ----------------  -------------------
+k2k_relay_1   k2k_relay    k2k_relay    300.300293        inf
+
+Latency Information
+Compute Unit  Kernel Name  Module Name  Start Interval  Best (cycles)  Avg (cycles)  Worst (cycles)  Best (absolute)  Avg (absolute)  Worst (absolute)
+------------  -----------  -----------  --------------  -------------  ------------  --------------  ---------------  --------------  ----------------
+k2k_relay_1   k2k_relay    k2k_relay    undef           undef          undef         undef           undef            undef           undef
+
+Area Information
+Compute Unit  Kernel Name  Module Name  FF  LUT  DSP  BRAM  URAM
+------------  -----------  -----------  --  ---  ---  ----  ----
+k2k_relay_1   k2k_relay    k2k_relay    7   49   0    0     0
+-------------------------------------------------------------------------------

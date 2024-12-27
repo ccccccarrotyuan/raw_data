@@ -1,0 +1,221 @@
+
+
+================================================================
+== Vitis HLS Report for 'spmv_vector_loader'
+================================================================
+* Date:           Mon Dec 16 17:06:16 2024
+
+* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:47:39 MDT 2021)
+* Project:        spmv_vector_loader
+* Solution:       solution (Vitis Kernel Flow Target)
+* Product family: virtexuplus
+* Target device:  xcu280-fsvh2892-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  3.33 ns|  2.433 ns|     0.90 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|  dataflow|
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------+----------------+---------+---------+----------+----------+-----+-----+---------+
+        |                   |                |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |      Instance     |     Module     |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +-------------------+----------------+---------+---------+----------+----------+-----+-----+---------+
+        |load_duplicate_U0  |load_duplicate  |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+        |write_k2ks_U0      |write_k2ks      |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+        |write_k2ks_1_U0    |write_k2ks_1    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+        |write_k2ks_2_U0    |write_k2ks_2    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+        +-------------------+----------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|        8|    -|
+|FIFO                 |        0|     -|     4647|     2478|    -|
+|Instance             |       16|     -|     1842|     2086|    0|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|        -|    -|
+|Register             |        -|     -|        3|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |       16|     0|     6492|     4572|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1344|  3008|   869120|   434560|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        1|     0|       ~0|        1|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4032|  9024|  2607360|  1303680|  960|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |       ~0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------+----------------+---------+----+-----+------+-----+
+    |      Instance     |     Module     | BRAM_18K| DSP|  FF |  LUT | URAM|
+    +-------------------+----------------+---------+----+-----+------+-----+
+    |control_s_axi_U    |control_s_axi   |        0|   0|  151|   234|    0|
+    |load_duplicate_U0  |load_duplicate  |        0|   0|  798|   644|    0|
+    |spmv_vin_m_axi_U   |spmv_vin_m_axi  |       16|   0|  881|  1052|    0|
+    |write_k2ks_U0      |write_k2ks      |        0|   0|    4|    52|    0|
+    |write_k2ks_1_U0    |write_k2ks_1    |        0|   0|    4|    52|    0|
+    |write_k2ks_2_U0    |write_k2ks_2    |        0|   0|    4|    52|    0|
+    +-------------------+----------------+---------+----+-----+------+-----+
+    |Total              |                |       16|   0| 1842|  2086|    0|
+    +-------------------+----------------+---------+----+-----+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +---------------+---------+------+----+-----+------+-----+---------+
+    |      Name     | BRAM_18K|  FF  | LUT| URAM| Depth| Bits| Size:D*B|
+    +---------------+---------+------+----+-----+------+-----+---------+
+    |duplicate_0_U  |        0|  1549|   0|    -|     8|  290|     2320|
+    |duplicate_1_U  |        0|  1549|   0|    -|     8|  290|     2320|
+    |duplicate_2_U  |        0|  1549|   0|    -|     8|  290|     2320|
+    +---------------+---------+------+----+-----+------+-----+---------+
+    |Total          |        0|  4647|   0|    0|    24|  870|     6960|
+    +---------------+---------+------+----+-----+------+-----+---------+
+
+    * Expression: 
+    +--------------------------------+----------+----+---+----+------------+------------+
+    |          Variable Name         | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------------+----------+----+---+----+------------+------------+
+    |ap_idle                         |       and|   0|  0|   2|           1|           1|
+    |ap_sync_continue                |       and|   0|  0|   2|           1|           1|
+    |ap_sync_done                    |       and|   0|  0|   2|           1|           1|
+    |load_duplicate_U0_start_full_n  |       and|   0|  0|   2|           1|           1|
+    +--------------------------------+----------+----+---+----+------------+------------+
+    |Total                           |          |   0|  0|   8|           4|           4|
+    +--------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    +--------------+---+----+-----+-----------+
+    |     Name     | FF| LUT| Bits| Const Bits|
+    +--------------+---+----+-----+-----------+
+    |ap_rst_n_inv  |  1|   0|    1|          0|
+    |ap_rst_reg_1  |  1|   0|    1|          0|
+    |ap_rst_reg_2  |  1|   0|    1|          0|
+    +--------------+---+----+-----+-----------+
+    |Total         |  3|   0|    3|          0|
+    +--------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------+-----+------+---------------+--------------------+--------------+
+|        RTL Ports        | Dir | Bits |    Protocol   |    Source Object   |    C Type    |
++-------------------------+-----+------+---------------+--------------------+--------------+
+|s_axi_control_AWVALID    |   in|     1|          s_axi|             control|        scalar|
+|s_axi_control_AWREADY    |  out|     1|          s_axi|             control|        scalar|
+|s_axi_control_AWADDR     |   in|     6|          s_axi|             control|        scalar|
+|s_axi_control_WVALID     |   in|     1|          s_axi|             control|        scalar|
+|s_axi_control_WREADY     |  out|     1|          s_axi|             control|        scalar|
+|s_axi_control_WDATA      |   in|    32|          s_axi|             control|        scalar|
+|s_axi_control_WSTRB      |   in|     4|          s_axi|             control|        scalar|
+|s_axi_control_ARVALID    |   in|     1|          s_axi|             control|        scalar|
+|s_axi_control_ARREADY    |  out|     1|          s_axi|             control|        scalar|
+|s_axi_control_ARADDR     |   in|     6|          s_axi|             control|        scalar|
+|s_axi_control_RVALID     |  out|     1|          s_axi|             control|        scalar|
+|s_axi_control_RREADY     |   in|     1|          s_axi|             control|        scalar|
+|s_axi_control_RDATA      |  out|    32|          s_axi|             control|        scalar|
+|s_axi_control_RRESP      |  out|     2|          s_axi|             control|        scalar|
+|s_axi_control_BVALID     |  out|     1|          s_axi|             control|        scalar|
+|s_axi_control_BREADY     |   in|     1|          s_axi|             control|        scalar|
+|s_axi_control_BRESP      |  out|     2|          s_axi|             control|        scalar|
+|ap_local_block           |  out|     1|  ap_ctrl_chain|  spmv_vector_loader|  return value|
+|ap_clk                   |   in|     1|  ap_ctrl_chain|  spmv_vector_loader|  return value|
+|ap_rst_n                 |   in|     1|  ap_ctrl_chain|  spmv_vector_loader|  return value|
+|interrupt                |  out|     1|  ap_ctrl_chain|  spmv_vector_loader|  return value|
+|m_axi_spmv_vin_AWVALID   |  out|     1|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_AWREADY   |   in|     1|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_AWADDR    |  out|    64|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_AWID      |  out|     1|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_AWLEN     |  out|     8|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_AWSIZE    |  out|     3|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_AWBURST   |  out|     2|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_AWLOCK    |  out|     2|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_AWCACHE   |  out|     4|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_AWPROT    |  out|     3|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_AWQOS     |  out|     4|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_AWREGION  |  out|     4|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_AWUSER    |  out|     1|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_WVALID    |  out|     1|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_WREADY    |   in|     1|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_WDATA     |  out|   256|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_WSTRB     |  out|    32|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_WLAST     |  out|     1|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_WID       |  out|     1|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_WUSER     |  out|     1|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_ARVALID   |  out|     1|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_ARREADY   |   in|     1|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_ARADDR    |  out|    64|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_ARID      |  out|     1|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_ARLEN     |  out|     8|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_ARSIZE    |  out|     3|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_ARBURST   |  out|     2|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_ARLOCK    |  out|     2|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_ARCACHE   |  out|     4|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_ARPROT    |  out|     3|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_ARQOS     |  out|     4|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_ARREGION  |  out|     4|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_ARUSER    |  out|     1|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_RVALID    |   in|     1|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_RREADY    |  out|     1|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_RDATA     |   in|   256|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_RLAST     |   in|     1|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_RID       |   in|     1|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_RUSER     |   in|     1|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_RRESP     |   in|     2|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_BVALID    |   in|     1|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_BREADY    |  out|     1|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_BRESP     |   in|     2|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_BID       |   in|     1|          m_axi|            spmv_vin|       pointer|
+|m_axi_spmv_vin_BUSER     |   in|     1|          m_axi|            spmv_vin|       pointer|
+|to_SLR0_TDATA            |  out|  1024|           axis|             to_SLR0|       pointer|
+|to_SLR0_TVALID           |  out|     1|           axis|             to_SLR0|       pointer|
+|to_SLR0_TREADY           |   in|     1|           axis|             to_SLR0|       pointer|
+|to_SLR1_TDATA            |  out|  1024|           axis|             to_SLR1|       pointer|
+|to_SLR1_TVALID           |  out|     1|           axis|             to_SLR1|       pointer|
+|to_SLR1_TREADY           |   in|     1|           axis|             to_SLR1|       pointer|
+|to_SLR2_TDATA            |  out|  1024|           axis|             to_SLR2|       pointer|
+|to_SLR2_TVALID           |  out|     1|           axis|             to_SLR2|       pointer|
+|to_SLR2_TREADY           |   in|     1|           axis|             to_SLR2|       pointer|
++-------------------------+-----+------+---------------+--------------------+--------------+
+

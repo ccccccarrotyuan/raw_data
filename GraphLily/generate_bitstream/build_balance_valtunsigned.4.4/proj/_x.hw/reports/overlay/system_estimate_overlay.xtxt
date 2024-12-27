@@ -1,0 +1,234 @@
+===============================================================================
+Version:    v++ v2021.2 (64-bit)
+Build:      SW Build 3363252 on 2021-10-14-04:41:01
+Copyright:  Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+Created:    Tue Dec 24 02:17:39 2024
+===============================================================================
+
+-------------------------------------------------------------------------------
+Design Name:             overlay
+Target Device:           xilinx:u280:xdma:201920.3
+Target Clock:            200MHz
+Total number of kernels: 1
+-------------------------------------------------------------------------------
+
+Kernel Summary
+Kernel Name  Type  Target              OpenCL Library  Compute Units
+-----------  ----  ------------------  --------------  -------------
+overlay      c     fpga0:OCL_REGION_0  overlay         1
+
+
+-------------------------------------------------------------------------------
+OpenCL Binary:     overlay
+Kernels mapped to: clc_region
+
+Timing Information (MHz)
+Compute Unit  Kernel Name  Module Name                                                                                           Target Frequency  Estimated Frequency
+------------  -----------  ----------------------------------------------------------------------------------------------------  ----------------  -------------------
+overlay_1     overlay      kernel_assign_vector_sparse_new_frontier_Pipeline_loop_read_inout_val                                 200               273.972595
+overlay_1     overlay      kernel_assign_vector_sparse_new_frontier_Pipeline_loop_process                                        200               485.672638
+overlay_1     overlay      kernel_assign_vector_sparse_new_frontier_Pipeline_loop_write_inout_val                                200               273.972595
+overlay_1     overlay      kernel_assign_vector_sparse_new_frontier_Pipeline_loop_write_new_frontier                             200               273.972595
+overlay_1     overlay      kernel_assign_vector_sparse_new_frontier                                                              200               273.972595
+overlay_1     overlay      overlay_Pipeline_loop_read_inout_val                                                                  200               273.972595
+overlay_1     overlay      overlay_Pipeline_loop_process                                                                         200               632.511108
+overlay_1     overlay      overlay_Pipeline_loop_write_inout_val                                                                 200               273.972595
+overlay_1     overlay      kernel_assign_vector_dense_Pipeline_loop_kernel_assign_vector_dense                                   200               273.972595
+overlay_1     overlay      kernel_assign_vector_dense                                                                            200               273.972595
+overlay_1     overlay      overlay_Pipeline_loop_kernel_add_scalar_vector_dense                                                  200               273.972595
+overlay_1     overlay      kernel_spmspv_Pipeline_loop_reset_output_buffer                                                       200               526.315796
+overlay_1     overlay      entry_proc                                                                                            200               729.394592
+overlay_1     overlay      load_vector_from_gmem_Pipeline_loop_over_vector_values                                                200               273.972595
+overlay_1     overlay      load_vector_from_gmem                                                                                 200               273.972595
+overlay_1     overlay      load_matrix_from_gmem_Pipeline_loop_get_column_len_ML                                                 200               273.972595
+overlay_1     overlay      load_matrix_from_gmem_Pipeline_loop_over_pkts_ML                                                      200               273.972595
+overlay_1     overlay      load_matrix_from_gmem                                                                                 200               273.972595
+overlay_1     overlay      arbiter_1p_8u_8u_7u_s                                                                                 200               287.935486
+overlay_1     overlay      pipereg_stage_A_shuffle_inout_type_s                                                                  200               inf
+overlay_1     overlay      shuffler_1p_shuffle_inout_type_shuffle_inout_vale_type_8u_8u_7u_Pipeline_loop_shuffle_pipeline        200               146.886017
+overlay_1     overlay      shuffler_1p_shuffle_inout_type_shuffle_inout_vale_type_8u_8u_7u_s                                     200               146.886017
+overlay_1     overlay      pe_ufixed_mul_alu_ap_ufixed_32_8_0_0_0_char_s                                                         200               315.457397
+overlay_1     overlay      ufixed_pe_cluster_part1_ap_ufixed_32_8_0_0_0_char_shuffle_inout_type_8u_Pipeline_loop_pe_part1        200               195.121948
+overlay_1     overlay      ufixed_pe_cluster_part1_ap_ufixed_32_8_0_0_0_char_shuffle_inout_type_8u_s                             200               195.121948
+overlay_1     overlay      pe_ufixed_add_alu_ap_ufixed_32_8_0_0_0_char_s                                                         200               761.614624
+overlay_1     overlay      ufixed_pe_cluster_spmspv_uram_part2_ap_ufixed_32_8_0_0_0_char_4u_8u_16000u_3u_Pipeline_loop_pe_part2  200               211.059525
+overlay_1     overlay      ufixed_pe_cluster_spmspv_uram_part2_ap_ufixed_32_8_0_0_0_char_4u_8u_16000u_3u_s                       200               211.059525
+overlay_1     overlay      ufixed_pe_cluster_spmspv_uram_ap_ufixed_32_8_0_0_0_char_shuffle_inout_type_4u_8u_3u_16000u_s          200               195.121948
+overlay_1     overlay      compute_spmspv                                                                                        200               146.886017
+overlay_1     overlay      bram_access_read_2ports                                                                               200               875.656799
+overlay_1     overlay      checkout_results_Pipeline_loop_over_dense_data_pipeline                                               200               295.857971
+overlay_1     overlay      checkout_results                                                                                      200               295.857971
+overlay_1     overlay      write_back_gmem                                                                                       200               144.383484
+overlay_1     overlay      write_back_results                                                                                    200               144.383484
+overlay_1     overlay      kernel_spmspv                                                                                         200               144.383484
+overlay_1     overlay      kernel_spmv_Pipeline_loop_initialize_out_uram                                                         200               336.473755
+overlay_1     overlay      HLS_REG_PACKED_VAL_T_s                                                                                200               inf
+overlay_1     overlay      vector_loader_ddr_to_uram_Pipeline_loop_vector_loader_ddr_to_uram                                     200               273.972595
+overlay_1     overlay      vector_loader_ddr_to_uram                                                                             200               273.972595
+overlay_1     overlay      matrix_loader_hbm_to_stream_one_channel_Pipeline_VITIS_LOOP_54_1                                      200               273.972595
+overlay_1     overlay      matrix_loader_hbm_to_stream_one_channel_Pipeline_loop_matrix_loader_hbm_to_stream_one_channel         200               273.972595
+overlay_1     overlay      matrix_loader_hbm_to_stream_one_channel                                                               200               273.972595
+overlay_1     overlay      pipereg_stage_A_shuffle_1_inout_type_s                                                                200               inf
+overlay_1     overlay      shuffler_1p_shuffle_1_inout_type_shuffle_1_inout_value_type_8u_8u_7u_Pipeline_loop_shuffle_pipeline   200               146.886017
+overlay_1     overlay      shuffler_1p_shuffle_1_inout_type_shuffle_1_inout_value_type_8u_8u_7u_s                                200               146.886017
+overlay_1     overlay      vector_loader_uram_to_stream_one_channel_Pipeline_loop_vector_loader_uram_to_stream_one_channel       200               366.300354
+overlay_1     overlay      vector_loader_uram_to_stream_one_channel                                                              200               366.300354
+overlay_1     overlay      pipereg_stage_A_shuffle_2_inout_type_s                                                                200               inf
+overlay_1     overlay      shuffler_1p_shuffle_2_inout_type_shuffle_2_inout_value_type_8u_8u_7u_Pipeline_loop_shuffle_pipeline   200               146.886017
+overlay_1     overlay      shuffler_1p_shuffle_2_inout_type_shuffle_2_inout_value_type_8u_8u_7u_s                                200               146.886017
+overlay_1     overlay      ufixed_pe_cluster_part1_ap_ufixed_32_8_0_0_0_char_shuffle_2_inout_type_8u_Pipeline_loop_pe_part1      200               195.121948
+overlay_1     overlay      ufixed_pe_cluster_part1_ap_ufixed_32_8_0_0_0_char_shuffle_2_inout_type_8u_s                           200               195.121948
+overlay_1     overlay      ufixed_pe_cluster_spmv_uram_part2_ap_ufixed_32_8_0_0_0_char_8u_64000u_3u_Pipeline_loop_pe_part2       200               211.059525
+overlay_1     overlay      ufixed_pe_cluster_spmv_uram_part2_ap_ufixed_32_8_0_0_0_char_8u_64000u_3u_s                            200               211.059525
+overlay_1     overlay      ufixed_pe_cluster_spmv_uram_ap_ufixed_32_8_0_0_0_char_shuffle_2_inout_type_8u_3u_64000u_s             200               195.121948
+overlay_1     overlay      compute_spmv_one_channel                                                                              200               146.886017
+overlay_1     overlay      compute_spmv_one_channel_1                                                                            200               146.886017
+overlay_1     overlay      compute_spmv_one_channel_2                                                                            200               146.886017
+overlay_1     overlay      compute_spmv_one_channel_3                                                                            200               146.886017
+overlay_1     overlay      dataflow_in_loop_VITIS_LOOP_495_4                                                                     200               146.886017
+overlay_1     overlay      dataflow_parent_loop_proc                                                                             200               146.886017
+overlay_1     overlay      write_to_out_ddr_Pipeline_loop_write_to_out_ddr                                                       200               273.972595
+overlay_1     overlay      write_to_out_ddr                                                                                      200               273.972595
+overlay_1     overlay      kernel_spmv                                                                                           200               146.886017
+overlay_1     overlay      overlay                                                                                               200               144.383484
+
+Latency Information
+Compute Unit  Kernel Name  Module Name                                                                                           Start Interval  Best (cycles)  Avg (cycles)  Worst (cycles)  Best (absolute)  Avg (absolute)  Worst (absolute)
+------------  -----------  ----------------------------------------------------------------------------------------------------  --------------  -------------  ------------  --------------  ---------------  --------------  ----------------
+overlay_1     overlay      kernel_assign_vector_sparse_new_frontier_Pipeline_loop_read_inout_val                                 273             273            273           273             1.365 us         1.365 us        1.365 us
+overlay_1     overlay      kernel_assign_vector_sparse_new_frontier_Pipeline_loop_process                                        131             131            131           131             0.655 us         0.655 us        0.655 us
+overlay_1     overlay      kernel_assign_vector_sparse_new_frontier_Pipeline_loop_write_inout_val                                200             200            200           200             1.000 us         1.000 us        1.000 us
+overlay_1     overlay      kernel_assign_vector_sparse_new_frontier_Pipeline_loop_write_new_frontier                             undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      kernel_assign_vector_sparse_new_frontier                                                              undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      overlay_Pipeline_loop_read_inout_val                                                                  273             273            273           273             1.365 us         1.365 us        1.365 us
+overlay_1     overlay      overlay_Pipeline_loop_process                                                                         130             130            130           130             0.650 us         0.650 us        0.650 us
+overlay_1     overlay      overlay_Pipeline_loop_write_inout_val                                                                 200             200            200           200             1.000 us         1.000 us        1.000 us
+overlay_1     overlay      kernel_assign_vector_dense_Pipeline_loop_kernel_assign_vector_dense                                   5 ~ -1          5              undef         undef           25.000 ns        undef           undef
+overlay_1     overlay      kernel_assign_vector_dense                                                                            2 ~ -1          2              undef         undef           10.000 ns        undef           undef
+overlay_1     overlay      overlay_Pipeline_loop_kernel_add_scalar_vector_dense                                                  5 ~ -1          5              undef         undef           25.000 ns        undef           undef
+overlay_1     overlay      kernel_spmspv_Pipeline_loop_reset_output_buffer                                                       4 ~ 16002       4              undef         16002           20.000 ns        undef           80.010 us
+overlay_1     overlay      entry_proc                                                                                            0               0              0             0               0 ns             0 ns            0 ns
+overlay_1     overlay      load_vector_from_gmem_Pipeline_loop_over_vector_values                                                undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      load_vector_from_gmem                                                                                 undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      load_matrix_from_gmem_Pipeline_loop_get_column_len_ML                                                 74              74             74            74              0.370 us         0.370 us        0.370 us
+overlay_1     overlay      load_matrix_from_gmem_Pipeline_loop_over_pkts_ML                                                      undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      load_matrix_from_gmem                                                                                 undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      arbiter_1p_8u_8u_7u_s                                                                                 1               5              5             5               25.000 ns        25.000 ns       25.000 ns
+overlay_1     overlay      pipereg_stage_A_shuffle_inout_type_s                                                                  1               5              5             5               25.000 ns        25.000 ns       25.000 ns
+overlay_1     overlay      shuffler_1p_shuffle_inout_type_shuffle_inout_vale_type_8u_8u_7u_Pipeline_loop_shuffle_pipeline        undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      shuffler_1p_shuffle_inout_type_shuffle_inout_vale_type_8u_8u_7u_s                                     undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      pe_ufixed_mul_alu_ap_ufixed_32_8_0_0_0_char_s                                                         1               2              2             2               10.000 ns        10.000 ns       10.000 ns
+overlay_1     overlay      ufixed_pe_cluster_part1_ap_ufixed_32_8_0_0_0_char_shuffle_inout_type_8u_Pipeline_loop_pe_part1        undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      ufixed_pe_cluster_part1_ap_ufixed_32_8_0_0_0_char_shuffle_inout_type_8u_s                             undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      pe_ufixed_add_alu_ap_ufixed_32_8_0_0_0_char_s                                                         1               0              0             0               0 ns             0 ns            0 ns
+overlay_1     overlay      ufixed_pe_cluster_spmspv_uram_part2_ap_ufixed_32_8_0_0_0_char_4u_8u_16000u_3u_Pipeline_loop_pe_part2  undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      ufixed_pe_cluster_spmspv_uram_part2_ap_ufixed_32_8_0_0_0_char_4u_8u_16000u_3u_s                       undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      ufixed_pe_cluster_spmspv_uram_ap_ufixed_32_8_0_0_0_char_shuffle_inout_type_4u_8u_3u_16000u_s          undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      compute_spmspv                                                                                        undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      bram_access_read_2ports                                                                               1               2              2             2               10.000 ns        10.000 ns       10.000 ns
+overlay_1     overlay      checkout_results_Pipeline_loop_over_dense_data_pipeline                                               undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      checkout_results                                                                                      undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      write_back_gmem                                                                                       undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      write_back_results                                                                                    undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      kernel_spmspv                                                                                         undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      kernel_spmv_Pipeline_loop_initialize_out_uram                                                         undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      HLS_REG_PACKED_VAL_T_s                                                                                1               0              0             0               0 ns             0 ns            0 ns
+overlay_1     overlay      vector_loader_ddr_to_uram_Pipeline_loop_vector_loader_ddr_to_uram                                     4 ~ -1          4              undef         undef           20.000 ns        undef           undef
+overlay_1     overlay      vector_loader_ddr_to_uram                                                                             3 ~ -1          3              undef         undef           15.000 ns        undef           undef
+overlay_1     overlay      matrix_loader_hbm_to_stream_one_channel_Pipeline_VITIS_LOOP_54_1                                      74              74             74            74              0.370 us         0.370 us        0.370 us
+overlay_1     overlay      matrix_loader_hbm_to_stream_one_channel_Pipeline_loop_matrix_loader_hbm_to_stream_one_channel         undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      matrix_loader_hbm_to_stream_one_channel                                                               undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      pipereg_stage_A_shuffle_1_inout_type_s                                                                1               5              5             5               25.000 ns        25.000 ns       25.000 ns
+overlay_1     overlay      shuffler_1p_shuffle_1_inout_type_shuffle_1_inout_value_type_8u_8u_7u_Pipeline_loop_shuffle_pipeline   undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      shuffler_1p_shuffle_1_inout_type_shuffle_1_inout_value_type_8u_8u_7u_s                                undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      vector_loader_uram_to_stream_one_channel_Pipeline_loop_vector_loader_uram_to_stream_one_channel       undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      vector_loader_uram_to_stream_one_channel                                                              undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      pipereg_stage_A_shuffle_2_inout_type_s                                                                1               5              5             5               25.000 ns        25.000 ns       25.000 ns
+overlay_1     overlay      shuffler_1p_shuffle_2_inout_type_shuffle_2_inout_value_type_8u_8u_7u_Pipeline_loop_shuffle_pipeline   undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      shuffler_1p_shuffle_2_inout_type_shuffle_2_inout_value_type_8u_8u_7u_s                                undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      ufixed_pe_cluster_part1_ap_ufixed_32_8_0_0_0_char_shuffle_2_inout_type_8u_Pipeline_loop_pe_part1      undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      ufixed_pe_cluster_part1_ap_ufixed_32_8_0_0_0_char_shuffle_2_inout_type_8u_s                           undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      ufixed_pe_cluster_spmv_uram_part2_ap_ufixed_32_8_0_0_0_char_8u_64000u_3u_Pipeline_loop_pe_part2       undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      ufixed_pe_cluster_spmv_uram_part2_ap_ufixed_32_8_0_0_0_char_8u_64000u_3u_s                            undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      ufixed_pe_cluster_spmv_uram_ap_ufixed_32_8_0_0_0_char_shuffle_2_inout_type_8u_3u_64000u_s             undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      compute_spmv_one_channel                                                                              undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      compute_spmv_one_channel_1                                                                            undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      compute_spmv_one_channel_2                                                                            undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      compute_spmv_one_channel_3                                                                            undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      dataflow_in_loop_VITIS_LOOP_495_4                                                                     undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      dataflow_parent_loop_proc                                                                             undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      write_to_out_ddr_Pipeline_loop_write_to_out_ddr                                                       142 ~ -1        142            undef         undef           0.710 us         undef           undef
+overlay_1     overlay      write_to_out_ddr                                                                                      5 ~ -1          5              undef         undef           25.000 ns        undef           undef
+overlay_1     overlay      kernel_spmv                                                                                           undef           undef          undef         undef           undef            undef           undef
+overlay_1     overlay      overlay                                                                                               undef           undef          undef         undef           undef            undef           undef
+
+Area Information
+Compute Unit  Kernel Name  Module Name                                                                                           FF      LUT     DSP  BRAM  URAM
+------------  -----------  ----------------------------------------------------------------------------------------------------  ------  ------  ---  ----  ----
+overlay_1     overlay      kernel_assign_vector_sparse_new_frontier_Pipeline_loop_read_inout_val                                 727     422     0    0     0
+overlay_1     overlay      kernel_assign_vector_sparse_new_frontier_Pipeline_loop_process                                        96      154     0    0     0
+overlay_1     overlay      kernel_assign_vector_sparse_new_frontier_Pipeline_loop_write_inout_val                                320     224     0    0     0
+overlay_1     overlay      kernel_assign_vector_sparse_new_frontier_Pipeline_loop_write_new_frontier                             368     188     0    0     0
+overlay_1     overlay      kernel_assign_vector_sparse_new_frontier                                                              2114    3098    0    0     0
+overlay_1     overlay      overlay_Pipeline_loop_read_inout_val                                                                  695     422     0    0     0
+overlay_1     overlay      overlay_Pipeline_loop_process                                                                         10      73      0    0     0
+overlay_1     overlay      overlay_Pipeline_loop_write_inout_val                                                                 320     224     0    0     0
+overlay_1     overlay      kernel_assign_vector_dense_Pipeline_loop_kernel_assign_vector_dense                                   1381    1177    0    0     0
+overlay_1     overlay      kernel_assign_vector_dense                                                                            1759    2393    0    0     0
+overlay_1     overlay      overlay_Pipeline_loop_kernel_add_scalar_vector_dense                                                  582     1004    0    0     0
+overlay_1     overlay      kernel_spmspv_Pipeline_loop_reset_output_buffer                                                       32      548     0    0     0
+overlay_1     overlay      entry_proc                                                                                            2       20      0    0     0
+overlay_1     overlay      load_vector_from_gmem_Pipeline_loop_over_vector_values                                                102     119     0    0     0
+overlay_1     overlay      load_vector_from_gmem                                                                                 239     711     0    0     0
+overlay_1     overlay      load_matrix_from_gmem_Pipeline_loop_get_column_len_ML                                                 175     481     0    0     0
+overlay_1     overlay      load_matrix_from_gmem_Pipeline_loop_over_pkts_ML                                                      1745    945     0    0     0
+overlay_1     overlay      load_matrix_from_gmem                                                                                 2572    2453    0    0     0
+overlay_1     overlay      arbiter_1p_8u_8u_7u_s                                                                                 1997    4082    0    0     0
+overlay_1     overlay      pipereg_stage_A_shuffle_inout_type_s                                                                  481     138     0    0     0
+overlay_1     overlay      shuffler_1p_shuffle_inout_type_shuffle_inout_vale_type_8u_8u_7u_Pipeline_loop_shuffle_pipeline        7840    9318    0    0     0
+overlay_1     overlay      shuffler_1p_shuffle_inout_type_shuffle_inout_vale_type_8u_8u_7u_s                                     7854    9589    0    0     0
+overlay_1     overlay      pe_ufixed_mul_alu_ap_ufixed_32_8_0_0_0_char_s                                                         319     507     0    0     0
+overlay_1     overlay      ufixed_pe_cluster_part1_ap_ufixed_32_8_0_0_0_char_shuffle_inout_type_8u_Pipeline_loop_pe_part1        3983    5783    0    0     0
+overlay_1     overlay      ufixed_pe_cluster_part1_ap_ufixed_32_8_0_0_0_char_shuffle_inout_type_8u_s                             3997    6000    0    0     0
+overlay_1     overlay      pe_ufixed_add_alu_ap_ufixed_32_8_0_0_0_char_s                                                         0       376     0    0     0
+overlay_1     overlay      ufixed_pe_cluster_spmspv_uram_part2_ap_ufixed_32_8_0_0_0_char_4u_8u_16000u_3u_Pipeline_loop_pe_part2  6071    8460    0    0     0
+overlay_1     overlay      ufixed_pe_cluster_spmspv_uram_part2_ap_ufixed_32_8_0_0_0_char_4u_8u_16000u_3u_s                       6084    8311    0    0     0
+overlay_1     overlay      ufixed_pe_cluster_spmspv_uram_ap_ufixed_32_8_0_0_0_char_shuffle_inout_type_4u_8u_3u_16000u_s          10211   14732   0    0     0
+overlay_1     overlay      compute_spmspv                                                                                        21177   32194   0    0     0
+overlay_1     overlay      bram_access_read_2ports                                                                               11      322     0    0     0
+overlay_1     overlay      checkout_results_Pipeline_loop_over_dense_data_pipeline                                               1542    2654    0    0     0
+overlay_1     overlay      checkout_results                                                                                      1563    2870    0    0     0
+overlay_1     overlay      write_back_gmem                                                                                       831     1334    0    0     0
+overlay_1     overlay      write_back_results                                                                                    2608    6626    0    0     0
+overlay_1     overlay      kernel_spmspv                                                                                         24798   44334   0    0     0
+overlay_1     overlay      kernel_spmv_Pipeline_loop_initialize_out_uram                                                         18      102     0    0     0
+overlay_1     overlay      HLS_REG_PACKED_VAL_T_s                                                                                0       0       0    0     0
+overlay_1     overlay      vector_loader_ddr_to_uram_Pipeline_loop_vector_loader_ddr_to_uram                                     349     105     0    0     0
+overlay_1     overlay      vector_loader_ddr_to_uram                                                                             594     932     0    0     0
+overlay_1     overlay      matrix_loader_hbm_to_stream_one_channel_Pipeline_VITIS_LOOP_54_1                                      655     727     0    0     0
+overlay_1     overlay      matrix_loader_hbm_to_stream_one_channel_Pipeline_loop_matrix_loader_hbm_to_stream_one_channel         2617    1576    0    0     0
+overlay_1     overlay      matrix_loader_hbm_to_stream_one_channel                                                               4077    3499    0    0     0
+overlay_1     overlay      pipereg_stage_A_shuffle_1_inout_type_s                                                                481     138     0    0     0
+overlay_1     overlay      shuffler_1p_shuffle_1_inout_type_shuffle_1_inout_value_type_8u_8u_7u_Pipeline_loop_shuffle_pipeline   7840    9318    0    0     0
+overlay_1     overlay      shuffler_1p_shuffle_1_inout_type_shuffle_1_inout_value_type_8u_8u_7u_s                                7853    9578    0    0     0
+overlay_1     overlay      vector_loader_uram_to_stream_one_channel_Pipeline_loop_vector_loader_uram_to_stream_one_channel       1081    326     0    0     0
+overlay_1     overlay      vector_loader_uram_to_stream_one_channel                                                              1085    508     0    0     0
+overlay_1     overlay      pipereg_stage_A_shuffle_2_inout_type_s                                                                481     138     0    0     0
+overlay_1     overlay      shuffler_1p_shuffle_2_inout_type_shuffle_2_inout_value_type_8u_8u_7u_Pipeline_loop_shuffle_pipeline   7840    9318    0    0     0
+overlay_1     overlay      shuffler_1p_shuffle_2_inout_type_shuffle_2_inout_value_type_8u_8u_7u_s                                7853    9578    0    0     0
+overlay_1     overlay      ufixed_pe_cluster_part1_ap_ufixed_32_8_0_0_0_char_shuffle_2_inout_type_8u_Pipeline_loop_pe_part1      3983    5783    0    0     0
+overlay_1     overlay      ufixed_pe_cluster_part1_ap_ufixed_32_8_0_0_0_char_shuffle_2_inout_type_8u_s                           3989    5991    0    0     0
+overlay_1     overlay      ufixed_pe_cluster_spmv_uram_part2_ap_ufixed_32_8_0_0_0_char_8u_64000u_3u_Pipeline_loop_pe_part2       4471    7470    0    0     0
+overlay_1     overlay      ufixed_pe_cluster_spmv_uram_part2_ap_ufixed_32_8_0_0_0_char_8u_64000u_3u_s                            4484    7591    0    0     0
+overlay_1     overlay      ufixed_pe_cluster_spmv_uram_ap_ufixed_32_8_0_0_0_char_shuffle_2_inout_type_8u_3u_64000u_s             8603    14003   0    0     0
+overlay_1     overlay      compute_spmv_one_channel                                                                              30209   46962   0    0     0
+overlay_1     overlay      compute_spmv_one_channel_1                                                                            30209   46962   0    0     0
+overlay_1     overlay      compute_spmv_one_channel_2                                                                            30209   46962   0    0     0
+overlay_1     overlay      compute_spmv_one_channel_3                                                                            30209   46962   0    0     0
+overlay_1     overlay      dataflow_in_loop_VITIS_LOOP_495_4                                                                     121467  189271  0    0     64
+overlay_1     overlay      dataflow_parent_loop_proc                                                                             121758  189349  0    0     64
+overlay_1     overlay      write_to_out_ddr_Pipeline_loop_write_to_out_ddr                                                       919     1972    0    0     0
+overlay_1     overlay      write_to_out_ddr                                                                                      1062    2242    0    0     0
+overlay_1     overlay      kernel_spmv                                                                                           123047  195481  0    0     64
+overlay_1     overlay      overlay                                                                                               169379  267910  0    740   448
+-------------------------------------------------------------------------------
